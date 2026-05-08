@@ -45,4 +45,6 @@ Důvod:
 
 Poznámka: u bytů vlastněných fyzickou osobou zůstává odpovědnost vůči SVJ na vlastníkovi. U bytů ve vlastnictví
 Stavebního bytového družstva Mír se předpokládá praktická role uživatele bytu při volbě počtu čipů a typu telefonu;
-platební komunikaci je potřeba ještě přesně potvrdit.
+platební komunikace a platba mají směřovat na nájemníky, nikoliv přes SBD Mír jako zprostředkovatele platby.
+U spoluvlastnictví stačí odpověď jedné osoby jednající za jednotku. U bytů vlastněných fyzickou osobou budou
+oficiálně oslovováni vlastníci, nikoliv nájemníci.

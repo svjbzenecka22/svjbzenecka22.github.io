@@ -69,3 +69,7 @@ danou jednotku, protože zatím neexistuje samostatný systém ověření osoby 
 Do uzávěrky se má odpověď za jednotku dát změnit a jako finální má platit poslední odpověď za jednotku. U bytů
 vlastněných fyzickou osobou zůstává odpovědnost vůči SVJ na vlastníkovi. U bytů ve vlastnictví Stavebního bytového
 družstva Mír se předpokládá praktická role uživatele bytu při volbě čipů a telefonu.
+
+Doplnění: u spoluvlastnictví stačí odpověď jedné osoby jednající za jednotku. U bytů vlastněných fyzickou osobou
+budou oficiálně oslovováni vlastníci, nikoliv nájemníci. U nájemních bytů ve vlastnictví Stavebního bytového družstva
+Mír má platba směřovat na nájemníky a SBD Mír nemá vystupovat jako zprostředkovatel platby.

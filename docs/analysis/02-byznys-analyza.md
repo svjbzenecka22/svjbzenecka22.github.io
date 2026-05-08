@@ -119,8 +119,16 @@ Pro byty vlastněné fyzickou osobou zůstává odpovědnost vůči SVJ na vlast
 bytového družstva Mír se předpokládá zvláštní praktický režim: rozhodovat o počtu čipů a typu telefonu má spíše
 uživatel bytu, protože je faktickým uživatelem zařízení.
 
-Platební komunikace a výzva k doplatku mají směřovat na kontakt evidovaný u jednotky, typicky na vlastníka bytu.
-Nemají se automaticky posílat na nájemníka nebo jinou osobu jen proto, že odpověď vyplnila.
+U spoluvlastnictví stačí odpověď jedné osoby jednající za jednotku, protože systém v první fázi nebude ověřovat,
+která konkrétní osoba se za jednotku přihlásila.
+
+Platební komunikace a výzva k doplatku mají u bytů vlastněných fyzickou osobou směřovat na kontakt evidovaný
+u jednotky, typicky na vlastníka bytu. Oslovováni mají být vlastníci, nikoliv nájemníci. U nájemních bytů ve
+vlastnictví Stavebního bytového družstva Mír má platba směřovat na nájemníky a SBD Mír nemá vystupovat jako
+zprostředkovatel této platby.
+
+Pokud by se u bytu vlastněného fyzickou osobou ozval vlastník i uživatel bytu s rozdílným požadavkem, je pro
+komunikaci vůči SVJ určující vlastník, protože právě vlastník je oficiálně oslovenou osobou.
 
 Do uzávěrky se má odpověď za jednotku dát změnit. Pro další práci se předpokládá pravidlo, že platí poslední odpověď
 za jednotku před uzávěrkou. Tím se snižuje riziko duplicitních odpovědí za stejnou jednotku.
@@ -195,11 +203,7 @@ Automatické párování plateb je mimo rozsah první fáze.
 ### Otevřená procesní rozhodnutí
 
 - Potvrdit finální formulaci pravidla, že odpověď patří jednotce, ne osobě.
-- Potvrdit zvláštní režim pro byty ve vlastnictví Stavebního bytového družstva Mír.
-- Potvrdit, zda u spoluvlastnictví stačí jedna osoba jednající za jednotku.
 - Potvrdit, že do uzávěrky automaticky platí poslední odpověď za jednotku.
-- Jak se řeší jednotka ve spoluvlastnictví?
-- Jak se řeší rozpor mezi vlastníkem a nájemníkem?
 - Kdo potvrdí finální objednávku a kdo nese odpovědnost za doplatek?
 - Jak výbor osloví jednotky, které neodpoví do uzávěrky?
 - Má systém počítat doplatek, nebo pouze sbírat podklady?

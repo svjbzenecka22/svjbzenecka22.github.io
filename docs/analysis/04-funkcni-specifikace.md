@@ -46,7 +46,9 @@ Požadavky je nutné potvrdit po zodpovězení prioritních otázek v byznys ana
 - Rozsah povinných údajů má být co nejmenší.
 - Systém nebo proces musí umožnit odlišit poslední platnou odpověď od starších nebo chybných odpovědí.
 - Do uzávěrky má být možné odpověď za jednotku změnit; jako finální má být použita poslední odpověď před uzávěrkou.
-- Platební komunikace se má vést na kontakt evidovaný u jednotky, typicky na vlastníka, ne automaticky na osobu, která odpověď zadala.
+- U spoluvlastnictví stačí jedna odpověď za jednotku.
+- Platební komunikace se má u bytů vlastněných fyzickou osobou vést na kontakt evidovaný u jednotky, typicky na vlastníka, ne automaticky na osobu, která odpověď zadala.
+- U nájemních bytů ve vlastnictví Stavebního bytového družstva Mír má platební komunikace směřovat na nájemníky.
 - Veřejná informační stránka nesmí zobrazovat odpovědi jednotlivých jednotek.
 - Online řešení musí mít náhradní administrativní postup pro osoby, které neodpoví online.
 

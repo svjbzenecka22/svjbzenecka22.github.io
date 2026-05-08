@@ -47,16 +47,14 @@ Pracovní odpovědi z 2026-05-08:
 - V první fázi se nepředpokládá spolehlivé ověření totožnosti osoby proti samostatnému systému vlastníků nebo nájemníků.
 - U bytů vlastněných fyzickou osobou zůstává odpovědnost vůči SVJ na vlastníkovi, i když praktický požadavek může zadat jiná osoba.
 - U bytů ve vlastnictví Stavebního bytového družstva Mír má být praktickým rozhodovatelem spíše uživatel bytu, protože ten reálně zná potřebu čipů a telefonu.
-- Doplatek a platební komunikace se mají posílat na kontakt evidovaný u dané jednotky, typicky na vlastníka bytu, ne automaticky na nájemníka nebo jinou osobu, která odpověď zadala.
+- U bytů vlastněných fyzickou osobou budou oficiálně oslovováni vlastníci, nikoliv nájemníci.
+- U spoluvlastnictví stačí odpověď jedné osoby jednající za jednotku, protože systém v první fázi nebude ověřovat totožnost ani vztah osoby k jednotce.
+- Doplatek a platební komunikace se mají u bytů vlastněných fyzickou osobou posílat na kontakt evidovaný u dané jednotky, typicky na vlastníka bytu.
+- U nájemních bytů ve vlastnictví Stavebního bytového družstva Mír má platba směřovat na nájemníky; SBD Mír nemá vystupovat jako zprostředkovatel této platby.
 - Pokud bude za stejnou jednotku zadáno více odpovědí, nemá jít o více osobních odpovědí, ale o změny odpovědi dané jednotky.
 - Do uzávěrky má být možné odpověď za jednotku změnit; pro další práci se předpokládá, že platí poslední odpověď za jednotku před uzávěrkou.
 - Do budoucna je preferovaný směr jednotkový účet nebo jiný stabilní přístup za každou jednotku, použitelný i pro další dotazníky, hlasování nebo zprávy.
-
-Zbývá potvrdit:
-
-- zda u spoluvlastnictví stačí odpověď jedné osoby jednající za jednotku,
-- jak přesně budou řešeny byty ve vlastnictví SBD Mír z pohledu platební komunikace,
-- kdo ve výboru rozhodne případný spor, pokud se ozve vlastník i uživatel bytu s rozdílným požadavkem.
+- Pokud by se u bytu vlastněného fyzickou osobou ozval vlastník i uživatel bytu s rozdílným požadavkem, je pro komunikaci vůči SVJ určující vlastník, protože právě vlastník je oficiálně oslovenou osobou.
 
 ### Změny a uzávěrka
 
