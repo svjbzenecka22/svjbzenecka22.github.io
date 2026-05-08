@@ -50,3 +50,12 @@ byznys zadání, byznys analýza, IT analýza, funkční specifikace, technická
 
 Prvním konkrétním use casem pro analýzu je sekce k přístupovému systému, zejména sběr počtu čipů a volby typu
 bytového telefonu za jednotlivé partaje.
+
+## Průběžný záznam 2026-05-08: rozpracování první agendy
+
+Byla rozšířena analýza první agendy přístupového systému bez výběru technologie. Důraz je na procesní pravidla,
+zejména jednu finální odpověď za jednotku, oprávněnou osobu, možnost změny odpovědi, rozsah sbíraných údajů,
+doplatky, exporty a náhradní neonline postup.
+
+Další krok je položit prioritní otázky výboru a dodavateli, aby bylo možné rozhodnout, zda první agenda potřebuje
+jen jednoduchý formulářový sběr, nebo robustnější neveřejnou datovou část.
