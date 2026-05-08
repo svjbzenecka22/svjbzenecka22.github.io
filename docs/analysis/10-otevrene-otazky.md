@@ -72,6 +72,8 @@ Pracovní odpovědi z 2026-05-08:
 - Po uzávěrce musí odpovídající osoba kontaktovat výbor individuálně, například e-mailem, telefonicky nebo přes WhatsApp.
 - Výjimky po uzávěrce řeší výbor; pokud bude změna přijata, výbor ji zapíše nebo upraví administrativně ze své strany.
 - Jednotky, které do uzávěrky neodpoví, budou kontaktovány e-mailem.
+- Pokud to nebude technicky příliš náročné, má systém umět připravit nebo vygenerovat e-mail pro jednotky, které dosud neodpověděly, včetně jejich evidovaných kontaktů.
+- Vhodné zlepšení je také možnost odeslat před uzávěrkou avízo jednotkám bez odpovědi, aby měly čas včas reagovat.
 
 ### Rozsah údajů
 

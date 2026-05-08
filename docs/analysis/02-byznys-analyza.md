@@ -138,6 +138,10 @@ systému. Osoba, která potřebuje změnu po uzávěrce, musí kontaktovat výbo
 telefonicky nebo přes WhatsApp. Výbor případnou výjimku posoudí a pokud ji přijme, zapíše nebo upraví odpověď
 administrativně ze své strany. Jednotky bez odpovědi budou po uzávěrce kontaktovány e-mailem.
 
+Pokud to nebude technicky příliš náročné, je vhodné, aby systém uměl výboru připravit seznam neodpovězených jednotek
+včetně evidovaných kontaktů nebo přímo vygenerovat e-mail pro připomenutí. Praktickým zlepšením by bylo také avízo
+před uzávěrkou, aby jednotky, které na agendu zapomněly, měly ještě čas odpověď promyslet a odeslat.
+
 Do budoucna je vhodným směrem stabilní přístup nebo účet za každou jednotku, který by bylo možné použít i pro další
 agendy, například dotazníky, hlasování nebo vkládání zpráv.
 
@@ -231,7 +235,9 @@ Automatické párování plateb je mimo rozsah první fáze.
 - možnost úpravy odpovědi do uzávěrky,
 - automatické potvrzení e-mailem,
 - přehled stavu pro výbor,
-- jednoduché připomenutí nevyplněným jednotkám.
+- jednoduché připomenutí nevyplněným jednotkám,
+- vygenerování e-mailu nebo seznamu kontaktů pro jednotky bez odpovědi,
+- avízo před uzávěrkou pro jednotky, které dosud neodpověděly.
 
 ### Budoucí možnosti
 

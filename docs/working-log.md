@@ -82,3 +82,7 @@ odpovídající osoba musí kontaktovat výbor individuálně e-mailem, telefoni
 
 Výjimky po uzávěrce řeší výbor. Pokud výbor pozdní změnu přijme, zapíše ji nebo upraví administrativně ze své strany.
 Jednotky bez odpovědi mají být kontaktovány e-mailem.
+
+Doplnění: pokud to nebude technicky příliš náročné, má systém pomoci výboru s připomenutím neodpovězených jednotek,
+například vygenerováním seznamu kontaktů nebo e-mailu. Vhodné je také avízo před uzávěrkou pro jednotky, které dosud
+neodpověděly.

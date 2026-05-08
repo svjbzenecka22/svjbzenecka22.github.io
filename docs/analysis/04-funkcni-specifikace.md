@@ -80,6 +80,8 @@ stabilním přístupem za jednotku.
 - opravit zjevnou administrativní chybu se zaznamenáním důvodu,
 - administrativně zapsat nebo upravit odpověď po uzávěrce, pokud výbor schválí výjimku,
 - vyfiltrovat jednotky bez odpovědi pro e-mailové připomenutí,
+- pokud to zvolená technologie rozumně umožní, vygenerovat e-mail nebo seznam kontaktů pro jednotky bez odpovědi,
+- pokud to zvolená technologie rozumně umožní, připravit avízo před uzávěrkou pro jednotky bez odpovědi,
 - exportovat souhrn pro dodavatele,
 - exportovat podklady pro doplatky,
 - uzavřít sběr odpovědí,
