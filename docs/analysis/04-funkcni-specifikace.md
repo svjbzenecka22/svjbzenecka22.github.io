@@ -46,6 +46,8 @@ Požadavky je nutné potvrdit po zodpovězení prioritních otázek v byznys ana
 - Rozsah povinných údajů má být co nejmenší.
 - Systém nebo proces musí umožnit odlišit poslední platnou odpověď od starších nebo chybných odpovědí.
 - Do uzávěrky má být možné odpověď za jednotku změnit; jako finální má být použita poslední odpověď před uzávěrkou.
+- Změna odpovědi do uzávěrky má být samoobslužná.
+- Po uzávěrce nemá být změna dostupná v běžné uživatelské části systému; výjimky řeší výbor individuálně.
 - U spoluvlastnictví stačí jedna odpověď za jednotku.
 - Platební komunikace se má u bytů vlastněných fyzickou osobou vést na kontakt evidovaný u jednotky, typicky na vlastníka, ne automaticky na osobu, která odpověď zadala.
 - U nájemních bytů ve vlastnictví Stavebního bytového družstva Mír má platební komunikace směřovat na nájemníky.
@@ -76,6 +78,8 @@ stabilním přístupem za jednotku.
 - rozlišit platné, nahrazené, neúplné a ručně doplněné odpovědi,
 - doplnit odpověď přijatou mimo online formulář,
 - opravit zjevnou administrativní chybu se zaznamenáním důvodu,
+- administrativně zapsat nebo upravit odpověď po uzávěrce, pokud výbor schválí výjimku,
+- vyfiltrovat jednotky bez odpovědi pro e-mailové připomenutí,
 - exportovat souhrn pro dodavatele,
 - exportovat podklady pro doplatky,
 - uzavřít sběr odpovědí,
@@ -106,7 +110,7 @@ Volitelné položky podle rozhodnutí výboru:
 - Typ telefonu musí být jedna z výborem schválených variant.
 - Jednotka musí být rozpoznatelná proti seznamu jednotek používanému výborem.
 - Odpověď bez potvrzení doplatku nebo platební povinnosti nemá být považována za finální.
-- Po uzávěrce se nové odpovědi nebo změny zpracují jen podle pravidla stanoveného výborem.
+- Po uzávěrce se nové odpovědi nebo změny zpracují jen individuálně přes výbor a případně administrativním zásahem výboru.
 
 ### Náhradní neonline postup
 

@@ -48,3 +48,16 @@ Stavebního bytového družstva Mír se předpokládá praktická role uživatel
 platební komunikace a platba mají směřovat na nájemníky, nikoliv přes SBD Mír jako zprostředkovatele platby.
 U spoluvlastnictví stačí odpověď jedné osoby jednající za jednotku. U bytů vlastněných fyzickou osobou budou
 oficiálně oslovováni vlastníci, nikoliv nájemníci.
+
+## 2026-05-08: změny odpovědí do uzávěrky a po ní
+
+Rozhodnutí: do uzávěrky má být změna odpovědi za jednotku samoobslužná a jako finální má platit poslední odpověď
+za jednotku před uzávěrkou. Po uzávěrce už se změny nemají řešit běžnou uživatelskou částí systému.
+
+Důvod:
+
+- před uzávěrkou je praktické umožnit partajím opravit odpověď bez administrativní zátěže výboru,
+- po uzávěrce už výbor potřebuje stabilní podklad pro objednávku,
+- individuální pozdní změny mají jít přes výbor e-mailem, telefonicky nebo přes WhatsApp,
+- pokud výbor pozdní změnu přijme, zapíše ji administrativně ze své strany,
+- jednotky bez odpovědi budou po uzávěrce připomenuty e-mailem.

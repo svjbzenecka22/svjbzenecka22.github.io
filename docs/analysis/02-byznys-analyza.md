@@ -133,6 +133,11 @@ komunikaci vůči SVJ určující vlastník, protože právě vlastník je ofici
 Do uzávěrky se má odpověď za jednotku dát změnit. Pro další práci se předpokládá pravidlo, že platí poslední odpověď
 za jednotku před uzávěrkou. Tím se snižuje riziko duplicitních odpovědí za stejnou jednotku.
 
+Změna odpovědi do uzávěrky má být samoobslužná. Po uzávěrce už nemá být změna dostupná v běžné uživatelské části
+systému. Osoba, která potřebuje změnu po uzávěrce, musí kontaktovat výbor individuálně, například e-mailem,
+telefonicky nebo přes WhatsApp. Výbor případnou výjimku posoudí a pokud ji přijme, zapíše nebo upraví odpověď
+administrativně ze své strany. Jednotky bez odpovědi budou po uzávěrce kontaktovány e-mailem.
+
 Do budoucna je vhodným směrem stabilní přístup nebo účet za každou jednotku, který by bylo možné použít i pro další
 agendy, například dotazníky, hlasování nebo vkládání zpráv.
 
@@ -203,9 +208,7 @@ Automatické párování plateb je mimo rozsah první fáze.
 ### Otevřená procesní rozhodnutí
 
 - Potvrdit finální formulaci pravidla, že odpověď patří jednotce, ne osobě.
-- Potvrdit, že do uzávěrky automaticky platí poslední odpověď za jednotku.
 - Kdo potvrdí finální objednávku a kdo nese odpovědnost za doplatek?
-- Jak výbor osloví jednotky, které neodpoví do uzávěrky?
 - Má systém počítat doplatek, nebo pouze sbírat podklady?
 - Jak dlouho se budou odpovědi uchovávat po dokončení objednávky?
 

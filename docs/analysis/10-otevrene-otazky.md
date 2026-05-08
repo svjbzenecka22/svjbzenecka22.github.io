@@ -64,6 +64,15 @@ Pracovní odpovědi z 2026-05-08:
 4. Kdo schvaluje výjimky po uzávěrce?
 5. Jakým způsobem budou kontaktovány jednotky, které do uzávěrky neodpoví?
 
+Pracovní odpovědi z 2026-05-08:
+
+- Do uzávěrky má platit poslední odeslaná odpověď za jednotku.
+- Změna odpovědi do uzávěrky má být samoobslužná, tedy bez nutnosti kontaktovat výbor.
+- Po uzávěrce už nemá být změna řešena běžnou uživatelskou částí systému.
+- Po uzávěrce musí odpovídající osoba kontaktovat výbor individuálně, například e-mailem, telefonicky nebo přes WhatsApp.
+- Výjimky po uzávěrce řeší výbor; pokud bude změna přijata, výbor ji zapíše nebo upraví administrativně ze své strany.
+- Jednotky, které do uzávěrky neodpoví, budou kontaktovány e-mailem.
+
 ### Rozsah údajů
 
 1. Stačí evidovat pouze jednotku, počet čipů a typ telefonu?
