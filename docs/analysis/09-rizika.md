@@ -75,3 +75,9 @@ Mitigace: Před spuštěním sběru ověřit u dodavatele požadovaný formát o
 Popis: Partaje mohou chtít změnit počet čipů nebo typ telefonu po uzávěrce nebo po předání objednávky dodavateli.
 
 Mitigace: Předem zveřejnit uzávěrku, pravidla změn a dopad pozdních změn na cenu, dodání nebo individuální řešení.
+
+## Riziko: neobvykle vysoký počet čipů
+
+Popis: Počet čipů na jednotku nemá stanovený obchodní limit, takže některá odpověď může obsahovat neobvykle vysoký počet.
+
+Mitigace: Formulář má přijímat celé nezáporné číslo, ale výbor má před objednávkou zkontrolovat neobvykle vysoké hodnoty a případně je individuálně ověřit.

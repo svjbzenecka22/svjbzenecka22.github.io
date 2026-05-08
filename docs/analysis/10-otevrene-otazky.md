@@ -101,6 +101,15 @@ Pracovní odpovědi z 2026-05-08:
 4. Bude možné objednat žádný nový telefon, pokud partaj nechce měnit stávající zařízení?
 5. Má výbor nebo dodavatel doporučenou výchozí variantu telefonu pro nerozhodnuté partaje?
 
+Pracovní odpovědi z 2026-05-08:
+
+- Počet čipů na jednotku nemá stanovený minimální ani maximální obchodní limit.
+- Každý objednaný čip se platí; neexistuje základní počet čipů zahrnutý v ceně.
+- Všechny typy bytového telefonu jsou dostupné pro všechny jednotky.
+- Varianta bez doplatku má být řešena jako základní verze telefonu s doplatkem 0 Kč.
+- Výbor ani dodavatel nemají doporučenou výchozí variantu telefonu pro nerozhodnuté partaje.
+- Konkrétní názvy a ceny variant telefonů je potřeba držet podle aktuální nabídky nebo ceníku dodavatele.
+
 ### Doplatky a potvrzení
 
 1. Budou ceny čipů a telefonů známé před spuštěním sběru?

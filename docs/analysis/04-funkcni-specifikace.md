@@ -113,9 +113,19 @@ Volitelné položky podle rozhodnutí výboru:
 Pokud bude existovat obecná portálová identita s rolemi a přístupy, má systém identifikaci odpovídající osoby a její
 vztah k jednotce přednostně odvozovat z přihlášení nebo profilu, nikoliv vyžadovat ruční opakované zadání.
 
+### Pravidla pro čipy a telefony
+
+- Počet čipů nemá stanovený minimální ani maximální obchodní limit.
+- Počet čipů musí být celé nezáporné číslo.
+- Každý objednaný čip se platí; není základní počet čipů zahrnutý v ceně.
+- Všechny typy bytového telefonu jsou dostupné pro všechny jednotky.
+- Základní varianta telefonu bez doplatku má mít doplatek 0 Kč.
+- Systém nemá předvybírat doporučenou variantu telefonu podle doporučení výboru nebo dodavatele.
+- Názvy a ceny variant telefonů mají odpovídat aktuální nabídce nebo ceníku dodavatele.
+
 ### Pravidla validace k potvrzení
 
-- Počet čipů musí být celé číslo v povoleném rozsahu.
+- Počet čipů musí být celé nezáporné číslo.
 - Typ telefonu musí být jedna z výborem schválených variant.
 - Jednotka musí být rozpoznatelná proti seznamu jednotek používanému výborem.
 - Odpověď bez potvrzení doplatku nebo platební povinnosti nemá být považována za finální.
@@ -131,7 +141,7 @@ doplněnou.
 ## Návrh akceptačních kritérií pro první agendu
 
 - Každá odpověď je přiřazena ke konkrétní jednotce.
-- Počet čipů je číselná hodnota v povoleném rozsahu.
+- Počet čipů je celé nezáporné číslo.
 - Typ telefonu je vybrán z předem daného seznamu.
 - Odpovědi lze exportovat do tabulky.
 - Veřejná stránka neobsahuje neveřejná data ani osobní údaje nad nezbytný rozsah.

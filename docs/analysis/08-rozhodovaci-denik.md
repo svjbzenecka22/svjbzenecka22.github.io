@@ -75,3 +75,17 @@ Důvod:
   osoby, kontakt a vztah k jednotce,
 - pokud portálová identita existovat bude, mají se tyto údaje přednostně odvodit z přihlášení nebo profilu,
 - volná poznámka má být omezena na dotazy a připomínky k agendě, aby se nesbíraly zbytečné osobní nebo citlivé údaje.
+
+## 2026-05-08: pravidla pro čipy a typy telefonů
+
+Rozhodnutí: počet čipů na jednotku nemá stanovený minimální ani maximální obchodní limit a každý objednaný čip se
+platí. Všechny typy bytového telefonu mají být dostupné pro všechny jednotky. Varianta bez doplatku má být vedena
+jako základní verze telefonu s doplatkem 0 Kč.
+
+Důvod:
+
+- výbor nechce předem omezovat počet čipů na jednotku,
+- neexistuje základní počet čipů zahrnutý v ceně,
+- dostupnost telefonů nemá být omezena podle jednotky,
+- výbor ani dodavatel nemají doporučenou výchozí variantu telefonu pro nerozhodnuté partaje,
+- konkrétní názvy a ceny variant je potřeba převzít z aktuální nabídky nebo ceníku dodavatele.

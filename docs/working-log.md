@@ -95,3 +95,13 @@ umožnit volnou poznámku pro dotazy a připomínky k agendě.
 Jméno odpovídající osoby, kontakt a vztah k jednotce závisí na zvolené technologické variantě. Pokud bude existovat
 obecná portálová identita s rolemi a přístupy, mají se tyto údaje odvodit z přihlášení nebo profilu. Pokud půjde
 o MVP bez takové identity, je vhodné tyto údaje sbírat ve formuláři, aby výbor věděl, kdo odpověď za jednotku vyplnil.
+
+## Průběžný záznam 2026-05-08: čipy a typy telefonů
+
+Byla doplněna pravidla pro čipy a typy bytových telefonů. Počet čipů na jednotku nemá stanovený minimální ani
+maximální obchodní limit, ale ve formuláři má jít o celé nezáporné číslo. Každý objednaný čip se platí; neexistuje
+základní počet čipů zahrnutý v ceně.
+
+Všechny typy bytového telefonu mají být dostupné pro všechny jednotky. Varianta bez doplatku se má řešit jako
+základní verze telefonu s doplatkem 0 Kč. Výbor ani dodavatel nemají doporučenou výchozí variantu telefonu pro
+nerozhodnuté partaje.

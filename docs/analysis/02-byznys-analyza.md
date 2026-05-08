@@ -107,6 +107,17 @@ vyplnil.
 Volná poznámka má být povolena pro dotazy a připomínky k agendě přístupového systému. Formulář má uživatele stručně
 navést, aby do poznámky neuváděl zbytečné osobní nebo citlivé údaje.
 
+### Čipy a typy telefonů
+
+Počet čipů na jednotku nemá stanovený minimální ani maximální obchodní limit. Z praktického hlediska má formulář
+stále pracovat s celým nezáporným číslem. Každý objednaný čip se platí; není určen základní počet čipů zahrnutý
+v ceně.
+
+Všechny typy bytového telefonu mají být dostupné pro všechny jednotky. Varianta bez doplatku se má řešit jako
+základní verze telefonu s doplatkem 0 Kč, nikoliv jako doporučená volba výboru. Výbor ani dodavatel nemají pro
+nerozhodnuté partaje doporučenou výchozí variantu telefonu. Konkrétní názvy a ceny variant je potřeba držet podle
+aktuální nabídky nebo ceníku dodavatele.
+
 Údaje, které nejsou pro první agendu zřejmou nutností:
 
 - rodná čísla,
