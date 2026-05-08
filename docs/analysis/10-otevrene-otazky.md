@@ -40,6 +40,24 @@ Tyto otázky je vhodné zodpovědět dříve, než se bude vybírat konkrétní 
 4. Kdo nese odpovědnost za doplatek, pokud odpověď vyplní nájemník nebo jiná pověřená osoba?
 5. Co se stane, když výbor obdrží dvě rozdílné odpovědi za stejnou jednotku?
 
+Pracovní odpovědi z 2026-05-08:
+
+- Odpověď se má v první agendě vázat primárně k bytové jednotce, ne ke konkrétní osobě.
+- Odpověď může odeslat osoba, která se za danou jednotku přihlásí do systému nebo použije přístup určený pro danou jednotku.
+- V první fázi se nepředpokládá spolehlivé ověření totožnosti osoby proti samostatnému systému vlastníků nebo nájemníků.
+- U bytů vlastněných fyzickou osobou zůstává odpovědnost vůči SVJ na vlastníkovi, i když praktický požadavek může zadat jiná osoba.
+- U bytů ve vlastnictví Stavebního bytového družstva Mír má být praktickým rozhodovatelem spíše uživatel bytu, protože ten reálně zná potřebu čipů a telefonu.
+- Doplatek a platební komunikace se mají posílat na kontakt evidovaný u dané jednotky, typicky na vlastníka bytu, ne automaticky na nájemníka nebo jinou osobu, která odpověď zadala.
+- Pokud bude za stejnou jednotku zadáno více odpovědí, nemá jít o více osobních odpovědí, ale o změny odpovědi dané jednotky.
+- Do uzávěrky má být možné odpověď za jednotku změnit; pro další práci se předpokládá, že platí poslední odpověď za jednotku před uzávěrkou.
+- Do budoucna je preferovaný směr jednotkový účet nebo jiný stabilní přístup za každou jednotku, použitelný i pro další dotazníky, hlasování nebo zprávy.
+
+Zbývá potvrdit:
+
+- zda u spoluvlastnictví stačí odpověď jedné osoby jednající za jednotku,
+- jak přesně budou řešeny byty ve vlastnictví SBD Mír z pohledu platební komunikace,
+- kdo ve výboru rozhodne případný spor, pokud se ozve vlastník i uživatel bytu s rozdílným požadavkem.
+
 ### Změny a uzávěrka
 
 1. Má do uzávěrky platit poslední odeslaná odpověď za jednotku?

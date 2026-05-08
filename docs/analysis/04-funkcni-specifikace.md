@@ -42,8 +42,11 @@ Požadavky je nutné potvrdit po zodpovězení prioritních otázek v byznys ana
 
 - Každá jednotka má mít nejvýše jednu finální odpověď použitou pro objednávku.
 - Odpověď musí být přiřazena ke konkrétní jednotce.
+- Odpověď se v první fázi chápe jako odpověď jednotky, nikoliv jako ověřený osobní úkon konkrétní osoby.
 - Rozsah povinných údajů má být co nejmenší.
 - Systém nebo proces musí umožnit odlišit poslední platnou odpověď od starších nebo chybných odpovědí.
+- Do uzávěrky má být možné odpověď za jednotku změnit; jako finální má být použita poslední odpověď před uzávěrkou.
+- Platební komunikace se má vést na kontakt evidovaný u jednotky, typicky na vlastníka, ne automaticky na osobu, která odpověď zadala.
 - Veřejná informační stránka nesmí zobrazovat odpovědi jednotlivých jednotek.
 - Online řešení musí mít náhradní administrativní postup pro osoby, které neodpoví online.
 
@@ -59,6 +62,10 @@ Požadavky je nutné potvrdit po zodpovězení prioritních otázek v byznys ana
 - odeslat odpověď,
 - obdržet potvrzení o přijetí odpovědi,
 - případně upravit odpověď do termínu uzávěrky podle schváleného pravidla.
+
+Poznámka k oprávnění: v první fázi se nepředpokládá spolehlivé ověření osoby proti registru vlastníků nebo nájemníků.
+Přístup má proto prakticky reprezentovat jednotku. Do budoucna je vhodné počítat s jednotkovým účtem nebo jiným
+stabilním přístupem za jednotku.
 
 ### Funkce pro výbor
 
@@ -114,5 +121,6 @@ doplněnou.
 - Veřejná stránka neobsahuje neveřejná data ani osobní údaje nad nezbytný rozsah.
 - Výbor umí zjistit, které jednotky dosud neodpověděly.
 - Výbor umí určit finální odpověď za jednotku i v případě opravy nebo ručního doplnění.
+- Pokud přijde více odpovědí za stejnou jednotku před uzávěrkou, systém nebo proces umí určit poslední platnou odpověď.
 - Export pro dodavatele neobsahuje údaje, které dodavatel nepotřebuje.
 - Existuje postup pro odpovědi mimo online formulář.

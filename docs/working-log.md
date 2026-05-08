@@ -59,3 +59,13 @@ doplatky, exporty a náhradní neonline postup.
 
 Další krok je položit prioritní otázky výboru a dodavateli, aby bylo možné rozhodnout, zda první agenda potřebuje
 jen jednoduchý formulářový sběr, nebo robustnější neveřejnou datovou část.
+
+## Průběžný záznam 2026-05-08: odpověď k pravidlu za jednotku
+
+Byla zodpovězena první skupina prioritních otázek k tomu, kdo odesílá odpověď za jednotku. Pracovní závěr je, že
+první agenda se má vést po jednotkách, ne po osobách. Přístup k odpovědi za jednotku má prakticky reprezentovat
+danou jednotku, protože zatím neexistuje samostatný systém ověření osoby proti evidenci vlastníků nebo nájemníků.
+
+Do uzávěrky se má odpověď za jednotku dát změnit a jako finální má platit poslední odpověď za jednotku. U bytů
+vlastněných fyzickou osobou zůstává odpovědnost vůči SVJ na vlastníkovi. U bytů ve vlastnictví Stavebního bytového
+družstva Mír se předpokládá praktická role uživatele bytu při volbě čipů a telefonu.

@@ -110,6 +110,24 @@ za doplatek.
 
 Pokud bude povoleno více odpovědí za jednotku, musí být předem určeno, která odpověď je závazná a kdo řeší rozpory.
 
+Pracovní závěr z 2026-05-08: první agenda má být vedena po jednotkách. Odpověď se nemá evidovat jako samostatný
+projev konkrétní osoby, ale jako aktuální požadavek dané jednotky. Osoba, která má přístup k odpovědi za jednotku,
+může prakticky zadat nebo změnit počet čipů a typ telefonu, protože v první fázi neexistuje samostatný systém,
+který by spolehlivě ověřil její totožnost a vztah k jednotce.
+
+Pro byty vlastněné fyzickou osobou zůstává odpovědnost vůči SVJ na vlastníkovi. U bytů ve vlastnictví Stavebního
+bytového družstva Mír se předpokládá zvláštní praktický režim: rozhodovat o počtu čipů a typu telefonu má spíše
+uživatel bytu, protože je faktickým uživatelem zařízení.
+
+Platební komunikace a výzva k doplatku mají směřovat na kontakt evidovaný u jednotky, typicky na vlastníka bytu.
+Nemají se automaticky posílat na nájemníka nebo jinou osobu jen proto, že odpověď vyplnila.
+
+Do uzávěrky se má odpověď za jednotku dát změnit. Pro další práci se předpokládá pravidlo, že platí poslední odpověď
+za jednotku před uzávěrkou. Tím se snižuje riziko duplicitních odpovědí za stejnou jednotku.
+
+Do budoucna je vhodným směrem stabilní přístup nebo účet za každou jednotku, který by bylo možné použít i pro další
+agendy, například dotazníky, hlasování nebo vkládání zpráv.
+
 ### Návrh průběhu
 
 1. Výbor zveřejní informační stránku k přístupovému systému.
@@ -144,6 +162,9 @@ Výhoda: jednoduché použití a nízká administrativní zátěž.
 
 Nevýhoda: slabší kontrola identity a vyšší význam správné distribuce přístupových údajů.
 
+Pracovní preference pro první agendu: varianta 3, tedy odpověď za jednotku přes přístup určený pro jednotku. Nejde
+o potvrzení identity konkrétní osoby, ale o praktickou evidenci aktuální odpovědi dané jednotky.
+
 ### Varianty změny odpovědi
 
 #### Varianta 1: odpověď po odeslání nelze měnit
@@ -153,6 +174,9 @@ Jednoduché na řízení, ale zvyšuje počet individuálních oprav přes výbo
 #### Varianta 2: do uzávěrky platí poslední odpověď za jednotku
 
 Praktické pro vlastníky, ale vyžaduje jasnou evidenci času odpovědi a pravidlo pro nahrazení starší odpovědi.
+
+Pracovní preference pro první agendu: tato varianta. Případné opakované vyplnění za stejnou jednotku se má chápat
+jako změna odpovědi jednotky, nikoliv jako paralelní odpověď jiné osoby.
 
 #### Varianta 3: změnu potvrzuje výbor
 
@@ -170,10 +194,10 @@ Automatické párování plateb je mimo rozsah první fáze.
 
 ### Otevřená procesní rozhodnutí
 
-- Má být jedna odpověď za byt, nebo více odpovědí za osoby?
-- Smí odpověď zadat nájemník, nebo pouze vlastník?
-- Má být možné odpověď po odeslání upravit?
-- Má změnu odpovědi potvrzovat výbor, nebo automaticky platí poslední odpověď do uzávěrky?
+- Potvrdit finální formulaci pravidla, že odpověď patří jednotce, ne osobě.
+- Potvrdit zvláštní režim pro byty ve vlastnictví Stavebního bytového družstva Mír.
+- Potvrdit, zda u spoluvlastnictví stačí jedna osoba jednající za jednotku.
+- Potvrdit, že do uzávěrky automaticky platí poslední odpověď za jednotku.
 - Jak se řeší jednotka ve spoluvlastnictví?
 - Jak se řeší rozpor mezi vlastníkem a nájemníkem?
 - Kdo potvrdí finální objednávku a kdo nese odpovědnost za doplatek?

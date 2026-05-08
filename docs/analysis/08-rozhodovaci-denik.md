@@ -29,3 +29,20 @@ Důvod:
 - budoucí požadavky zahrnují veřejný web, soukromé sekce, dokumenty, souhlasy a možné hlasování,
 - některé funkce mají právní, bezpečnostní a procesní dopady,
 - první datová agenda k přístupovému systému může být MVP, ale nemá předčasně svázat celý budoucí portál.
+
+## 2026-05-08: první agenda se vede po jednotkách
+
+Rozhodnutí: pro první agendu přístupového systému se bude pracovat s odpovědí za bytovou jednotku, nikoliv s více
+samostatnými osobními odpověďmi za vlastníky, nájemníky nebo uživatele bytu.
+
+Důvod:
+
+- v první fázi neexistuje spolehlivý systém, proti kterému by bylo možné ověřit totožnost osoby a její oprávnění za jednotku,
+- praktickým cílem je získat použitelnou objednávkovou odpověď za každou jednotku,
+- případné opakované vyplnění za stejnou jednotku se má chápat jako změna odpovědi jednotky,
+- do uzávěrky má pro další analýzu platit poslední odpověď za jednotku,
+- dlouhodobě je vhodným směrem stabilní přístup nebo účet za jednotku, použitelný i pro další agendy.
+
+Poznámka: u bytů vlastněných fyzickou osobou zůstává odpovědnost vůči SVJ na vlastníkovi. U bytů ve vlastnictví
+Stavebního bytového družstva Mír se předpokládá praktická role uživatele bytu při volbě počtu čipů a typu telefonu;
+platební komunikaci je potřeba ještě přesně potvrdit.
