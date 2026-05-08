@@ -42,6 +42,23 @@ Popis: Bezplatná služba může změnit podmínky nebo limity.
 
 Mitigace: Volit řešení s exportem dat a možností migrace.
 
+## Riziko: nedokončení doporučené technické varianty včas
+
+Popis: Jednoduchá webová aplikace se Supabase lépe odpovídá MVP a budoucímu portálu, ale vyžaduje více návrhu,
+nastavení a testování než čistý formulář nebo tabulka. Při termínu 2026-05-24 může vzniknout časový tlak.
+
+Mitigace: Držet MVP úzce podle funkční specifikace a neimplementovat funkce mimo první agendu. Současně připravit
+Google Sheets + Apps Script jako záložní variantu, pokud by doporučený směr nebylo možné včas bezpečně dokončit.
+
+## Riziko: chybné nastavení přístupu v databázi
+
+Popis: Pokud budou špatně nastavena databázová pravidla, mohl by přístup za jednotku umožnit čtení nebo změnu údajů
+jiné jednotky, případně by se běžný uživatel mohl dostat k administrátorským datům.
+
+Mitigace: Přístupová pravidla navrhnout a otestovat samostatně před spuštěním. Ověřit testovacími jednotkami, že
+uživatel vidí a mění pouze svou jednotku, zatímco administrátor vidí všechny jednotky. Citlivé klíče a interní exporty
+neukládat do veřejného repozitáře ani do veřejného HTML.
+
 ## Riziko: výbor nebude schopen systém spravovat
 
 Popis: Příliš složité řešení může být provozně neudržitelné.

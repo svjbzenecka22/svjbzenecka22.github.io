@@ -16,11 +16,19 @@
 - Vyřešit hlavní architektonické body tak, aby první agenda nebyla slepou uličkou.
 - Vybrat technologickou variantu pro MVP.
 
+Pracovní stav k 2026-05-09: pro MVP se jako doporučený směr jeví jednoduchá webová aplikace s oddělenou datovou
+vrstvou Supabase a samostatným hostingem aplikační části. Google Sheets + Apps Script zůstává záložní varianta, pokud
+by doporučený směr nebylo možné včas bezpečně dokončit.
+
 ## Fáze 2: MVP pro přístupový systém
 
 - Připravit informační sekci.
-- Připravit formulář nebo aplikaci pro sběr odpovědí.
+- Připravit aplikační část pro sběr odpovědí za jednotky.
+- Připravit datovou vrstvu pro jednotky, odpovědi, varianty telefonů, čipy, variabilní symboly a stavy plateb.
+- Připravit přístup za jednotku nebo domácnost.
+- Připravit administrátorský přístup pro všechny tři členy výboru.
 - Připravit export pro výbor a dodavatele.
+- Připravit seznam jednotek bez odpovědi pro urgenci.
 - Ověřit proces s několika testovacími jednotkami.
 - Zveřejnit instrukce pro vlastníky a nájemníky.
 

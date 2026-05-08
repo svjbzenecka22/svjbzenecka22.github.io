@@ -191,3 +191,19 @@ Důvod:
 - primární e-mail a telefon jsou důležité kontakty, ale stabilním datovým klíčem má zůstat jednotka,
 - všichni tři členové výboru mají mít administrátorský přístup,
 - model sdíleného přístupu je potřeba později posoudit z hlediska bezpečnosti a auditní stopy.
+
+## 2026-05-09: pracovní technický směr pro MVP první agendy
+
+Rozhodnutí: pro další návrh MVP první agendy se bude pracovně rozpracovávat jednoduchá webová aplikace s oddělenou
+datovou vrstvou Supabase a samostatným hostingem aplikační části. Veřejný web zůstává na GitHub Pages a na aplikační
+část pouze odkazuje. Google Sheets + Apps Script zůstává záložní varianta pro případ, že by doporučený směr nešlo včas
+bezpečně dokončit.
+
+Důvod:
+
+- MVP potřebuje lépe řídit poslední platnou odpověď za jednotku, změny do uzávěrky, výpočty doplatků a exporty,
+- čistý Google Forms hůře splňuje požadavky na přístup za jednotku a administraci výboru,
+- Supabase a jednoduchá webová aplikace lépe navazují na dlouhodobý směr portálu SVJ,
+- oddělená datová vrstva umožní držet citlivá data mimo GitHub Pages a veřejný repozitář,
+- samostatný hosting aplikační části umožní později doplnit serverless logiku, pokud bude potřeba,
+- hotové portály pro SVJ má smysl dál porovnat pro dlouhodobou strategii, ale nemají blokovat aktuální sběr do 2026-05-24.

@@ -226,3 +226,13 @@ položky, pravidla pro čipy a telefony, doplatky, exporty, termíny, validace, 
 
 Specifikace záměrně ještě nevybírá technologii. Slouží jako podklad pro další krok, tedy pro srovnání realistických
 technologických variant a následné dopracování technické specifikace.
+
+## Průběžný záznam 2026-05-09: pracovní technický směr MVP
+
+Byly porovnány technologické varianty proti ucelené MVP specifikaci první agendy. Jako doporučený pracovní směr byla
+zvolena jednoduchá webová aplikace s oddělenou datovou vrstvou Supabase a samostatným hostingem aplikační části.
+Veřejný web má zůstat na GitHub Pages a na datovou agendu pouze odkazovat.
+
+Google Sheets + Apps Script zůstává záložní varianta pro případ, že by doporučený směr nebylo možné včas bezpečně
+dokončit. Čistý Google Forms je vhodný jen jako nouzové řešení, protože hůře splňuje požadavky na přístup za jednotku,
+změny odpovědí, administraci výboru a budoucí rozšiřitelnost.
