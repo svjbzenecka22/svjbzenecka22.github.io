@@ -217,3 +217,12 @@ doplatky a potvrzení, exporty a kontrola a otázky pro dodavatele.
 Z pohledu spuštění sběru počtu čipů a volby bytového telefonu už tyto otázky nejsou považovány za blokující otevřené
 body. Dále zůstává potřeba potvrdit jen navazující provozní a technické detaily při výběru technologie, nastavení
 uchování dat a finálním sladění s dodavatelem.
+
+## Průběžný záznam 2026-05-09: ucelený návrh MVP první agendy
+
+Byla přepracována funkční specifikace první agendy přístupového systému do uceleného návrhu MVP. Dokument už není jen
+pracovní kostrou, ale shrnuje cíl MVP, hranice první verze, role, uživatelský průběh, administraci výboru, datové
+položky, pravidla pro čipy a telefony, doplatky, exporty, termíny, validace, uchování dat a akceptační kritéria.
+
+Specifikace záměrně ještě nevybírá technologii. Slouží jako podklad pro další krok, tedy pro srovnání realistických
+technologických variant a následné dopracování technické specifikace.
