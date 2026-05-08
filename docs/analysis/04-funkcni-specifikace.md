@@ -89,7 +89,9 @@ stabilním přístupem za jednotku.
 - porovnat údaje z výpisu z účtu s evidencí podle variabilního symbolu a částky,
 - vygenerovat sestavu jednotek, které v daném termínu nezaplatily,
 - exportovat souhrn pro dodavatele,
+- exportovat pro dodavatele tabulku s poslední platnou odpovědí za jednotku,
 - exportovat podklady pro doplatky,
+- filtrovat jednotky bez odpovědi pro následné kontaktování,
 - uzavřít sběr odpovědí,
 - archivovat finální souhrn použitý pro objednávku.
 
@@ -142,6 +144,16 @@ vztah k jednotce přednostně odvozovat z přihlášení nebo profilu, nikoliv v
 - Systém má ideálně umožnit evidovat stav platby a vygenerovat sestavu nezaplacených jednotek.
 - Automatické napojení na banku není požadavkem první fáze.
 
+### Pravidla pro exporty
+
+- Export pro dodavatele má být tabulka.
+- Export pro dodavatele má obsahovat vždy jen poslední platnou odpověď za jednotku.
+- Pracovní rozsah exportu pro dodavatele: jméno, příjmení, kontakt, číslo bytu, podlaží, počet čipů a typ telefonu.
+- Finální rozsah osobních a kontaktních údajů v exportu je potřeba potvrdit podle skutečných potřeb dodavatele.
+- Přehled pro dodavatele a hlavní export pro výbor se mají generovat až po uzavření sběru objednávek.
+- Výbor musí umět filtrovat jednotky bez odpovědi.
+- Uchování historie změn a starších odpovědí je otevřený bod závislý na zvoleném systému a pravidlech uchování dat.
+
 ### Pravidla validace k potvrzení
 
 - Počet čipů musí být celé nezáporné číslo.
@@ -172,5 +184,5 @@ doplněnou.
 - Výbor umí zjistit, které jednotky dosud neodpověděly.
 - Výbor umí určit finální odpověď za jednotku i v případě opravy nebo ručního doplnění.
 - Pokud přijde více odpovědí za stejnou jednotku před uzávěrkou, systém nebo proces umí určit poslední platnou odpověď.
-- Export pro dodavatele neobsahuje údaje, které dodavatel nepotřebuje.
+- Export pro dodavatele obsahuje poslední platnou odpověď za jednotku a finální rozsah údajů potvrzený s dodavatelem.
 - Existuje postup pro odpovědi mimo online formulář.

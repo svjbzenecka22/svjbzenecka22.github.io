@@ -102,6 +102,16 @@ Pro MVP není požadováno automatické napojení na banku ani automatické pár
 mohl porovnat výpis z účtu s evidencí podle variabilního symbolu a částky a následně získat sestavu jednotek, které
 v daném termínu nezaplatily.
 
+## Exporty a uchování dat první agendy
+
+Export pro dodavatele má být pracovně tabulka obsahující poslední platnou odpověď za jednotku. Předpokládané údaje
+jsou jméno, příjmení, kontakt, číslo bytu, podlaží, počet čipů a typ telefonu. Rozsah osobních a kontaktních údajů
+je potřeba před spuštěním potvrdit podle skutečných potřeb dodavatele.
+
+Systém má umožnit generovat export až po uzavření sběru objednávek a průběžně filtrovat jednotky bez odpovědi.
+Délka uchování odpovědí a historie změn zatím není stanovena. Technicky může být uchování v řádu měsíců nebo let,
+ale konkrétní rozhodnutí závisí na zvoleném systému, kapacitě databáze, pravidlech zálohování a pravidlech uchování dat.
+
 ## Předběžné doporučení
 
 Pro veřejný web ponechat GitHub Pages.

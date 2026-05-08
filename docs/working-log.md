@@ -114,3 +114,13 @@ výši doplatku podle počtu čipů a zvoleného telefonu. Čipy i telefon mají
 Každá objednávka nebo odpověď za jednotku má mít unikátní variabilní symbol. Kontrola plateb má probíhat porovnáním
 výpisu z účtu s údaji v systému podle variabilního symbolu a částky. Systém má ideálně umožnit vygenerovat sestavu
 jednotek, které v daném termínu nezaplatily. Automatické napojení na banku není požadavkem první fáze.
+
+## Průběžný záznam 2026-05-08: exporty a kontrola
+
+Byly doplněny odpovědi k exportům. Formát objednávky pro dodavatele zatím nebyl stanoven, ale pracovně se předpokládá
+tabulka. Tabulka má obsahovat jméno, příjmení, kontakt, číslo bytu, podlaží, počet čipů a typ telefonu; rozsah údajů
+je potřeba ještě potvrdit s dodavatelem podle jeho skutečných potřeb.
+
+Export pro dodavatele i hlavní přehled pro výbor mají obsahovat poslední platnou odpověď za jednotku a generovat se
+po uzavření sběru objednávek. Pro výbor má být dostupná filtrace jednotek bez odpovědi. Délka uchování odpovědí
+a historie změn zatím není stanovena a závisí na zvoleném systému, kapacitě databáze a pravidlech uchování dat.

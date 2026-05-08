@@ -70,6 +70,14 @@ Popis: Dodavatel může potřebovat jiné členění nebo formát dat, než výb
 
 Mitigace: Před spuštěním sběru ověřit u dodavatele požadovaný formát objednávkového souhrnu a technické údaje potřebné k montáži.
 
+Poznámka: pracovní návrh počítá s tabulkou obsahující jméno, příjmení, kontakt, číslo bytu, podlaží, počet čipů a typ telefonu. Rozsah osobních a kontaktních údajů je potřeba potvrdit s dodavatelem a nepředávat údaje, které pro objednávku nebo montáž nepotřebuje.
+
+## Riziko: nejasná doba uchování odpovědí
+
+Popis: Bez stanovené doby uchování mohou v systému zůstat odpovědi a historie změn déle, než je prakticky nebo právně vhodné.
+
+Mitigace: Při výběru technologie stanovit pravidlo uchování odpovědí, historie změn, exportů a platebních podkladů. Zohlednit kapacitu systému, potřebu dohledatelnosti a minimalizaci osobních údajů.
+
 ## Riziko: pozdní změny po objednávce
 
 Popis: Partaje mohou chtít změnit počet čipů nebo typ telefonu po uzávěrce nebo po předání objednávky dodavateli.

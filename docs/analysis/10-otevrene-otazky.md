@@ -137,6 +137,17 @@ Pracovní odpovědi z 2026-05-08:
 4. Má být možné snadno vyfiltrovat jednotky bez odpovědi?
 5. Jak dlouho se mají odpovědi uchovávat po dokončení objednávky a vyúčtování doplatků?
 
+Pracovní odpovědi z 2026-05-08:
+
+- Formát pro předání objednávky dodavateli zatím nebyl dodavatelem výslovně stanoven.
+- Pracovně se jako vhodný formát předpokládá tabulka.
+- Tabulka pro dodavatele má obsahovat alespoň jméno, příjmení, kontakt, číslo bytu, podlaží, počet čipů a zvolený typ telefonu.
+- Rozsah osobních a kontaktních údajů v exportu pro dodavatele je potřeba ještě potvrdit podle toho, co dodavatel skutečně potřebuje pro objednávku nebo montáž.
+- Export má obsahovat vždy jen poslední platnou odpověď za jednotku.
+- Přehled pro dodavatele a výbor se má generovat až po uzavření sběru objednávek.
+- Pro výbor má být možné filtrovat jednotky bez odpovědi, aby je bylo možné kontaktovat.
+- Délka uchování odpovědí a historie změn zatím není rozhodnuta; technicky může dávat smysl uchování v řádu měsíců nebo let, ale záleží na zvoleném systému, kapacitě databáze a budoucích pravidlech uchování dat.
+
 ## Otázky pro dodavatele přístupového systému
 
 1. Jaké přesné typy bytových telefonů lze objednat a jaké jsou jejich ceny?

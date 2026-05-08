@@ -238,10 +238,23 @@ Vhodné u vyšší citlivosti nebo vyšších doplatků, ale zatěžuje administ
 
 ### Exporty a navazující práce výboru
 
-Export pro dodavatele má pravděpodobně obsahovat jen údaje nutné k objednávce: jednotku, počet čipů a typ telefonu.
+Formát pro předání objednávky dodavateli zatím nebyl dodavatelem výslovně stanoven. Pracovně se jako vhodný formát
+předpokládá tabulka. Tabulka pro dodavatele má obsahovat alespoň jméno, příjmení, kontakt, číslo bytu, podlaží,
+počet čipů a zvolený typ telefonu.
+
+Rozsah osobních a kontaktních údajů v exportu pro dodavatele je potřeba potvrdit podle toho, co dodavatel skutečně
+potřebuje pro objednávku nebo montáž. Obecné pravidlo zůstává, že dodavatel má dostat jen údaje potřebné pro svou
+část práce.
 
 Export pro výbor může obsahovat širší údaje: stav odpovědi, čas odeslání, kontaktní údaj pro řešení nejasností,
 poznámku, potvrzení finálního doplatku, vypočtenou výši doplatku a variabilní symbol.
+
+Export pro dodavatele i hlavní export pro výbor mají obsahovat poslední platnou odpověď za jednotku. Přehledy se mají
+generovat až po uzavření sběru objednávek. Pro průběžnou práci výboru má být dostupná filtrace jednotek bez odpovědi,
+aby je bylo možné kontaktovat.
+
+Délka uchování odpovědí a historie změn zatím není rozhodnuta. Technicky může být přijatelné uchování v řádu měsíců
+nebo let, ale záleží na zvoleném systému, kapacitě databáze, budoucím způsobu provozu a pravidlech uchování dat.
 
 Před návrhem řešení je potřeba odlišit, zda má systém doplatky pouze evidovat jako podklad, nebo je má také počítat.
 Pracovní závěr: systém má doplatek spočítat podle finálních cen a vygenerovat nebo evidovat unikátní variabilní
@@ -253,6 +266,7 @@ výpisu z účtu a sestavu nezaplacených jednotek.
 - Potvrdit finální formulaci pravidla, že odpověď patří jednotce, ne osobě.
 - Kdo potvrdí finální objednávku a kdo nese odpovědnost za doplatek?
 - Jak dlouho se budou odpovědi uchovávat po dokončení objednávky?
+- Potvrdit u dodavatele finální formát exportní tabulky a skutečně potřebný rozsah osobních a kontaktních údajů.
 - Při výběru technologie rozhodnout, zda už bude existovat portálová identita s rolemi, nebo zda MVP musí sbírat identifikaci odpovídající osoby ve formuláři.
 
 ## Prioritizace funkcí

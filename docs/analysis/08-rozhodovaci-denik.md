@@ -103,3 +103,16 @@ Důvod:
 - kontrola má porovnávat variabilní symbol a částku s údaji v systému,
 - systém má ideálně umožnit vygenerovat sestavu jednotek, které v daném termínu nezaplatily,
 - automatické napojení na banku není požadavkem první fáze.
+
+## 2026-05-08: exporty pro dodavatele a výbor
+
+Rozhodnutí: formát objednávky pro dodavatele zatím nebyl dodavatelem stanoven, ale pracovně se předpokládá tabulkový
+export. Export má obsahovat poslední platnou odpověď za jednotku a má se generovat po uzavření sběru objednávek.
+
+Důvod:
+
+- tabulka je praktický předávací formát pro výbor i dodavatele,
+- pracovní rozsah exportu pro dodavatele je jméno, příjmení, kontakt, číslo bytu, podlaží, počet čipů a typ telefonu,
+- rozsah osobních a kontaktních údajů je potřeba ještě potvrdit podle skutečných potřeb dodavatele,
+- výbor potřebuje filtrovat jednotky bez odpovědi, aby je mohl kontaktovat,
+- délka uchování odpovědí a historie změn zatím není stanovena a závisí na zvoleném systému, kapacitě databáze a pravidlech uchování dat.
