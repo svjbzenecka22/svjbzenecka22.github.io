@@ -118,6 +118,17 @@ Pracovní odpovědi z 2026-05-08:
 4. Má být doplatek za čipy a telefon hrazen jednou platbou, nebo odděleně?
 5. Jaké údaje má výbor potřebovat pro následnou kontrolu plateb?
 
+Pracovní odpovědi z 2026-05-08:
+
+- Ceny čipů i jednotlivých variant bytových telefonů jsou známé a budou doplněny do podkladů.
+- Ceny mají být finální, takže není potřeba ve formuláři pracovat s orientační cenou nebo pozdějším zpřesněním.
+- Formulář má zobrazovat finální výši doplatku podle zadaného počtu čipů a zvoleného typu telefonu.
+- Čipy i telefon mají být hrazeny jednou společnou platbou.
+- Každá objednávka nebo odpověď za jednotku má mít unikátní variabilní symbol pro kontrolu platby.
+- Výbor má po termínu platby porovnat výpis z účtu s údaji v systému podle variabilního symbolu a částky.
+- Systém má ideálně umožnit evidovat stav platby a vygenerovat sestavu jednotek, které v daném termínu nezaplatily.
+- Nejde zatím o požadavek na automatické napojení na banku; postačí podklady pro kontrolu proti výpisu z účtu.
+
 ### Exporty a kontrola
 
 1. V jakém formátu má výbor předat objednávku dodavateli?

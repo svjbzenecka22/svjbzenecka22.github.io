@@ -89,3 +89,17 @@ Důvod:
 - dostupnost telefonů nemá být omezena podle jednotky,
 - výbor ani dodavatel nemají doporučenou výchozí variantu telefonu pro nerozhodnuté partaje,
 - konkrétní názvy a ceny variant je potřeba převzít z aktuální nabídky nebo ceníku dodavatele.
+
+## 2026-05-08: doplatky a kontrola plateb
+
+Rozhodnutí: ceny čipů i telefonů jsou známé a finální. Formulář má zobrazovat finální výši doplatku. Čipy i telefon
+mají být hrazeny jednou společnou platbou. Každá objednávka nebo odpověď za jednotku má mít unikátní variabilní symbol.
+
+Důvod:
+
+- není potřeba pracovat s orientační cenou nebo pozdějším zpřesněním,
+- jednotná platba za čipy i telefon je administrativně jednodušší,
+- variabilní symbol umožní výboru kontrolovat platby proti výpisu z účtu,
+- kontrola má porovnávat variabilní symbol a částku s údaji v systému,
+- systém má ideálně umožnit vygenerovat sestavu jednotek, které v daném termínu nezaplatily,
+- automatické napojení na banku není požadavkem první fáze.

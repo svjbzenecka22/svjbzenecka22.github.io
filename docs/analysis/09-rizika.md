@@ -44,9 +44,9 @@ Mitigace: Před spuštěním sběru stanovit pravidlo jedné finální odpovědi
 
 ## Riziko: nejasné potvrzení doplatku
 
-Popis: Partaj nemusí rozumět tomu, zda potvrzuje přesnou cenu, orientační cenu nebo pouze souhlas s budoucím doplatkem.
+Popis: Partaj nemusí rozumět výši doplatku nebo platebním pokynům, zejména pokud nebude jasně zobrazen finální výpočet, částka a variabilní symbol.
 
-Mitigace: Komunikaci k doplatku formulovat podle toho, zda jsou ceny známé. Nepoužívat text, který působí jako přesná cena, pokud přesná cena ještě není schválena.
+Mitigace: Formulář má zobrazit finální cenu podle počtu čipů a zvoleného telefonu, celkovou částku jedné platby a variabilní symbol. Text potvrzení má jasně uvádět, že jde o finální doplatek podle aktuální odpovědi.
 
 ## Riziko: sběr nadbytečných osobních údajů
 
@@ -81,3 +81,9 @@ Mitigace: Předem zveřejnit uzávěrku, pravidla změn a dopad pozdních změn 
 Popis: Počet čipů na jednotku nemá stanovený obchodní limit, takže některá odpověď může obsahovat neobvykle vysoký počet.
 
 Mitigace: Formulář má přijímat celé nezáporné číslo, ale výbor má před objednávkou zkontrolovat neobvykle vysoké hodnoty a případně je individuálně ověřit.
+
+## Riziko: chybně přiřazená nebo nezaplacená platba
+
+Popis: Platba může přijít bez správného variabilního symbolu, v jiné částce nebo po termínu.
+
+Mitigace: Každá objednávka má mít unikátní variabilní symbol a systém má evidovat očekávanou částku. Výbor má kontrolovat výpis z účtu podle variabilního symbolu a částky a generovat sestavu jednotek, které v termínu nezaplatily.

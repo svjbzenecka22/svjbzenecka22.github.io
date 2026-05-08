@@ -85,7 +85,7 @@ Minimální rozsah údajů pro první agendu:
 - identifikace jednotky,
 - počet požadovaných čipů,
 - zvolený typ bytového telefonu,
-- potvrzení seznámení s doplatkem nebo budoucí platební povinností,
+- potvrzení seznámení s finálním doplatkem a platebními pokyny,
 - datum a čas odeslání odpovědi.
 
 Pro samotnou objednávku dodavateli jsou klíčové zejména jednotka, počet čipů a typ telefonu. Ostatní údaje slouží
@@ -117,6 +117,20 @@ Všechny typy bytového telefonu mají být dostupné pro všechny jednotky. Var
 základní verze telefonu s doplatkem 0 Kč, nikoliv jako doporučená volba výboru. Výbor ani dodavatel nemají pro
 nerozhodnuté partaje doporučenou výchozí variantu telefonu. Konkrétní názvy a ceny variant je potřeba držet podle
 aktuální nabídky nebo ceníku dodavatele.
+
+### Doplatky a kontrola plateb
+
+Ceny čipů i jednotlivých variant bytových telefonů jsou známé a mají být doplněny do podkladů. Pro první agendu se
+pracuje s finálními cenami, nikoliv s orientační cenou nebo pozdějším zpřesněním. Formulář má proto zobrazovat
+finální výši doplatku podle počtu čipů a zvoleného typu telefonu.
+
+Doplatek za čipy a telefon má být hrazen jednou společnou platbou. Každá objednávka nebo odpověď za jednotku má mít
+unikátní variabilní symbol, aby výbor mohl následně zkontrolovat platby proti výpisu z účtu. Kontrola má porovnávat
+alespoň variabilní symbol a zaplacenou částku s údaji evidovanými v systému.
+
+Systém má ideálně umožnit evidovat stav platby a vygenerovat sestavu jednotek, které v daném termínu nezaplatily.
+Automatické napojení na banku nebo automatické párování plateb není požadavkem první fáze; postačí podklady pro
+kontrolu na základě výpisu z účtu.
 
 Údaje, které nejsou pro první agendu zřejmou nutností:
 
@@ -174,7 +188,7 @@ agendy, například dotazníky, hlasování nebo vkládání zpráv.
 2. Výbor předem určí, kdo smí odpověď za jednotku vyplnit a jak se bude řešit spor.
 3. Každá jednotka obdrží způsob přístupu k formuláři nebo instrukce k vyplnění.
 4. Oprávněná osoba vyplní počet čipů a typ telefonu.
-5. Oprávněná osoba potvrdí seznámení s doplatkem nebo s tím, že doplatek bude stanoven podle výsledné objednávky.
+5. Oprávněná osoba potvrdí seznámení s finálním doplatkem a platebními pokyny.
 6. Systém nebo výbor potvrdí přijetí odpovědi.
 7. Do uzávěrky je podle předem daného pravidla možné odpověď opravit nebo nahradit novou odpovědí.
 8. Výbor po termínu uzávěrky exportuje souhrn.
@@ -227,16 +241,17 @@ Vhodné u vyšší citlivosti nebo vyšších doplatků, ale zatěžuje administ
 Export pro dodavatele má pravděpodobně obsahovat jen údaje nutné k objednávce: jednotku, počet čipů a typ telefonu.
 
 Export pro výbor může obsahovat širší údaje: stav odpovědi, čas odeslání, kontaktní údaj pro řešení nejasností,
-poznámku, potvrzení doplatku a případně výši doplatku, pokud bude v době exportu známá.
+poznámku, potvrzení finálního doplatku, vypočtenou výši doplatku a variabilní symbol.
 
 Před návrhem řešení je potřeba odlišit, zda má systém doplatky pouze evidovat jako podklad, nebo je má také počítat.
-Automatické párování plateb je mimo rozsah první fáze.
+Pracovní závěr: systém má doplatek spočítat podle finálních cen a vygenerovat nebo evidovat unikátní variabilní
+symbol. Automatické párování plateb je mimo rozsah první fáze, ale systém má podporovat ruční kontrolu plateb proti
+výpisu z účtu a sestavu nezaplacených jednotek.
 
 ### Otevřená procesní rozhodnutí
 
 - Potvrdit finální formulaci pravidla, že odpověď patří jednotce, ne osobě.
 - Kdo potvrdí finální objednávku a kdo nese odpovědnost za doplatek?
-- Má systém počítat doplatek, nebo pouze sbírat podklady?
 - Jak dlouho se budou odpovědi uchovávat po dokončení objednávky?
 - Při výběru technologie rozhodnout, zda už bude existovat portálová identita s rolemi, nebo zda MVP musí sbírat identifikaci odpovídající osoby ve formuláři.
 
@@ -249,7 +264,7 @@ Automatické párování plateb je mimo rozsah první fáze.
 - evidence odpovědí,
 - export pro výbor,
 - ochrana proti náhodnému vyplnění cizí jednotky,
-- jasný text o doplatku a platební povinnosti,
+- jasný text o finálním doplatku, platebních pokynech a variabilním symbolu,
 - pravidlo pro jednu platnou odpověď za jednotku,
 - seznam jednotek, proti kterému lze kontrolovat úplnost odpovědí,
 - postup pro opravy a pozdní odpovědi.

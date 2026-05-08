@@ -93,6 +93,15 @@ Slabé stránky:
 - správa administrátorů,
 - ukončení free služby nebo změna jejích podmínek.
 
+## Platební kontrola první agendy
+
+První agenda má pracovat s finálními cenami čipů a telefonů a má umět určit výsledný doplatek za jednotku. Každá
+objednávka nebo odpověď za jednotku má mít unikátní variabilní symbol.
+
+Pro MVP není požadováno automatické napojení na banku ani automatické párování plateb. Důležitější je, aby výbor
+mohl porovnat výpis z účtu s evidencí podle variabilního symbolu a částky a následně získat sestavu jednotek, které
+v daném termínu nezaplatily.
+
 ## Předběžné doporučení
 
 Pro veřejný web ponechat GitHub Pages.

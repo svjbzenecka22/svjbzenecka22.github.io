@@ -62,7 +62,9 @@ Požadavky je nutné potvrdit po zodpovězení prioritních otázek v byznys ana
 - vybrat typ telefonu,
 - uvést vztah k jednotce, pokud to výbor vyžaduje,
 - uvést kontaktní údaj pro potvrzení nebo řešení nejasností, pokud to výbor vyžaduje,
-- potvrdit seznámení s doplatkem,
+- zobrazit finální výši doplatku podle počtu čipů a zvoleného typu telefonu,
+- zobrazit platební pokyny včetně částky a variabilního symbolu,
+- potvrdit seznámení s finálním doplatkem a platebními pokyny,
 - odeslat odpověď,
 - obdržet potvrzení o přijetí odpovědi,
 - případně upravit odpověď do termínu uzávěrky podle schváleného pravidla.
@@ -82,6 +84,10 @@ stabilním přístupem za jednotku.
 - vyfiltrovat jednotky bez odpovědi pro e-mailové připomenutí,
 - pokud to zvolená technologie rozumně umožní, vygenerovat e-mail nebo seznam kontaktů pro jednotky bez odpovědi,
 - pokud to zvolená technologie rozumně umožní, připravit avízo před uzávěrkou pro jednotky bez odpovědi,
+- evidovat finální výši doplatku za jednotku,
+- evidovat nebo vygenerovat unikátní variabilní symbol pro platbu,
+- porovnat údaje z výpisu z účtu s evidencí podle variabilního symbolu a částky,
+- vygenerovat sestavu jednotek, které v daném termínu nezaplatily,
 - exportovat souhrn pro dodavatele,
 - exportovat podklady pro doplatky,
 - uzavřít sběr odpovědí,
@@ -94,7 +100,9 @@ Povinné položky pravděpodobného MVP:
 - jednotka,
 - počet čipů,
 - typ telefonu,
-- potvrzení seznámení s doplatkem nebo budoucí platební povinností,
+- potvrzení seznámení s finálním doplatkem a platebními pokyny,
+- vypočtená finální výše doplatku,
+- variabilní symbol platby,
 - čas odeslání odpovědi.
 
 Pokud MVP nebude mít obecnou portálovou identitu s rolemi a přístupy, mají být povinné nebo důrazně doporučené také
@@ -123,12 +131,25 @@ vztah k jednotce přednostně odvozovat z přihlášení nebo profilu, nikoliv v
 - Systém nemá předvybírat doporučenou variantu telefonu podle doporučení výboru nebo dodavatele.
 - Názvy a ceny variant telefonů mají odpovídat aktuální nabídce nebo ceníku dodavatele.
 
+### Pravidla pro doplatky a platby
+
+- Ceny čipů a telefonů jsou finální a mají být doplněny do systému nebo podkladů.
+- Doplatek má být vypočten z počtu čipů a zvolené varianty telefonu.
+- Formulář má zobrazit finální výši doplatku před odesláním odpovědi.
+- Čipy i telefon se hradí jednou společnou platbou.
+- Každá objednávka nebo odpověď za jednotku má mít unikátní variabilní symbol.
+- Kontrola plateb má být možná porovnáním výpisu z účtu s evidencí podle variabilního symbolu a částky.
+- Systém má ideálně umožnit evidovat stav platby a vygenerovat sestavu nezaplacených jednotek.
+- Automatické napojení na banku není požadavkem první fáze.
+
 ### Pravidla validace k potvrzení
 
 - Počet čipů musí být celé nezáporné číslo.
 - Typ telefonu musí být jedna z výborem schválených variant.
 - Jednotka musí být rozpoznatelná proti seznamu jednotek používanému výborem.
-- Odpověď bez potvrzení doplatku nebo platební povinnosti nemá být považována za finální.
+- Variabilní symbol musí být v rámci agendy unikátní.
+- Vypočtená částka doplatku musí odpovídat počtu čipů a zvolené variantě telefonu podle finálního ceníku.
+- Odpověď bez potvrzení finálního doplatku a platebních pokynů nemá být považována za finální.
 - Po uzávěrce se nové odpovědi nebo změny zpracují jen individuálně přes výbor a případně administrativním zásahem výboru.
 - Volná poznámka má být určena pouze pro dotazy a připomínky k agendě; uživatel má být stručně upozorněn, aby neuváděl zbytečné osobní nebo citlivé údaje.
 
@@ -144,6 +165,9 @@ doplněnou.
 - Počet čipů je celé nezáporné číslo.
 - Typ telefonu je vybrán z předem daného seznamu.
 - Odpovědi lze exportovat do tabulky.
+- Každá finální odpověď má vypočtenou finální výši doplatku a variabilní symbol.
+- Výbor umí připravit podklad pro kontrolu plateb podle variabilního symbolu a částky.
+- Výbor umí získat sestavu jednotek, které v daném termínu nezaplatily.
 - Veřejná stránka neobsahuje neveřejná data ani osobní údaje nad nezbytný rozsah.
 - Výbor umí zjistit, které jednotky dosud neodpověděly.
 - Výbor umí určit finální odpověď za jednotku i v případě opravy nebo ručního doplnění.

@@ -105,3 +105,12 @@ základní počet čipů zahrnutý v ceně.
 Všechny typy bytového telefonu mají být dostupné pro všechny jednotky. Varianta bez doplatku se má řešit jako
 základní verze telefonu s doplatkem 0 Kč. Výbor ani dodavatel nemají doporučenou výchozí variantu telefonu pro
 nerozhodnuté partaje.
+
+## Průběžný záznam 2026-05-08: doplatky a kontrola plateb
+
+Byla doplněna pravidla pro doplatky. Ceny čipů i telefonů jsou známé a finální, takže formulář má zobrazovat finální
+výši doplatku podle počtu čipů a zvoleného telefonu. Čipy i telefon mají být hrazeny jednou společnou platbou.
+
+Každá objednávka nebo odpověď za jednotku má mít unikátní variabilní symbol. Kontrola plateb má probíhat porovnáním
+výpisu z účtu s údaji v systému podle variabilního symbolu a částky. Systém má ideálně umožnit vygenerovat sestavu
+jednotek, které v daném termínu nezaplatily. Automatické napojení na banku není požadavkem první fáze.
