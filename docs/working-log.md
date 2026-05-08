@@ -42,3 +42,11 @@ a otevřených bodů.
 1. Udělat pečlivou analýzu budoucích očekávání od webu.
 2. Rozdělit očekávání na veřejnou část a případnou neveřejnou aplikační část.
 3. Až poté rozhodnout o výsledné technologii a publikační architektuře.
+
+## Navazující analytická dokumentace
+
+Dne 2026-05-08 byla založena složka `docs/analysis/` jako pracovní prostor pro standardní vývojový cyklus:
+byznys zadání, byznys analýza, IT analýza, funkční specifikace, technická specifikace, implementační plán a testy.
+
+Prvním konkrétním use casem pro analýzu je sekce k přístupovému systému, zejména sběr počtu čipů a volby typu
+bytového telefonu za jednotlivé partaje.
