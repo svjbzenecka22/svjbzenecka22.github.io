@@ -86,9 +86,21 @@ Mitigace: Předem zveřejnit uzávěrku, pravidla změn a dopad pozdních změn 
 
 ## Riziko: neobvykle vysoký počet čipů
 
-Popis: Počet čipů na jednotku nemá stanovený obchodní limit, takže některá odpověď může obsahovat neobvykle vysoký počet.
+Popis: Počet čipů na jednotku nemá stanovený horní obchodní limit, takže některá odpověď může obsahovat neobvykle vysoký počet.
 
-Mitigace: Formulář má přijímat celé nezáporné číslo, ale výbor má před objednávkou zkontrolovat neobvykle vysoké hodnoty a případně je individuálně ověřit.
+Mitigace: Formulář má přijímat kladné celé číslo, ale výbor má před objednávkou zkontrolovat neobvykle vysoké hodnoty a případně je individuálně ověřit. Hodnota 0 má být odmítnuta jako chyba.
+
+## Riziko: ztracené nebo zneužitelné čipy
+
+Popis: Ztracený čip může po nálezu použít neoprávněná osoba, pokud nebude vyřazen z evidence nebo deaktivován.
+
+Mitigace: Připravit provozní postup pro hlášení ztráty nebo poškození čipu, deaktivaci nebo vyřazení čipu a objednání náhradního čipu přes výbor. Výbor má zvážit rezervní zásobu čipů v domě.
+
+## Riziko: nedostatečná zásoba náhradních čipů
+
+Popis: Pokud výbor nebude mít žádné náhradní čipy, bude řešení ztrát nebo poškození závislé na dodávce od dodavatele.
+
+Mitigace: Při první objednávce zvážit objednání rezervních čipů do zásoby. Pracovní úvaha je přibližně 60 čipů, finální množství má výbor rozhodnout samostatně.
 
 ## Riziko: chybně přiřazená nebo nezaplacená platba
 

@@ -125,13 +125,16 @@ vztah k jednotce přednostně odvozovat z přihlášení nebo profilu, nikoliv v
 
 ### Pravidla pro čipy a telefony
 
-- Počet čipů nemá stanovený minimální ani maximální obchodní limit.
-- Počet čipů musí být celé nezáporné číslo.
+- Počet čipů nemá stanovený horní obchodní limit.
+- Počet čipů musí být kladné celé číslo.
+- Hodnota 0 čipů je chyba, protože by znamenala nefunkční přístup uživatele jednotky do domu nebo společných částí.
 - Každý objednaný čip se platí; není základní počet čipů zahrnutý v ceně.
+- Cena jednoho čipu je 44 Kč.
 - Všechny typy bytového telefonu jsou dostupné pro všechny jednotky.
 - Základní varianta telefonu bez doplatku má mít doplatek 0 Kč.
 - Systém nemá předvybírat doporučenou variantu telefonu podle doporučení výboru nebo dodavatele.
 - Názvy a ceny variant telefonů mají odpovídat aktuální nabídce nebo ceníku dodavatele.
+- Podklady k telefonům mají být ideálně vedeny jako tabulka variant s názvem, cenou, stručným popisem a odkazem na obrázek.
 
 ### Pravidla pro doplatky a platby
 
@@ -153,10 +156,20 @@ vztah k jednotce přednostně odvozovat z přihlášení nebo profilu, nikoliv v
 - Přehled pro dodavatele a hlavní export pro výbor se mají generovat až po uzavření sběru objednávek.
 - Výbor musí umět filtrovat jednotky bez odpovědi.
 - Uchování historie změn a starších odpovědí je otevřený bod závislý na zvoleném systému a pravidlech uchování dat.
+- Finální souhrn pro dodavatele má být připraven k předání do 2026-05-24.
+- Přibližně 5 dní před finálním termínem má výbor zkontrolovat neodpovězené jednotky a poslat e-mailovou urgenci.
+- Po předání finálního souhrnu dodavateli už se běžně nemá měnit počet čipů ani typ telefonu v rámci objednávky.
+
+### Provozní pravidla pro náhradní čipy
+
+- Ztracený nebo poškozený čip má být vyřazen z evidence nebo deaktivován.
+- Náhradní čip si vlastník nebo uživatel objedná u výboru.
+- Výbor má zvážit objednání rezervních čipů do zásoby pro řešení ztrát a poškození.
+- Pracovní úvaha pro zásobu je přibližně 60 čipů; finální množství zůstává k rozhodnutí.
 
 ### Pravidla validace k potvrzení
 
-- Počet čipů musí být celé nezáporné číslo.
+- Počet čipů musí být kladné celé číslo.
 - Typ telefonu musí být jedna z výborem schválených variant.
 - Jednotka musí být rozpoznatelná proti seznamu jednotek používanému výborem.
 - Variabilní symbol musí být v rámci agendy unikátní.
@@ -174,7 +187,7 @@ doplněnou.
 ## Návrh akceptačních kritérií pro první agendu
 
 - Každá odpověď je přiřazena ke konkrétní jednotce.
-- Počet čipů je celé nezáporné číslo.
+- Počet čipů je kladné celé číslo.
 - Typ telefonu je vybrán z předem daného seznamu.
 - Odpovědi lze exportovat do tabulky.
 - Každá finální odpověď má vypočtenou finální výši doplatku a variabilní symbol.

@@ -103,12 +103,14 @@ Pracovní odpovědi z 2026-05-08:
 
 Pracovní odpovědi z 2026-05-08:
 
-- Počet čipů na jednotku nemá stanovený minimální ani maximální obchodní limit.
+- Počet čipů na jednotku nemá stanovený horní obchodní limit.
+- Hodnota 0 čipů má být považována za chybu, protože by znamenala, že se uživatel jednotky po instalaci nedostane do domu nebo společných částí.
 - Každý objednaný čip se platí; neexistuje základní počet čipů zahrnutý v ceně.
 - Všechny typy bytového telefonu jsou dostupné pro všechny jednotky.
 - Varianta bez doplatku má být řešena jako základní verze telefonu s doplatkem 0 Kč.
 - Výbor ani dodavatel nemají doporučenou výchozí variantu telefonu pro nerozhodnuté partaje.
 - Konkrétní názvy a ceny variant telefonů je potřeba držet podle aktuální nabídky nebo ceníku dodavatele.
+- Cena jednoho čipu je 44 Kč.
 
 ### Doplatky a potvrzení
 
@@ -157,6 +159,22 @@ Pracovní odpovědi z 2026-05-08:
 5. Do kdy musí být dodavateli předán finální souhrn?
 6. Lze po předání objednávky ještě měnit počty čipů nebo typ telefonu?
 7. Jak se řeší neodpovězené jednotky?
+
+Pracovní odpovědi z 2026-05-08:
+
+- Přesné typy bytových telefonů, jejich obrázky a ceny jsou k dispozici a mají být doplněny do podkladů.
+- Nejvhodnější forma předání podkladů k telefonům je tabulka s názvem varianty, cenou, stručným popisem a odkazem na obrázek; obrázky je vhodné uložit jako samostatné soubory.
+- Cena jednoho čipu je 44 Kč.
+- Horní limit počtu čipů na jednotku není stanoven.
+- Hodnota 0 čipů u jednotky má být považována za chybu, protože by znamenala nefunkční přístup do domu a společných částí.
+- Dodavatel pro objednávku a montáž nepotřebuje víc než objednávku s identifikací vlastníka nebo nájemníka, kontaktem, číslem bytu, podlažím, počtem čipů a typem telefonu.
+- Finální souhrn má být dodavateli předán do 2026-05-24, aby dodavatel mohl připravit finální objednávku, konečnou cenu, smlouvu a podklady k úhradě.
+- Přibližně 5 dní před finálním termínem, pracovně 2026-05-19, má výbor ručně zkontrolovat neodpovězené jednotky a poslat jim e-mailovou urgenci.
+- Po předání finálního souhrnu dodavateli už nemá být možné běžně měnit počet čipů ani typ telefonu v rámci této objednávky.
+- Úhrada finální částky nemusí čekat na další potvrzení dodavatele, protože ceny pro jednotlivé partaje jsou známé z formuláře.
+- U ztracených nebo poškozených čipů bude potřeba čip vyřadit z evidence nebo deaktivovat, aby jej nemohla zneužít neoprávněná osoba.
+- Náhradní čip si vlastník nebo uživatel objedná u výboru.
+- Výbor má zvážit objednání rezervních čipů do zásoby pro řešení ztrát a poškození; pracovní úvaha je přibližně 60 čipů, finální množství zůstává k rozhodnutí.
 
 ## Otázky pro výbor před komunikací s vlastníky
 

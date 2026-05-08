@@ -109,14 +109,19 @@ navést, aby do poznámky neuváděl zbytečné osobní nebo citlivé údaje.
 
 ### Čipy a typy telefonů
 
-Počet čipů na jednotku nemá stanovený minimální ani maximální obchodní limit. Z praktického hlediska má formulář
-stále pracovat s celým nezáporným číslem. Každý objednaný čip se platí; není určen základní počet čipů zahrnutý
-v ceně.
+Počet čipů na jednotku nemá stanovený horní obchodní limit. Z praktického hlediska má formulář pracovat s kladným
+celým číslem. Hodnota 0 čipů má být považována za chybu, protože by znamenala, že se uživatel jednotky po instalaci
+nedostane do domu nebo některých společných částí. Každý objednaný čip se platí; není určen základní počet čipů
+zahrnutý v ceně. Cena jednoho čipu je 44 Kč.
 
 Všechny typy bytového telefonu mají být dostupné pro všechny jednotky. Varianta bez doplatku se má řešit jako
 základní verze telefonu s doplatkem 0 Kč, nikoliv jako doporučená volba výboru. Výbor ani dodavatel nemají pro
 nerozhodnuté partaje doporučenou výchozí variantu telefonu. Konkrétní názvy a ceny variant je potřeba držet podle
 aktuální nabídky nebo ceníku dodavatele.
+
+Přesné typy bytových telefonů, jejich obrázky a ceny jsou k dispozici a mají být doplněny do podkladů. Nejvhodnější
+forma je tabulka s názvem varianty, cenou, stručným popisem a odkazem na obrázek; obrázky je vhodné uložit jako
+samostatné soubory.
 
 ### Doplatky a kontrola plateb
 
@@ -246,6 +251,10 @@ Rozsah osobních a kontaktních údajů v exportu pro dodavatele je potřeba pot
 potřebuje pro objednávku nebo montáž. Obecné pravidlo zůstává, že dodavatel má dostat jen údaje potřebné pro svou
 část práce.
 
+Pracovní závěr k dodavateli: pro objednávku a montáž má stačit identifikace vlastníka nebo nájemníka, kontakt,
+číslo bytu, podlaží, počet čipů a typ telefonu. Dodavatel nepotřebuje další technické členění, pokud si ho výslovně
+nevyžádá.
+
 Export pro výbor může obsahovat širší údaje: stav odpovědi, čas odeslání, kontaktní údaj pro řešení nejasností,
 poznámku, potvrzení finálního doplatku, vypočtenou výši doplatku a variabilní symbol.
 
@@ -255,6 +264,19 @@ aby je bylo možné kontaktovat.
 
 Délka uchování odpovědí a historie změn zatím není rozhodnuta. Technicky může být přijatelné uchování v řádu měsíců
 nebo let, ale záleží na zvoleném systému, kapacitě databáze, budoucím způsobu provozu a pravidlech uchování dat.
+
+Finální souhrn má být dodavateli předán do 2026-05-24. Tento termín je současně pracovním koncem sběru pro účely
+přípravy finální objednávky, konečné ceny, smlouvy a podkladů k úhradě dodavateli. Přibližně 5 dní před termínem,
+pracovně 2026-05-19, má výbor ručně zkontrolovat neodpovězené jednotky a poslat jim e-mailovou urgenci.
+
+Po předání finálního souhrnu dodavateli už nemá být možné běžně měnit počet čipů ani typ telefonu v rámci této
+objednávky. Úhrada finální částky jednotlivými partajemi nemusí čekat na další potvrzení dodavatele, protože ceny
+jsou známé z formuláře.
+
+Pro provoz po instalaci je potřeba počítat se ztrátou nebo poškozením čipů. Ztracený nebo poškozený čip má být
+vyřazen z evidence nebo deaktivován, aby nemohl být zneužit. Náhradní čip si vlastník nebo uživatel objedná u výboru.
+Výbor má zvážit objednání rezervních čipů do zásoby pro tyto situace; pracovní úvaha je přibližně 60 čipů, finální
+množství zůstává k rozhodnutí.
 
 Před návrhem řešení je potřeba odlišit, zda má systém doplatky pouze evidovat jako podklad, nebo je má také počítat.
 Pracovní závěr: systém má doplatek spočítat podle finálních cen a vygenerovat nebo evidovat unikátní variabilní
@@ -267,6 +289,7 @@ výpisu z účtu a sestavu nezaplacených jednotek.
 - Kdo potvrdí finální objednávku a kdo nese odpovědnost za doplatek?
 - Jak dlouho se budou odpovědi uchovávat po dokončení objednávky?
 - Potvrdit u dodavatele finální formát exportní tabulky a skutečně potřebný rozsah osobních a kontaktních údajů.
+- Rozhodnout finální počet rezervních čipů objednaných do zásoby výboru.
 - Při výběru technologie rozhodnout, zda už bude existovat portálová identita s rolemi, nebo zda MVP musí sbírat identifikaci odpovídající osoby ve formuláři.
 
 ## Prioritizace funkcí

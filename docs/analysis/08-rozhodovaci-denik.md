@@ -78,13 +78,14 @@ Důvod:
 
 ## 2026-05-08: pravidla pro čipy a typy telefonů
 
-Rozhodnutí: počet čipů na jednotku nemá stanovený minimální ani maximální obchodní limit a každý objednaný čip se
-platí. Všechny typy bytového telefonu mají být dostupné pro všechny jednotky. Varianta bez doplatku má být vedena
-jako základní verze telefonu s doplatkem 0 Kč.
+Rozhodnutí: počet čipů na jednotku nemá stanovený horní obchodní limit, ale hodnota 0 čipů má být považována za
+chybu. Každý objednaný čip se platí a cena jednoho čipu je 44 Kč. Všechny typy bytového telefonu mají být dostupné
+pro všechny jednotky. Varianta bez doplatku má být vedena jako základní verze telefonu s doplatkem 0 Kč.
 
 Důvod:
 
-- výbor nechce předem omezovat počet čipů na jednotku,
+- výbor nechce předem omezovat horní počet čipů na jednotku,
+- hodnota 0 čipů by znamenala nefunkční přístup uživatele jednotky do domu nebo společných částí,
 - neexistuje základní počet čipů zahrnutý v ceně,
 - dostupnost telefonů nemá být omezena podle jednotky,
 - výbor ani dodavatel nemají doporučenou výchozí variantu telefonu pro nerozhodnuté partaje,
@@ -116,3 +117,18 @@ Důvod:
 - rozsah osobních a kontaktních údajů je potřeba ještě potvrdit podle skutečných potřeb dodavatele,
 - výbor potřebuje filtrovat jednotky bez odpovědi, aby je mohl kontaktovat,
 - délka uchování odpovědí a historie změn zatím není stanovena a závisí na zvoleném systému, kapacitě databáze a pravidlech uchování dat.
+
+## 2026-05-08: termín dodavatelského souhrnu a náhradní čipy
+
+Rozhodnutí: finální souhrn má být dodavateli předán do 2026-05-24. Přibližně 5 dní před tímto termínem má výbor
+zkontrolovat neodpovězené jednotky a poslat jim e-mailovou urgenci. Po předání finálního souhrnu už se běžně nemá
+měnit počet čipů ani typ telefonu v rámci objednávky.
+
+Důvod:
+
+- dodavatel potřebuje finální seznam pro přípravu objednávky, konečné ceny, smlouvy a podkladů k úhradě,
+- partaje mohou hradit finální částku podle formuláře bez čekání na další potvrzení dodavatele,
+- pozdní změny po předání souhrnu by narušily objednávku,
+- u ztracených nebo poškozených čipů bude potřeba čip deaktivovat nebo vyřadit z evidence,
+- náhradní čipy se budou objednávat přes výbor,
+- výbor má zvážit objednání rezervních čipů do zásoby, pracovně přibližně 60 kusů.

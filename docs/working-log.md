@@ -98,13 +98,17 @@ o MVP bez takové identity, je vhodné tyto údaje sbírat ve formuláři, aby v
 
 ## Průběžný záznam 2026-05-08: čipy a typy telefonů
 
-Byla doplněna pravidla pro čipy a typy bytových telefonů. Počet čipů na jednotku nemá stanovený minimální ani
-maximální obchodní limit, ale ve formuláři má jít o celé nezáporné číslo. Každý objednaný čip se platí; neexistuje
-základní počet čipů zahrnutý v ceně.
+Byla doplněna pravidla pro čipy a typy bytových telefonů. Počet čipů na jednotku nemá stanovený horní obchodní limit,
+ale ve formuláři má jít o kladné celé číslo. Každý objednaný čip se platí; neexistuje základní počet čipů zahrnutý
+v ceně.
 
 Všechny typy bytového telefonu mají být dostupné pro všechny jednotky. Varianta bez doplatku se má řešit jako
 základní verze telefonu s doplatkem 0 Kč. Výbor ani dodavatel nemají doporučenou výchozí variantu telefonu pro
 nerozhodnuté partaje.
+
+Doplnění: počet čipů má mít neomezený horní limit, ale hodnota 0 čipů má být považována za chybu. Cena jednoho čipu
+je 44 Kč. Přesné typy telefonů, obrázky a ceny jsou k dispozici a nejvhodnější je předat je jako tabulku variant
+s obrázky uloženými samostatně.
 
 ## Průběžný záznam 2026-05-08: doplatky a kontrola plateb
 
@@ -124,3 +128,14 @@ je potřeba ještě potvrdit s dodavatelem podle jeho skutečných potřeb.
 Export pro dodavatele i hlavní přehled pro výbor mají obsahovat poslední platnou odpověď za jednotku a generovat se
 po uzavření sběru objednávek. Pro výbor má být dostupná filtrace jednotek bez odpovědi. Délka uchování odpovědí
 a historie změn zatím není stanovena a závisí na zvoleném systému, kapacitě databáze a pravidlech uchování dat.
+
+## Průběžný záznam 2026-05-08: dodavatelský termín a náhradní čipy
+
+Byly doplněny odpovědi k dodavateli. Dodavatel pro objednávku a montáž potřebuje identifikaci vlastníka nebo nájemníka,
+kontakt, číslo bytu, podlaží, počet čipů a typ telefonu. Finální souhrn má být dodavateli předán do 2026-05-24,
+aby mohl připravit objednávku, konečnou cenu, smlouvu a podklady k úhradě.
+
+Přibližně 5 dní před finálním termínem má výbor ručně zkontrolovat neodpovězené jednotky a poslat e-mailovou urgenci.
+Po předání finálního souhrnu už se běžně nemá měnit počet čipů ani typ telefonu. Pro budoucí provoz je potřeba počítat
+se ztracenými nebo poškozenými čipy, jejich deaktivací nebo vyřazením z evidence a objednáváním náhrad přes výbor.
+Výbor má zvážit rezervní zásobu čipů, pracovně přibližně 60 kusů.
