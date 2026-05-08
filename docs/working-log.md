@@ -236,3 +236,15 @@ Veřejný web má zůstat na GitHub Pages a na datovou agendu pouze odkazovat.
 Google Sheets + Apps Script zůstává záložní varianta pro případ, že by doporučený směr nebylo možné včas bezpečně
 dokončit. Čistý Google Forms je vhodný jen jako nouzové řešení, protože hůře splňuje požadavky na přístup za jednotku,
 změny odpovědí, administraci výboru a budoucí rozšiřitelnost.
+
+## Průběžný záznam 2026-05-09: předimplementační detail 05 a 07
+
+Byla dopracována technická specifikace a testovací strategie první agendy. Technická specifikace nově popisuje pracovní
+obrazovky, jednotkové tokeny, administrátorský přístup, datové entity, stavy odpovědí a plateb, výpočet doplatku,
+pracovní pravidlo variabilního symbolu, exportní sloupce, bezpečnostní rozdělení, importní podklady, aplikační cesty,
+serverové operace, prostředí a implementační checklist.
+
+Testovací strategie byla rozšířena na konkrétní testovací plán MVP: platná odpověď, povinná pole, validace čipů,
+výběr telefonu, výpočet doplatku, variabilní symbol, opakovaná odpověď před uzávěrkou, změna po uzávěrce, administrace,
+exporty, bezpečnost jednotkového přístupu, administrátorský přístup, použitelnost, datová kvalita, archivace a kritéria
+pro ostré spuštění.
