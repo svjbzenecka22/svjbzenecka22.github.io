@@ -83,6 +83,16 @@ Pracovní odpovědi z 2026-05-08:
 4. Má osoba uvést vztah k jednotce, například vlastník, spoluvlastník, nájemník nebo pověřená osoba?
 5. Má být povolená volná poznámka, nebo by zvyšovala riziko sběru zbytečných osobních údajů?
 
+Pracovní odpovědi z 2026-05-08:
+
+- Pro samotnou objednávku stačí evidovat jednotku, počet čipů a typ telefonu.
+- Odpověď má umožnit také volný text pro dotazy nebo připomínky, které je vhodné řešit s výborem.
+- Jméno osoby, kontakt a vztah k jednotce závisí na tom, zda bude už v době spuštění existovat obecná portálová identita s rolemi a přístupy.
+- Pokud už bude portálová identita existovat, nemá být nutné znovu ručně sbírat údaje, které systém spolehlivě zná.
+- Pokud půjde o MVP bez nadefinovaných rolí a přístupů, je vhodné u odpovědi sbírat informaci, kdo ji za jednotku vyplnil.
+- U MVP bez portálové identity je vhodné sbírat alespoň jméno odpovídající osoby, kontaktní údaj pro řešení nejasností a vztah k jednotce.
+- Volná poznámka má být určena pro dotazy a připomínky k této konkrétní agendě, ne pro sběr zbytečných osobních nebo citlivých údajů.
+
 ### Čipy a telefony
 
 1. Jaký je minimální a maximální počet čipů na jednotku?

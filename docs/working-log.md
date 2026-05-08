@@ -86,3 +86,12 @@ Jednotky bez odpovědi mají být kontaktovány e-mailem.
 Doplnění: pokud to nebude technicky příliš náročné, má systém pomoci výboru s připomenutím neodpovězených jednotek,
 například vygenerováním seznamu kontaktů nebo e-mailu. Vhodné je také avízo před uzávěrkou pro jednotky, které dosud
 neodpověděly.
+
+## Průběžný záznam 2026-05-08: rozsah údajů
+
+Byla doplněna odpověď k rozsahu údajů. Pro samotnou objednávku stačí jednotka, počet čipů a typ telefonu. Vhodné je
+umožnit volnou poznámku pro dotazy a připomínky k agendě.
+
+Jméno odpovídající osoby, kontakt a vztah k jednotce závisí na zvolené technologické variantě. Pokud bude existovat
+obecná portálová identita s rolemi a přístupy, mají se tyto údaje odvodit z přihlášení nebo profilu. Pokud půjde
+o MVP bez takové identity, je vhodné tyto údaje sbírat ve formuláři, aby výbor věděl, kdo odpověď za jednotku vyplnil.

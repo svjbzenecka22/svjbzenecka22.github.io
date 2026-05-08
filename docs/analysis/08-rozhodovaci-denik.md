@@ -61,3 +61,17 @@ Důvod:
 - individuální pozdní změny mají jít přes výbor e-mailem, telefonicky nebo přes WhatsApp,
 - pokud výbor pozdní změnu přijme, zapíše ji administrativně ze své strany,
 - jednotky bez odpovědi budou po uzávěrce připomenuty e-mailem.
+
+## 2026-05-08: rozsah údajů pro první sběr
+
+Rozhodnutí: pro samotnou objednávku přístupového systému stačí jednotka, počet čipů a typ telefonu. Formulář má ale
+umožnit i volnou poznámku pro dotazy a připomínky k agendě.
+
+Důvod:
+
+- dodavatelský souhrn pravděpodobně potřebuje hlavně objednávkové údaje,
+- výbor může potřebovat dohledat, kdo odpověď za jednotku vyplnil,
+- pokud nebude existovat portálová identita s rolemi a přístupy, je vhodné ve formuláři sbírat jméno odpovídající
+  osoby, kontakt a vztah k jednotce,
+- pokud portálová identita existovat bude, mají se tyto údaje přednostně odvodit z přihlášení nebo profilu,
+- volná poznámka má být omezena na dotazy a připomínky k agendě, aby se nesbíraly zbytečné osobní nebo citlivé údaje.

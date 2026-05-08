@@ -88,12 +88,24 @@ Minimální rozsah údajů pro první agendu:
 - potvrzení seznámení s doplatkem nebo budoucí platební povinností,
 - datum a čas odeslání odpovědi.
 
+Pro samotnou objednávku dodavateli jsou klíčové zejména jednotka, počet čipů a typ telefonu. Ostatní údaje slouží
+hlavně výboru pro dohledání odpovědi, řešení nejasností a komunikaci s partají.
+
 Údaje, které mohou být potřebné, ale mají být sbírány jen při jasném důvodu:
 
 - jméno osoby, která odpověď vyplnila,
 - kontaktní e-mail nebo telefon pro řešení nejasností,
 - poznámka k nestandardní situaci,
 - potvrzení vztahu k jednotce, například vlastník, spoluvlastník, nájemník nebo pověřená osoba.
+
+Pravidlo pro identifikaci odpovídající osoby závisí na zvolené technologické a provozní variantě. Pokud bude už při
+spuštění agendy existovat obecná portálová identita s rolemi a přístupy, nemá být nutné znovu ručně sbírat údaje,
+které systém spolehlivě zná. Pokud půjde o MVP bez nadefinovaných rolí a přístupů, je vhodné u odpovědi sbírat
+alespoň jméno osoby, kontaktní údaj pro řešení nejasností a vztah k jednotce, aby výbor věděl, kdo odpověď za jednotku
+vyplnil.
+
+Volná poznámka má být povolena pro dotazy a připomínky k agendě přístupového systému. Formulář má uživatele stručně
+navést, aby do poznámky neuváděl zbytečné osobní nebo citlivé údaje.
 
 Údaje, které nejsou pro první agendu zřejmou nutností:
 
@@ -215,6 +227,7 @@ Automatické párování plateb je mimo rozsah první fáze.
 - Kdo potvrdí finální objednávku a kdo nese odpovědnost za doplatek?
 - Má systém počítat doplatek, nebo pouze sbírat podklady?
 - Jak dlouho se budou odpovědi uchovávat po dokončení objednávky?
+- Při výběru technologie rozhodnout, zda už bude existovat portálová identita s rolemi, nebo zda MVP musí sbírat identifikaci odpovídající osoby ve formuláři.
 
 ## Prioritizace funkcí
 

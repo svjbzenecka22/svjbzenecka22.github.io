@@ -97,14 +97,21 @@ Povinné položky pravděpodobného MVP:
 - potvrzení seznámení s doplatkem nebo budoucí platební povinností,
 - čas odeslání odpovědi.
 
-Volitelné položky podle rozhodnutí výboru:
+Pokud MVP nebude mít obecnou portálovou identitu s rolemi a přístupy, mají být povinné nebo důrazně doporučené také
+údaje o tom, kdo odpověď za jednotku vyplnil:
 
 - jméno odpovídající osoby,
-- vztah odpovídající osoby k jednotce,
-- e-mail,
-- telefon,
-- poznámka,
+- kontaktní údaj pro řešení nejasností,
+- vztah odpovídající osoby k jednotce.
+
+Volitelné položky podle rozhodnutí výboru:
+
+- druhý kontaktní údaj, například telefon vedle e-mailu,
+- poznámka s dotazem nebo připomínkou k agendě,
 - informace, zda jde o ručně doplněnou odpověď výborem.
+
+Pokud bude existovat obecná portálová identita s rolemi a přístupy, má systém identifikaci odpovídající osoby a její
+vztah k jednotce přednostně odvozovat z přihlášení nebo profilu, nikoliv vyžadovat ruční opakované zadání.
 
 ### Pravidla validace k potvrzení
 
@@ -113,6 +120,7 @@ Volitelné položky podle rozhodnutí výboru:
 - Jednotka musí být rozpoznatelná proti seznamu jednotek používanému výborem.
 - Odpověď bez potvrzení doplatku nebo platební povinnosti nemá být považována za finální.
 - Po uzávěrce se nové odpovědi nebo změny zpracují jen individuálně přes výbor a případně administrativním zásahem výboru.
+- Volná poznámka má být určena pouze pro dotazy a připomínky k agendě; uživatel má být stručně upozorněn, aby neuváděl zbytečné osobní nebo citlivé údaje.
 
 ### Náhradní neonline postup
 

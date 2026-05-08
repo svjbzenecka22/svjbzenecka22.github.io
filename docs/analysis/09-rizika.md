@@ -54,6 +54,10 @@ Popis: Formulář může z pohodlnosti sbírat více údajů, než je pro objedn
 
 Mitigace: Před návrhem formuláře určit minimální povinné údaje a volitelné údaje povolit jen s jasným účelem.
 
+Poznámka: pokud nebude existovat portálová identita s rolemi a přístupy, může být důvodné sbírat jméno odpovídající
+osoby, kontakt a vztah k jednotce. Volná poznámka má být povolena jen pro dotazy a připomínky k agendě a má být
+doplněna upozorněním, aby uživatelé neuváděli zbytečné osobní nebo citlivé údaje.
+
 ## Riziko: opomenutí neonline odpovědí
 
 Popis: Některé osoby mohou odpovědět e-mailem, telefonicky, osobně nebo na papíře. Pokud se tyto odpovědi nedostanou do stejné evidence, souhrn bude chybný.
