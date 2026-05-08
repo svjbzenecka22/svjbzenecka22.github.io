@@ -162,3 +162,17 @@ Důvod:
 - u budoucího elektronického hlasování nebo souhlasů bude potřeba auditní stopa a právně potvrzená doba uchování,
 - dokumenty bude do budoucna potřeba rozdělit minimálně na veřejné a neveřejné po přihlášení,
 - otázka dokumentů vázaných jen ke konkrétní jednotce zatím zůstává otevřená.
+
+## 2026-05-08: strategický směr k portálu SVJ
+
+Rozhodnutí: budoucí web nemá zůstat pouze informační stránkou. Dlouhodobou ambicí je portálové řešení pro správu agend
+SVJ, pokud to bude organizačně, technicky a finančně zvládnutelné.
+
+Důvod:
+
+- veřejné a neveřejné části bude potřeba postupně oddělovat podle charakteru konkrétních agend a dokumentů,
+- správu má dlouhodobě primárně zajišťovat předseda výboru, ale řešení má být sdílitelné i s ostatními členy výboru,
+- provozní rozpočet zatím není pevně stanoven; pracovní ambice je velmi nízký provoz, orientačně kolem 100 Kč měsíčně,
+- reálnost rozpočtu má vyplynout z technické a nákladové analýzy,
+- před výběrem technologie je vhodné porovnat vlastní nízkonákladové řešení s hotovými portály pro SVJ nebo bytové domy,
+- první agenda má být spuštěna rychle, ale s vyřešenými hlavními architektonickými body, aby nevznikla slepá ulička.

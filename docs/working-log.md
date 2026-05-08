@@ -55,7 +55,7 @@ bytového telefonu za jednotlivé partaje.
 
 Byla rozšířena analýza první agendy přístupového systému bez výběru technologie. Důraz je na procesní pravidla,
 zejména jednu finální odpověď za jednotku, oprávněnou osobu, možnost změny odpovědi, rozsah sbíraných údajů,
-doplatky, exporty a náhradní neonline postup.
+doplatky a exporty.
 
 Další krok je položit prioritní otázky výboru a dodavateli, aby bylo možné rozhodnout, zda první agenda potřebuje
 jen jednoduchý formulářový sběr, nebo robustnější neveřejnou datovou část.
@@ -181,3 +181,16 @@ varianta zatím zůstává otevřená.
 Elektronické hlasování není požadavkem první fáze. Současné stanovy SVJ s ním nejsou kompatibilní, ale výbor pracuje
 na jejich změně. U budoucího elektronického hlasování nebo souhlasů bude pravděpodobně nutná auditní stopa a dobu
 uchování bude potřeba ověřit právně, pravděpodobně s právníkem SBD Mír.
+
+## Průběžný záznam 2026-05-08: strategický směr portálu
+
+Byly doplněny pracovní odpovědi ke strategickým otázkám. Budoucí web nemá být pouze informační, ale má směřovat k
+portálovému řešení pro správu agend SVJ, pokud to bude organizačně, technicky a finančně zvládnutelné. Konkrétní
+rozdělení veřejných a neveřejných částí se nemá určovat plošně předem; má vyplynout z charakteru jednotlivých agend,
+dokumentů a dat.
+
+Dlouhodobou správu má primárně zajišťovat předseda výboru, ale řešení má být sdílitelné i s ostatními členy výboru.
+Provozní rozpočet zatím není pevně určen; pracovní přání je držet provoz velmi nízko, orientačně kolem 100 Kč měsíčně,
+pokud se ukáže, že je to reálné. Před technologickým rozhodnutím je vhodné porovnat vlastní nízkonákladové řešení i
+hotové portály pro SVJ nebo bytové domy. Prioritou má být kombinace rychlého spuštění první agendy a rozumné
+dlouhodobé architektury, bez stavby zbytečně rozsáhlého ideálního řešení.

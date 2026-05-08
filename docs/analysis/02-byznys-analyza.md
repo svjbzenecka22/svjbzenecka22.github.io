@@ -29,6 +29,21 @@ Dodavatel typicky nemá mít přístup do systému. Výbor mu předává pouze s
 
 ## Veřejná část webu
 
+Strategický směr z 2026-05-08: budoucí web nemá být pouze informační stránka. Dlouhodobou ambicí je portálové řešení
+pro správu agend SVJ, pokud to bude v možnostech výboru. Současně nemá smysl hned stavět rozsáhlé ideální řešení;
+první agenda má být dostatečně rychlá, ale nemá vytvořit slepou uličku pro budoucí rozvoj.
+
+Rozdělení konkrétních částí na veřejné a neveřejné zatím není potřeba uzavřít plošně. Některé části veřejné budou a
+některé neveřejné také; o režimu konkrétní části má rozhodnout charakter daného dokumentu, agendy nebo dat.
+
+Správu webu má dlouhodobě primárně zajišťovat předseda výboru, ale řešení má být navrženo tak, aby se správa dala
+sdílet i s ostatními členy výboru. Udržitelnosti má pomoci dobrá dokumentace a možnost využívat AI asistenci při
+úpravách.
+
+Přijatelný měsíční rozpočet zatím není pevně stanoven. Pracovní ambice je udržet provoz velmi nízko, orientačně kolem
+100 Kč měsíčně, pokud se ukáže, že je to reálné. O výsledném rozpočtu má rozhodnout až detailnější srovnání technických
+možností, včetně hotových portálů pro SVJ nebo bytové domy dostupných na trhu.
+
 Možné oblasti:
 
 - základní informace o SVJ,

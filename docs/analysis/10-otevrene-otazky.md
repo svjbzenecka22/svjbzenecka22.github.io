@@ -8,6 +8,20 @@
 4. Jaký je přijatelný měsíční rozpočet, pokud bezplatná varianta nebude stačit?
 5. Má být prioritou rychlost spuštění první agendy, nebo dlouhodobá architektura?
 
+Pracovní odpovědi z 2026-05-08:
+
+- Budoucí web nemá být pouze informační. Dlouhodobou ambicí je portálové řešení pro správu agend SVJ, pokud to bude organizačně, technicky a finančně zvládnutelné.
+- Před výběrem technologie je vhodné udělat analýzu nákladů a funkcionality, včetně srovnání hotových portálových řešení pro SVJ nebo bytové domy dostupných na trhu.
+- Zatím není nutné přesně určit, které části budou veřejné a které neveřejné. Některé části veřejné budou a některé neveřejné také; konkrétní režim má vyplynout z charakteru jednotlivých agend a dokumentů.
+- Systém má s veřejnými i neveřejnými částmi od začátku počítat architektonicky, aby později nebylo nutné zásadně přestavovat základní řešení.
+- Dlouhodobou správu má primárně zajišťovat předseda výboru, ale řešení má být postavené tak, aby správu mohli převzít nebo sdílet i ostatní členové výboru.
+- Je vhodné využívat AI asistenci a dobrou dokumentaci tak, aby údržba nebyla závislá jen na profesionálním vývojáři.
+- Přijatelný měsíční rozpočet zatím není pevně určen. Pracovní přání je držet provoz co nejníže, orientačně kolem 100 Kč měsíčně, pokud se ukáže, že je to reálné.
+- Reálný rozpočet má vyplynout z detailnější analýzy technických možností, požadovaných funkcí, provozních omezení a případného srovnání hotových portálů.
+- Prioritou má být kombinace rychlého spuštění první agendy a rozumné dlouhodobé architektury.
+- Není cílem stavět hned ideální a rozsáhlé řešení, ale první verze nemá být slepá ulička vyžadující později výrazný refaktoring.
+- Před implementací je potřeba vyřešit alespoň hlavní architektonické body: oddělení veřejné a neveřejné části, způsob evidence odpovědí, export dat, přístupová práva a možnost budoucího rozšíření.
+
 ## Otázky k uživatelům a oprávněním
 
 1. Má mít přístup vlastník, nájemník, nebo oba?

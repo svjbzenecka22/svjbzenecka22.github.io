@@ -12,6 +12,8 @@
 - Vyjasnit veřejné a neveřejné části.
 - Popsat první agendu přístupového systému.
 - Rozhodnout minimální potřebnou úroveň přístupu a ochrany dat.
+- Připravit srovnání nákladů a funkcionality vlastního řešení a hotových portálů pro SVJ nebo bytové domy.
+- Vyřešit hlavní architektonické body tak, aby první agenda nebyla slepou uličkou.
 - Vybrat technologickou variantu pro MVP.
 
 ## Fáze 2: MVP pro přístupový systém
@@ -26,7 +28,7 @@
 
 - Vyhodnotit použitelnost řešení.
 - Vyhodnotit administrativní zátěž výboru.
-- Rozhodnout, zda pokračovat stejnou technologií, nebo postavit robustnější portál.
+- Rozhodnout, zda pokračovat stejnou technologií, postavit robustnější vlastní portál, nebo zvolit hotové portálové řešení.
 
 ## Fáze 4: rozšíření webu
 

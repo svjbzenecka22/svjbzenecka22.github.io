@@ -6,6 +6,22 @@ Porovnat možné technické přístupy a jejich dopady na náklady, bezpečnost,
 
 ## Základní rozdělení
 
+Strategický požadavek z 2026-05-08: technické řešení má hledat rovnováhu mezi rychlým spuštěním první agendy a
+rozumnou dlouhodobou architekturou. První verze nemá být zbytečně rozsáhlá, ale nemá ani vytvořit slepou uličku, která
+by později vyžadovala výrazný refaktoring.
+
+Před finálním výběrem technologie má být připraveno srovnání nákladů a funkcionality. Vedle vlastní nízkonákladové
+varianty je vhodné porovnat také hotové portály pro SVJ nebo bytové domy dostupné na trhu. Pracovní rozpočtová ambice
+je velmi nízký provoz, orientačně kolem 100 Kč měsíčně, ale reálnost této hranice zatím není potvrzena.
+
+Hlavní architektonické body, které je potřeba vyřešit ještě před implementací první agendy:
+
+- oddělení veřejné a neveřejné části,
+- způsob evidence odpovědí a změn,
+- export dat pro výbor a dodavatele,
+- přístupová práva nebo přístup za jednotku,
+- možnost budoucího rozšíření na dokumenty, další agendy a případně portálové funkce.
+
 ### Veřejný statický web
 
 Vhodný pro informační obsah, dokumenty a rozcestníky.
@@ -82,6 +98,25 @@ Slabé stránky:
 - pravidelné náklady,
 - správa serveru,
 - vyšší provozní odpovědnost.
+
+### Varianta E: hotový portál pro SVJ nebo bytový dům
+
+Silné stránky:
+
+- hotové funkce pro správu domu,
+- pravděpodobně vyřešená přístupová práva a role,
+- nižší vývojová zátěž výboru,
+- možná podpora dokumentů, komunikace, požadavků nebo hlasování podle konkrétní služby.
+
+Slabé stránky:
+
+- pravidelné náklady mohou překročit nízký rozpočtový cíl,
+- menší kontrola nad vzhledem, daty a integrací s vlastním webem,
+- závislost na dodavateli služby,
+- nutnost ověřit export dat, migraci, právní podmínky a rozsah funkcí.
+
+Poznámka: konkrétní portály, ceny a funkce je potřeba doplnit v samostatném srovnání. Toto srovnání má být jedním z
+podkladů pro rozhodnutí, zda pokračovat vlastním nízkonákladovým řešením, nebo zvolit hotovou službu.
 
 ## Bezpečnostní a provozní témata
 
