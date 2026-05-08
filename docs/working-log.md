@@ -139,3 +139,13 @@ Přibližně 5 dní před finálním termínem má výbor ručně zkontrolovat n
 Po předání finálního souhrnu už se běžně nemá měnit počet čipů ani typ telefonu. Pro budoucí provoz je potřeba počítat
 se ztracenými nebo poškozenými čipy, jejich deaktivací nebo vyřazením z evidence a objednáváním náhrad přes výbor.
 Výbor má zvážit rezervní zásobu čipů, pracovně přibližně 60 kusů.
+
+## Průběžný záznam 2026-05-08: podklady telefonních variant
+
+Byly připraveny pracovní podklady k variantám bytových telefonů podle dodaného screenshotu a produktových stránek ABB.
+Vznikl dokument `docs/analysis/12-telefonni-varianty.md`, datový soubor `docs/analysis/data/telefonni-varianty.csv`
+a lokální obrázky ve složce `docs/analysis/assets/telefony/`.
+
+Podklady obsahují čtyři varianty: základní audiotelefon, handsfree audiotelefon, videotelefon 4,3" a videotelefon 7".
+U obrázků je potřeba před veřejným publikováním ověřit možnost použití produktových obrázků ABB nebo použít podklady
+výslovně poskytnuté dodavatelem.
