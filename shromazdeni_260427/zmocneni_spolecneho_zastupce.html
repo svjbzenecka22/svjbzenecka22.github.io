@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zmocnění společného zástupce – SVJ Bzenecká 22, Brno</title>
+  <style>
+    :root {
+      --bg: #eef3f8;
+      --paper: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #9ca3af;
+      --border: #d1d5db;
+      --primary: #1d4ed8;
+      --soft: #eff6ff;
+      --shadow: 0 10px 28px rgba(15, 23, 42, 0.10);
+      --maxw: 920px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.45;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .shell {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .toolbar h1 {
+      margin: 0;
+      font-size: 1.05rem;
+      color: #0f172a;
+    }
+
+    .btn {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--primary);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .paper {
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .paper-inner {
+      padding: 24mm 20mm 22mm;
+    }
+
+    .doc-header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: var(--soft);
+      color: #1e40af;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .doc-title {
+      font-size: 1.85rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      margin: 0 0 8px;
+    }
+
+    .doc-subtitle {
+      color: var(--muted);
+      margin: 0;
+      font-size: 0.98rem;
+    }
+
+    .info-box {
+      border: 1px solid var(--border);
+      background: #f8fafc;
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin: 18px 0 22px;
+    }
+
+    .content p {
+      margin: 0 0 10px;
+      font-size: 1rem;
+    }
+
+    .fillline {
+      display: inline-block;
+      min-width: 180px;
+      border-bottom: 1px solid var(--line);
+      height: 1em;
+      vertical-align: -0.15em;
+    }
+
+    .fillline.short { min-width: 90px; }
+    .fillline.medium { min-width: 220px; }
+
+    .blockline {
+      border-bottom: 1px solid var(--line);
+      min-height: 1.25em;
+      margin: 4px 0 10px;
+    }
+
+    .label {
+      margin-top: 18px;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+
+    .signature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      margin-top: 20px;
+    }
+
+    .signature-box {
+      padding-top: 16px;
+    }
+
+    .signature-line {
+      border-bottom: 1px solid var(--line);
+      height: 34px;
+      margin-bottom: 8px;
+    }
+
+    .signature-caption {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .note {
+      margin-top: 22px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      color: #92400e;
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    @media (max-width: 720px) {
+      .paper-inner { padding: 18px; }
+      .doc-title { font-size: 1.55rem; }
+      .signature-grid { grid-template-columns: 1fr; gap: 16px; }
+    }
+
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    @media print {
+      html, body { background: #fff; }
+      .shell { max-width: none; padding: 0; }
+      .toolbar { display: none !important; }
+      .paper { box-shadow: none; border: none; border-radius: 0; }
+      .paper-inner { padding: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="toolbar">
+      <h1>Testovací dokument k tisku – Zmocnění společného zástupce</h1>
+      <button class="btn" onclick="window.print()">Tisk / Uložit do PDF</button>
+    </div>
+
+    <article class="paper">
+      <div class="paper-inner">
+        <header class="doc-header">
+          <div class="eyebrow">SVJ Bzenecká 22, Brno</div>
+          <h2 class="doc-title">ZMOCNĚNÍ SPOLEČNÉHO ZÁSTUPCE</h2>
+          <p class="doc-subtitle">pro spoluvlastníky jednotky / společné jmění manželů</p>
+        </header>
+
+        <section class="info-box">
+          Tento formulář slouží k určení společného zástupce ve smyslu § 1185 odst. 2 občanského zákoníku pro výkon práv vůči Společenství vlastníků Bzenecká 22, Brno.
+        </section>
+
+        <section class="content">
+          <p>
+            Spoluvlastníci bytové jednotky č.
+            <span class="fillline short"></span>
+            v domě
+            <span class="fillline medium"></span>
+          </p>
+
+          <p>(jméno, příjmení, bydliště spoluvlastníka č. 1)</p>
+          <div class="blockline"></div>
+
+          <p>(jméno, příjmení, bydliště spoluvlastníka č. 2)</p>
+          <div class="blockline"></div>
+
+          <p>
+            se dohodli ve smyslu § 1185 odst. 2 občanského zákoníku, že jejich práva vůči
+            <strong>Společenství vlastníků Bzenecká 22, Brno</strong>
+          </p>
+
+          <p>bude vykonávat</p>
+          <div class="blockline"></div>
+
+          <p>(jméno, příjmení, bydliště společného zástupce)</p>
+
+          <div class="signature-grid">
+            <div class="signature-box">
+              <p>V <span class="fillline short"></span> dne <span class="fillline short"></span></p>
+              <div class="signature-line"></div>
+              <div class="signature-caption">podpisy spoluvlastníků</div>
+            </div>
+
+            <div class="signature-box">
+              <p>Zmocnění přijímám</p>
+              <p>V <span class="fillline short"></span> dne <span class="fillline short"></span></p>
+              <div class="signature-line"></div>
+              <div class="signature-caption">podpis zmocněnce</div>
+            </div>
+          </div>
+
+          <div class="note">
+            Podpisy na zmocnění nemusí být úředně ověřeny.
+          </div>
+        </section>
+
+        <div class="footer">
+          Připraveno jako tisková HTML verze pro web / GitHub Pages.
+        </div>
+      </div>
+    </article>
+  </div>
+</body>
+</html>

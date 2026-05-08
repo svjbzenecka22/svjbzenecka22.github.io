@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shromáždění vlastníků – 27. 4. 2026 | SVJ Bzenecká 22, Brno</title>
+  <meta
+    name="description"
+    content="Pozvánka, plná moc, zmocnění společného zástupce a podklady ke shromáždění SVJ Bzenecká 22, Brno, dne 27. 4. 2026."
+  />
+  <meta name="theme-color" content="#2563eb" />
+
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --surface-soft: #f8fbff;
+      --text: #1f2937;
+      --muted: #667085;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --primary-soft: #eff6ff;
+      --border: #dbe4f0;
+      --ok-bg: #ecfdf5;
+      --ok-border: #bbf7d0;
+      --ok-text: #065f46;
+      --warn-bg: #fffbeb;
+      --warn-border: #fde68a;
+      --warn-text: #92400e;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --radius: 18px;
+      --max: 1180px;
+      --header-height: 72px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #edf3ff 0px, var(--bg) 240px);
+      line-height: 1.6;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    :focus-visible {
+      outline: 3px solid rgba(37, 99, 235, 0.35);
+      outline-offset: 2px;
+      border-radius: 10px;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(219, 228, 240, 0.92);
+    }
+
+    .topbar-inner {
+      min-height: var(--header-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      color: #1e3a8a;
+      letter-spacing: 0.1px;
+      font-size: 0.98rem;
+      white-space: nowrap;
+    }
+
+    .brand-link {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .brand-link:hover {
+      text-decoration: none;
+    }
+
+    .brand-badge {
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, #60a5fa, #2563eb);
+      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+      flex: 0 0 auto;
+    }
+
+    .nav-desktop {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav-desktop a,
+    .nav-mobile a {
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .menu-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fff;
+      color: var(--text);
+      cursor: pointer;
+      flex: 0 0 auto;
+    }
+
+    .menu-toggle svg {
+      width: 22px;
+      height: 22px;
+      display: block;
+    }
+
+    .mobile-nav-wrap {
+      display: none;
+      padding-bottom: 12px;
+    }
+
+    .mobile-nav-wrap.is-open {
+      display: block;
+    }
+
+    .nav-mobile {
+      display: grid;
+      gap: 8px;
+      padding-top: 6px;
+    }
+
+    .nav-mobile a {
+      display: block;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fff;
+    }
+
+    .hero {
+      padding: 28px 0 18px;
+    }
+
+    .hero-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 30px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      gap: 24px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: #1e3a8a;
+      font-size: 0.84rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+      line-height: 1.18;
+      letter-spacing: -0.015em;
+    }
+
+    h1 {
+      margin-bottom: 12px;
+      font-size: clamp(2rem, 4.4vw, 3.15rem);
+    }
+
+    h2 {
+      margin-bottom: 14px;
+      font-size: clamp(1.3rem, 2.1vw, 1.55rem);
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .lead {
+      font-size: 1.06rem;
+      color: var(--muted);
+      max-width: 62ch;
+      margin-bottom: 0;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 12px 18px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      font-weight: 800;
+      transition: transform 0.12s ease, background-color 0.12s ease, border-color 0.12s ease;
+      text-align: center;
+    }
+
+    .btn:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .summary-grid {
+      display: grid;
+      gap: 12px;
+      align-content: start;
+    }
+
+    .summary-card {
+      background: linear-gradient(180deg, #ffffff 0%, var(--surface-soft) 100%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px 16px 14px;
+    }
+
+    .summary-label {
+      color: var(--muted);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .summary-value {
+      font-size: 1.08rem;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .section {
+      padding: 18px 0;
+      scroll-margin-top: calc(var(--header-height) + 18px);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 22px;
+      align-items: start;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .card p:last-child,
+    .card ul:last-child,
+    .card ol:last-child {
+      margin-bottom: 0;
+    }
+
+    .agenda {
+      margin: 0;
+      padding-left: 24px;
+    }
+
+    .agenda li {
+      margin-bottom: 12px;
+      padding-left: 4px;
+    }
+
+    .docs-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .doc-item {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      background: #fff;
+    }
+
+    .doc-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .doc-title {
+      margin: 0;
+      font-size: 1.04rem;
+      font-weight: 800;
+    }
+
+    .doc-desc {
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .doc-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .mini {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .steps {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .steps li {
+      margin-bottom: 10px;
+    }
+
+    .contact-list {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .contact-list li {
+      margin-bottom: 10px;
+    }
+
+    .note {
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin-top: 16px;
+      font-size: 0.97rem;
+      line-height: 1.5;
+    }
+
+    .note.ok {
+      background: var(--ok-bg);
+      border: 1px solid var(--ok-border);
+      color: var(--ok-text);
+    }
+
+    .note.warn {
+      background: var(--warn-bg);
+      border: 1px solid var(--warn-border);
+      color: var(--warn-text);
+    }
+
+    .footer {
+      padding: 28px 0 42px;
+    }
+
+    .footer-card {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px 18px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .footer-card strong {
+      color: var(--text);
+    }
+
+    @media (max-width: 980px) {
+      .hero-card,
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 820px) {
+      .nav-desktop {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: inline-flex;
+      }
+
+      .topbar-inner {
+        min-height: 64px;
+      }
+
+      .hero {
+        padding-top: 20px;
+      }
+
+      .hero-card {
+        padding: 22px;
+      }
+
+      .card {
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(var(--max), calc(100% - 20px));
+      }
+
+      h1 {
+        font-size: clamp(1.8rem, 8vw, 2.4rem);
+      }
+
+      .lead {
+        font-size: 1rem;
+      }
+
+      .hero-actions,
+      .doc-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .doc-head {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .agenda {
+        padding-left: 20px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .hero-card,
+      .card {
+        padding: 16px;
+      }
+
+      .summary-card {
+        padding: 14px;
+      }
+    }
+
+    @media print {
+      .topbar,
+      .hero-actions,
+      .doc-actions,
+      .footer {
+        display: none !important;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      .card,
+      .hero-card,
+      .summary-card,
+      .doc-item {
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        <a class="brand brand-link" href="../index.html" aria-label="Přejít na hlavní stránku SVJ Bzenecká 22">
+          <span class="brand-badge" aria-hidden="true"></span>
+          <span>SVJ Bzenecká 22, Brno</span>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Hlavní navigace">
+          <a href="#zakladni-informace">Základní informace</a>
+          <a href="#program">Program</a>
+          <a href="#dokumenty">Dokumenty</a>
+          <a href="#zastoupeni">Zastoupení</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Otevřít nebo zavřít menu"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <path d="M4 7h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 17h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-nav-wrap" id="mobileNav">
+        <nav class="nav-mobile" aria-label="Mobilní navigace">
+          <a href="#zakladni-informace">Základní informace</a>
+          <a href="#program">Program</a>
+          <a href="#dokumenty">Dokumenty</a>
+          <a href="#zastoupeni">Zastoupení</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="zakladni-informace">
+      <div class="container">
+        <div class="hero-card">
+          <div>
+            <span class="eyebrow">Pozvánka na shromáždění vlastníků</span>
+            <h1>Shromáždění SVJ Bzenecká 22, Brno</h1>
+            <p class="lead">
+              Na této stránce jsou zveřejněny základní informace a podklady ke shromáždění vlastníků,
+              které se koná dne <strong>27. 4. 2026</strong>. Níže najdete pozvánku, plnou moc,
+              zmocnění společného zástupce a zveřejněné podklady k bodům 3, 4, 5 a 11 programu
+              shromáždění.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#dokumenty">Zobrazit dokumenty</a>
+              <a class="btn" href="#program">Přejít na program</a>
+            </div>
+
+            <div class="note ok">
+              Pokud se nemůžete osobně zúčastnit, využijte prosím formulář
+              <strong>plné moci</strong> nebo <strong>zmocnění společného zástupce</strong>
+              podle vaší situace.
+            </div>
+          </div>
+
+          <div class="summary-grid">
+            <div class="summary-card">
+              <div class="summary-label">Datum</div>
+              <div class="summary-value">Pondělí 27. dubna 2026</div>
+            </div>
+
+            <div class="summary-card">
+              <div class="summary-label">Čas</div>
+              <div class="summary-value">18:00 hodin</div>
+            </div>
+
+            <div class="summary-card">
+              <div class="summary-label">Místo konání</div>
+              <div class="summary-value">Zasedací místnost domu (suterén)</div>
+            </div>
+
+            <div class="summary-card">
+              <div class="summary-label">Pořadatel</div>
+              <div class="summary-value">Společenství vlastníků Bzenecká 22, Brno</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="program">
+      <div class="container grid-2">
+        <article class="card">
+          <h2>Program shromáždění</h2>
+          <ol class="agenda">
+            <li>Zahájení, seznámení s programem, kontrola usnášeníschopnosti, volba řídícího a zapisovatele</li>
+            <li>Informace o provozu a údržbě domu</li>
+            <li>Představení řešení výměny vodoměrů a RTN</li>
+            <li>Představení řešení přístupových systémů (zvonky a čipy)</li>
+            <li>Představení řešení zvětšení otvoru v panelu a výměny vstupních dveří v suterénu</li>
+            <li>Schválení řešení výměny vodoměrů a RTN</li>
+            <li>Schválení řešení přístupových systémů (zvonky a čipy)</li>
+            <li>Schválení řešení zvětšení otvoru v panelu a výměny vstupních dveří v suterénu</li>
+            <li>Schválení účetní závěrky 2025</li>
+            <li>Schválení prominutí nájemného pro paní Drábkovou (kosmetika) po dobu trvání hlučných a prašných prací v části domu před vstupem</li>
+            <li>Schválení domovního řádu dle nové směrnice MÍR č. 3/2025</li>
+            <li>Informace o aktuálně probíhajících projektech (balkóny, rozšíření zadního vstupu)</li>
+            <li>Diskuse, závěr</li>
+          </ol>
+        </article>
+
+        <aside class="card">
+          <h2>Důležité informace</h2>
+          <p>
+            Doporučujeme, aby si každý vlastník předem prošel zveřejněné dokumenty.
+            Tím se může výrazně zrychlit průběh samotného jednání.
+          </p>
+
+          <div class="note warn">
+            Pokud vlastní jednotku více osob společně, je vhodné předem vyřešit
+            zastupování prostřednictvím formuláře
+            <strong>Zmocnění společného zástupce</strong>.
+          </div>
+
+          <p class="mini" style="margin-top: 16px;">
+            Tato stránka slouží jako přehledný rozcestník. Oficiální texty dokumentů jsou uvedeny
+            v samostatných HTML souborech. Podklad k bodu 9 bude rozeslán samostatně e-mailem
+            a není součástí veřejné stránky.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="dokumenty">
+      <div class="container">
+        <div class="card">
+          <h2>Dokumenty ke zobrazení</h2>
+          <p class="mini">
+            Dokumenty se otevírají jako samostatné HTML stránky. Na této stránce jsou zveřejněny
+            dokumenty k bodům 3, 4, 5 a 11 programu, spolu s pozvánkou a formuláři pro zastoupení.
+          </p>
+
+          <div class="docs-list">
+            <article class="doc-item">
+              <div class="doc-head">
+                <h3 class="doc-title">Pozvánka na shromáždění</h3>
+                <span class="mini">soubor: <code>pozvanka.html</code></span>
+              </div>
+              <div class="doc-desc">
+                Oficiální pozvánka obsahující datum, místo konání, program shromáždění a základní organizační informace.
+              </div>
+              <div class="doc-actions">
+                <a class="btn btn-primary" href="pozvanka.html" target="_blank" rel="noopener noreferrer">Otevřít dokument</a>
+              </div>
+            </article>
+
+            <article class="doc-item">
+              <div class="doc-head">
+                <h3 class="doc-title">Plná moc</h3>
+                <span class="mini">soubor: <code>plna_moc.html</code></span>
+              </div>
+              <div class="doc-desc">
+                Formulář pro zastupování vlastníka na shromáždění v případě, že se nemůže osobně dostavit.
+              </div>
+              <div class="doc-actions">
+                <a class="btn btn-primary" href="plna_moc.html" target="_blank" rel="noopener noreferrer">Otevřít dokument</a>
+              </div>
+            </article>
+
+            <article class="doc-item">
+              <div class="doc-head">
+                <h3 class="doc-title">Zmocnění společného zástupce</h3>
+                <span class="mini">soubor: <code>zmocneni_spolecneho_zastupce.html</code></span>
+              </div>
+              <div class="doc-desc">
+                Formulář určený zejména pro případy, kdy je jednotka ve spoluvlastnictví více osob a je třeba určit společného zástupce.
+              </div>
+              <div class="doc-actions">
+                <a class="btn btn-primary" href="zmocneni_spolecneho_zastupce.html" target="_blank" rel="noopener noreferrer">Otevřít dokument</a>
+              </div>
+            </article>
+
+            <article class="doc-item">
+              <div class="doc-head">
+                <h3 class="doc-title">Bod 3 – Výměna měřidel</h3>
+                <span class="mini">soubor: <code>bod_03_meridla.html</code></span>
+              </div>
+              <div class="doc-desc">
+                Porovnání nabídek dodavatelů na výměnu vodoměrů a indikátorů topných nákladů včetně doporučení výboru.
+              </div>
+              <div class="doc-actions">
+                <a class="btn btn-primary" href="bod_03_meridla.html" target="_blank" rel="noopener noreferrer">Otevřít dokument</a>
+              </div>
+            </article>
+
+            <article class="doc-item">
+              <div class="doc-head">
+                <h3 class="doc-title">Bod 4 – Přístupové systémy (zvonky a čipy)</h3>
+                <span class="mini">soubor: <code>bod_04_pristupovy_system.html</code></span>
+              </div>
+              <div class="doc-desc">
+                Podklad k modernizaci domovní komunikace, čipového přístupu a návazných zámků s doporučením výboru.
+              </div>
+              <div class="doc-actions">
+                <a class="btn btn-primary" href="bod_04_pristupovy_system.html" target="_blank" rel="noopener noreferrer">Otevřít dokument</a>
+              </div>
+            </article>
+
+            <article class="doc-item">
+              <div class="doc-head">
+                <h3 class="doc-title">Bod 5 – Zvětšení otvoru v panelu a nové dveře v suterénu</h3>
+                <span class="mini">soubor: <code>bod_05_dvere_suterenu.html</code></span>
+              </div>
+              <div class="doc-desc">
+                Podklad k úpravě vstupu v suterénu, zvětšení otvoru v panelu a výměně dveří včetně doporučení výboru.
+              </div>
+              <div class="doc-actions">
+                <a class="btn btn-primary" href="bod_05_dvere_suterenu.html" target="_blank" rel="noopener noreferrer">Otevřít dokument</a>
+              </div>
+            </article>
+
+            <article class="doc-item">
+              <div class="doc-head">
+                <h3 class="doc-title">Bod 11 – Domovní řád</h3>
+                <span class="mini">soubor: <code>bod_11_domovni_rad.html</code></span>
+              </div>
+              <div class="doc-desc">
+                Návrh domovního řádu upravujícího pravidla užívání jednotek, společných prostor a související povinnosti uživatelů domu.
+              </div>
+              <div class="doc-actions">
+                <a class="btn btn-primary" href="bod_11_domovni_rad.html" target="_blank" rel="noopener noreferrer">Otevřít dokument</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="zastoupeni">
+      <div class="container grid-2">
+        <article class="card">
+          <h2>Jak postupovat, pokud se nemůžete zúčastnit</h2>
+          <ol class="steps">
+            <li>Otevřete odpovídající formulář v sekci Dokumenty.</li>
+            <li>Vyplňte potřebné údaje.</li>
+            <li>Formulář vytiskněte a podepište.</li>
+            <li>Doručte jej výboru SVJ před zahájením shromáždění nebo dle pokynů uvedených v pozvánce.</li>
+          </ol>
+
+          <div class="note ok">
+            Pro běžné zastoupení jedné osoby použijte <strong>Plnou moc</strong>.
+            Pro zastoupení více spoluvlastníků jedné jednotky použijte
+            <strong>Zmocnění společného zástupce</strong>.
+          </div>
+        </article>
+
+        <aside class="card">
+          <h2>Poznámka k dokumentům</h2>
+          <p>
+            Dokumenty jsou zveřejněny jako samostatné HTML stránky, aby byly dobře čitelné
+            na mobilu i na počítači a zároveň šly snadno tisknout.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="kontakt">
+      <div class="container">
+        <div class="card">
+          <h2>Kontakt</h2>
+          <p>
+            V případě dotazů ke shromáždění nebo k dokumentům kontaktujte výbor SVJ.
+          </p>
+
+          <ul class="contact-list">
+            <li><strong>Patrik Řehák</strong> – předseda, byt č. 10, tel. +420 725 791 406</li>
+            <li><strong>Ondrej Peťko</strong> – člen výboru, byt č. 15, tel. +420 728 760 898</li>
+            <li><strong>František Červenec</strong> – člen výboru, byt č. 11, tel. +420 603 791 144</li>
+            <li><strong>Společný e-mail výboru:</strong> <a href="mailto:svjbzenecka22@gmail.com">svjbzenecka22@gmail.com</a></li>
+          </ul>
+
+          <div class="note ok">
+            Detailní podklad k bodu 9 (Schválení účetní závěrky 2025) nebude zveřejněn na veřejné stránce
+            a bude rozeslán samostatně e-mailem.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-card">
+        <strong>SVJ Bzenecká 22, Brno</strong><br />
+        Informační stránka ke shromáždění vlastníků dne 27. 4. 2026.
+      </div>
+    </div>
+  </footer>
+
+  
+<script>
+  (function () {
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileLinks = mobileNav ? mobileNav.querySelectorAll('a') : [];
+
+    if (menuToggle && mobileNav) {
+      menuToggle.addEventListener('click', function () {
+        const isOpen = mobileNav.classList.toggle('is-open');
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      mobileLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          mobileNav.classList.remove('is-open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  })();
+</script>

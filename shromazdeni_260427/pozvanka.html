@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pozvánka – SVJ Bzenecká 22, Brno</title>
+  <style>
+    :root {
+      --bg: #eef3f8;
+      --paper: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #d1d5db;
+      --line: #9ca3af;
+      --primary: #1d4ed8;
+      --soft: #eff6ff;
+      --shadow: 0 10px 28px rgba(15, 23, 42, 0.10);
+      --maxw: 920px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.5;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .shell {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .toolbar h1 {
+      margin: 0;
+      font-size: 1.05rem;
+      color: #0f172a;
+    }
+
+    .btn {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--primary);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .paper {
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .paper-inner {
+      padding: 22mm 18mm 20mm;
+    }
+
+    .doc-header {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: var(--soft);
+      color: #1e40af;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .doc-title {
+      margin: 0;
+      font-size: 2.1rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+
+    .doc-subtitle {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .hero-box {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 16px;
+      margin: 22px 0 18px;
+    }
+
+    .info-panel,
+    .callout {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #f8fafc;
+      padding: 14px 15px;
+    }
+
+    .info-panel strong,
+    .callout strong { color: #111827; }
+
+    .section-title {
+      margin: 22px 0 10px;
+      font-size: 1.1rem;
+      font-weight: 800;
+    }
+
+    ol.program {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    ol.program li {
+      margin-bottom: 8px;
+    }
+
+    .signature-area {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: end;
+    }
+
+    .signature-block {
+      min-height: 110px;
+    }
+
+    .signature-line {
+      margin-top: 28px;
+      border-bottom: 1px solid var(--line);
+      width: 220px;
+      max-width: 100%;
+    }
+
+    .signature-caption {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-top: 8px;
+    }
+
+    .sign-name {
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+    .notice {
+      margin-top: 18px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      color: #92400e;
+      font-size: 0.95rem;
+    }
+
+    .footnote {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      .paper-inner { padding: 18px; }
+      .doc-title { font-size: 1.8rem; }
+      .hero-box, .signature-area { grid-template-columns: 1fr; }
+    }
+
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    @media print {
+      html, body { background: #fff; }
+      .shell { max-width: none; padding: 0; }
+      .toolbar { display: none !important; }
+      .paper { box-shadow: none; border: none; border-radius: 0; }
+      .paper-inner { padding: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="toolbar">
+      <h1>Testovací dokument k tisku – Pozvánka</h1>
+      <button class="btn" onclick="window.print()">Tisk / Uložit do PDF</button>
+    </div>
+
+    <article class="paper">
+      <div class="paper-inner">
+        <header class="doc-header">
+          <div class="eyebrow">SVJ Bzenecká 22, Brno</div>
+          <h2 class="doc-title">POZVÁNKA</h2>
+          <p class="doc-subtitle">na shromáždění Společenství vlastníků Bzenecká 22, Brno</p>
+        </header>
+
+        <div class="hero-box">
+          <div class="callout">
+            <strong>Shromáždění se bude konat</strong><br />
+            v <strong>pondělí 27. dubna 2026 v 18:00 hodin</strong><br />
+            v <strong>zasedací místnosti domu (suterén)</strong>.
+          </div>
+          <div class="info-panel">
+            <strong>Místo:</strong> zasedací místnost domu (suterén)<br />
+            <strong>Datum:</strong> 27. dubna 2026<br />
+            <strong>Čas:</strong> 18:00 hodin
+          </div>
+        </div>
+
+        <h3 class="section-title">Program</h3>
+        <ol class="program">
+          <li>Zahájení, seznámení s programem, kontrola usnášeníschopnosti, volba řídícího a zapisovatele</li>
+          <li>Informace o provozu a údržbě v domě</li>
+          <li>Představení řešení výměny vodoměrů a RTN</li>
+          <li>Představení řešení přístupových systémů (zvonky a čipy)</li>
+          <li>Představení řešení zvětšení otvoru v panelu a výměny vstupních dveří v suterénu</li>
+          <li>Schválení řešení výměny vodoměrů a RTN</li>
+          <li>Schválení řešení přístupových systémů (zvonky a čipy)</li>
+          <li>Schválení řešení zvětšení otvoru v panelu a výměny vstupních dveří v suterénu</li>
+          <li>Schválení účetní závěrky 2025</li>
+          <li>Schválení prominutí nájemného pro paní Drábkovou (kosmetika) po dobu trvání hlučných a prašných prací v části domu před vstupem</li>
+          <li>Schválení domovního řádu dle nové směrnice MÍR č. 3/2025</li>
+          <li>Informace o aktuálně probíhajících projektech (balkóny, rozšíření zadního vstupu)</li>
+          <li>Diskuse, závěr</li>
+        </ol>
+
+        <div class="notice">
+          Spoluvlastníci jednotky zmocní společného zástupce, který bude vykonávat jejich práva vůči osobě odpovědné za správu domu; to platí i v případě manželů, kteří mají jednotku ve společném jmění. Zástupce vlastníka bytu předloží písemnou plnou moc. Podpisy na zmocnění či plné moci nemusí být úředně ověřeny.
+        </div>
+
+        <p class="footnote">Materiály ke shromáždění jsou k dispozici u členů výboru.</p>
+
+        <div class="signature-area">
+          <div class="signature-block">
+            <p>V Brně dne 13. dubna 2026</p>
+            <div class="signature-line"></div>
+            <div class="sign-name">Patrik Řehák</div>
+            <div class="signature-caption">předseda SVJ</div>
+          </div>
+          <div></div>
+        </div>
+
+        <div class="footer">Připraveno jako tisková HTML verze pro web / GitHub Pages.</div>
+      </div>
+    </article>
+  </div>
+</body>
+</html>

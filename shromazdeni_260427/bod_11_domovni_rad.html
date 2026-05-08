@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bod 11 – Domovní řád | SVJ Bzenecká 22, Brno</title>
+  <meta
+    name="description"
+    content="Podklad ke shromáždění vlastníků SVJ Bzenecká 22, Brno – domovní řád."
+  />
+  <meta name="theme-color" content="#2563eb" />
+
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --surface-soft: #f8fbff;
+      --text: #1f2937;
+      --muted: #667085;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --primary-soft: #eff6ff;
+      --border: #dbe4f0;
+      --ok-bg: #ecfdf5;
+      --ok-border: #bbf7d0;
+      --ok-text: #065f46;
+      --warn-bg: #fffbeb;
+      --warn-border: #fde68a;
+      --warn-text: #92400e;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --radius: 18px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #edf3ff 0px, var(--bg) 240px);
+      line-height: 1.65;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(219, 228, 240, 0.92);
+    }
+
+    .topbar-inner {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      color: #1e3a8a;
+      font-size: 0.98rem;
+      white-space: nowrap;
+    }
+
+    .brand-badge {
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, #60a5fa, #2563eb);
+      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+      flex: 0 0 auto;
+    }
+
+    .top-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .hero {
+      padding: 28px 0 18px;
+    }
+
+    .hero-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 30px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      gap: 24px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: #1e3a8a;
+      font-size: 0.84rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+      line-height: 1.18;
+      letter-spacing: -0.015em;
+    }
+
+    h1 {
+      margin-bottom: 12px;
+      font-size: clamp(1.9rem, 4.2vw, 3rem);
+    }
+
+    h2 {
+      margin-bottom: 14px;
+      font-size: clamp(1.25rem, 2vw, 1.55rem);
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .lead {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 68ch;
+      margin-bottom: 0;
+    }
+
+    .summary-grid {
+      display: grid;
+      gap: 12px;
+      align-content: start;
+    }
+
+    .summary-card {
+      background: linear-gradient(180deg, #ffffff 0%, var(--surface-soft) 100%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px 16px 14px;
+    }
+
+    .summary-label {
+      color: var(--muted);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .summary-value {
+      font-size: 1.04rem;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .section {
+      padding: 18px 0;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .card + .card {
+      margin-top: 18px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 22px;
+      align-items: start;
+    }
+
+    .note {
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin-top: 16px;
+      font-size: 0.97rem;
+      line-height: 1.55;
+    }
+
+    .note.ok {
+      background: var(--ok-bg);
+      border: 1px solid var(--ok-border);
+      color: var(--ok-text);
+    }
+
+    .note.warn {
+      background: var(--warn-bg);
+      border: 1px solid var(--warn-border);
+      color: var(--warn-text);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 11px 16px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      font-weight: 800;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .list li {
+      margin-bottom: 10px;
+    }
+
+    .section-nav {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .section-nav a {
+      display: block;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fff;
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .section-nav a:hover {
+      text-decoration: none;
+      background: var(--surface-soft);
+    }
+
+    .footer {
+      padding: 28px 0 42px;
+    }
+
+    .footer-card {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px 18px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .footer-card strong {
+      color: var(--text);
+    }
+
+    @media (max-width: 980px) {
+      .hero-card,
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        width: min(var(--max), calc(100% - 20px));
+      }
+
+      .hero-card,
+      .card {
+        padding: 20px;
+      }
+
+      .topbar-inner {
+        min-height: 60px;
+      }
+
+      .summary-grid,
+      .section-nav {
+        grid-template-columns: 1fr;
+      }
+
+      .top-actions {
+        width: 100%;
+      }
+
+      .top-actions .btn {
+        width: 100%;
+      }
+    }
+
+    @media print {
+      .topbar,
+      .top-actions,
+      .footer {
+        display: none !important;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      .card,
+      .hero-card,
+      .summary-card {
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        <div class="brand">
+          <span class="brand-badge" aria-hidden="true"></span>
+          <span>SVJ Bzenecká 22, Brno</span>
+        </div>
+
+        <div class="top-actions">
+          <button class="btn btn-primary" onclick="window.print()">Tisk / Uložit do PDF</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <div>
+            <span class="eyebrow">Podklad pro shromáždění vlastníků</span>
+            <h1>Domovní řád</h1>
+            <p class="lead">
+              Tento dokument upravuje podmínky a způsob užívání jednotek, nebytových prostor,
+              společných částí domu a jeho zařízení. Domovní řád je závazný pro všechny uživatele
+              jednotek a další osoby vstupující do domu.
+            </p>
+
+            <div class="note ok">
+              Domovní řád navazuje na obecnou právní úpravu a pravidla společenství vlastníků
+              a slouží k jasnějšímu vymezení pravidel souvisejících s bydlením a užíváním domu.
+            </div>
+          </div>
+
+          <div class="summary-grid">
+            <div class="summary-card">
+              <div class="summary-label">Účel dokumentu</div>
+              <div class="summary-value">Pravidla užívání domu, jednotek a společných částí</div>
+            </div>
+
+            <div class="summary-card">
+              <div class="summary-label">Závaznost</div>
+              <div class="summary-value">Pro všechny uživatele jednotek a další osoby vstupující do domu</div>
+            </div>
+
+            <div class="summary-card">
+              <div class="summary-label">Noční klid</div>
+              <div class="summary-value">22:00–6:00</div>
+            </div>
+
+            <div class="summary-card">
+              <div class="summary-label">Předpokládaná účinnost</div>
+              <div class="summary-value">Po schválení a vyvěšení v domě</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <h2>Obsah dokumentu</h2>
+          <div class="section-nav">
+            <a href="#a">A. Úvodní ustanovení</a>
+            <a href="#b">B. Základní pojmy</a>
+            <a href="#c">C. Práva a povinnosti</a>
+            <a href="#d">D. Čistota a pořádek</a>
+            <a href="#e">E. Společné části domu</a>
+            <a href="#f">F. Prádelny a sušárny</a>
+            <a href="#g">G. Vyvěšování a vykládání věcí</a>
+            <a href="#h">H. Klid v domě</a>
+            <a href="#i">I. Držení domácích zvířat</a>
+            <a href="#j">J. Závěrečná ustanovení</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="a">
+      <div class="container">
+        <div class="card">
+          <h2>A. Úvodní ustanovení</h2>
+          <p>
+            Domovní řád upravuje podmínky a způsob užívání jednotek, nebytových prostor,
+            společných částí domu a jeho zařízení.
+          </p>
+          <p>
+            Základní úprava vzájemných práv a povinností mezi nájemci a pronajímatelem,
+            vlastníky jednotek je stanovena zákonem č. 89/2012 Sb., občanský zákoník,
+            ve znění pozdějších předpisů.
+          </p>
+          <p>
+            Domovní řád upřesňuje a vyzdvihuje pravidla související s bydlením a užíváním
+            bytového domu a je závazný pro všechny uživatele jednotek (nebytových prostor)
+            v domě a pro další osoby vstupující do domu.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="b">
+      <div class="container">
+        <div class="card">
+          <h2>B. Základní pojmy</h2>
+          <ol class="list">
+            <li>Bytovým domem se rozumí stavba pro bydlení, ve které více než polovina podlahové plochy slouží bydlení.</li>
+            <li>Jednotkou se rozumí byt jako prostorově oddělená část domu a podíl na společných částech nemovité věci.</li>
+            <li>Nebytové jednotky jsou místnosti nebo soubory místností určené k jiným účelům než k bydlení.</li>
+            <li>Příslušenstvím k bytu jsou vedlejší místnosti a prostory určené k tomu, aby byly používány spolu s bytem.</li>
+            <li>Společné části domu jsou části nemovité věci, které mají podle své povahy sloužit vlastníkům jednotek společně.</li>
+            <li>Uživatelem jednotky se rozumí vlastník, nájemce, podnájemce, členové jejich domácností a další osoby, jimž je umožněn vstup do jednotky a do budovy.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="c">
+      <div class="container">
+        <div class="card">
+          <h2>C. Práva a povinnosti vyplývající z užívání jednotky (nebytového prostoru)</h2>
+          <ol class="list">
+            <li>Uživatelé jednotky jsou povinni dodržovat klid, pořádek a čistotu ve společných částech domu a vyvarovat se jednání porušujícího dobré mravy a veřejný pořádek.</li>
+            <li>Uživatel jednotky je při výkonu svých práv povinen dbát, aby v domě bylo vytvořeno prostředí umožňující ostatním uživatelům řádný výkon jejich práv.</li>
+            <li>Uživatel jednotky je povinen řádně užívat jednotku i společné části domu a po předchozím oznámení umožnit přístup do jednotky v případech uvedených v dokumentu, zejména při odstraňování havárií a při kontrole nebo výměně měřicích zařízení.</li>
+            <li>V případě nepřítomnosti delší než dva měsíce je uživatel povinen oznámit pověřené osobě nebo správci domu kontakt na osobu, která v případě potřeby zajistí přístup do jednotky.</li>
+            <li>V havarijních situacích je uživatel povinen sdělit aktuální telefonní a případně e-mailový kontakt na osobu, která umožní bez zbytečného prodlení vstup do jednotky.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="d">
+      <div class="container">
+        <div class="card">
+          <h2>D. Zajištění čistoty a pořádku v domě</h2>
+          <ol class="list">
+            <li>Vyklepávat koberce, rohožky a ostatní věci je možné pouze na místě k tomu určeném; je zakázáno vyhazovat odpadky a jiné předměty z oken a balkonů / lodžií.</li>
+            <li>Uživatel jednotky je povinen dbát na to, aby se předcházelo výskytu hmyzu v jeho jednotce a rozšiřování hmyzu v domě, a v případě výskytu tuto skutečnost neprodleně oznámit.</li>
+            <li>Je zakázáno krmení ptactva, především holubů, a také potkanů a jiných hlodavců, a to jak na balkonech a ve společných částech domu, tak v okolí domu.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="e">
+      <div class="container">
+        <div class="card">
+          <h2>E. Užívání společných částí (prostor a zařízení) domu</h2>
+          <ol class="list">
+            <li>Společné části domu se užívají jen k účelům odpovídajícím jejich povaze a určení.</li>
+            <li>Je zakázáno umisťovat ve společných částech domu předměty, které tam nepatří, zejména látky snadno vznětlivé, hořlavé nebo jinak nebezpečné, a dále je zakázáno kouření či užívání otevřeného ohně ve společných prostorách.</li>
+            <li>Ve společných částech domu je vyloučeno umístění motocyklů, elektrokol, elektrokoloběžek a jiných elektrických dopravních prostředků s bateriemi; vyloučeno je i jejich nabíjení.</li>
+            <li>Ve sklepních prostorách je nutné udržovat pořádek, neukládat nebezpečné látky a ponechat chodby mezi kójemi volné.</li>
+            <li>Hlavní uzávěry vody, plynu, elektrické rozvodny a rozvodné skříně musí být označeny.</li>
+            <li>Vstup na střechu domu, do předávací stanice tepla a do strojoven výtahů je dovolen pouze oprávněným osobám.</li>
+            <li>Ke komínovým dvířkům, hydrantům, hlavním uzávěrům, čistícím otvorům kanalizace a podobným zařízením musí být vždy zajištěn volný přístup.</li>
+            <li>Ve společných prostorách je nutné dbát na zhasínání světel a uzavírání oken ve sklepě při mrazu.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="f">
+      <div class="container">
+        <div class="card">
+          <h2>F. Prádelny, sušárny</h2>
+          <ol class="list">
+            <li>Způsob užívání prádelen a sušáren stanoví shromáždění vlastníků svým rozhodnutím, včetně případných paušálních poplatků za vodu a elektřinu.</li>
+            <li>Je-li v prádelně prováděno měření spotřeby vody a elektřiny, uživatel je povinen po ukončení praní provést zápis do evidenčního záznamníku a nechat jej ověřit pověřenou osobou.</li>
+            <li>Shromáždění vlastníků může rozhodnout i o tom, že prádelny či sušárny budou pronajaty.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="g">
+      <div class="container">
+        <div class="card">
+          <h2>G. Vyvěšování a vykládání věcí</h2>
+          <ol class="list">
+            <li>Bez písemného souhlasu nelze umísťovat na vnější konstrukce balkonů, lodžií, oken, fasády, střechy a anténní stožár jakákoliv zařízení a předměty.</li>
+            <li>Balkony a lodžie nesmějí být využívány jako skladiště; uložené věci musí být zabezpečeny proti pádu a při zalévání květin nesmí docházet ke stékání vody do nižších podlaží.</li>
+            <li>Pro instalaci vlastních venkovních antén, venkovních žaluzií a klimatizačních jednotek je třeba předchozí písemný souhlas statutárního orgánu společenství.</li>
+            <li>Uživatel jednotky se musí zdržet umisťování reklam a vývěsek na informační tabuli určenou pro sdělení statutárního orgánu společenství.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="h">
+      <div class="container">
+        <div class="card">
+          <h2>H. Klid v domě</h2>
+          <ol class="list">
+            <li>Každý uživatel jednotky je povinen užívat jednotku v souladu s dobrými mravy tak, aby nedocházelo k obtěžování ostatních osob v domě.</li>
+            <li>V době od <strong>22:00 do 6:00</strong> jsou všichni uživatelé jednotek povinni dodržovat noční klid. V této době není dovoleno provozovat činnosti působící hluk, zejména hrát na hudební nástroje, hlučně komunikovat nebo používat hlučné přístroje a spotřebiče.</li>
+            <li>Hlučné práce při rekonstrukci jednotky mohou být prováděny pouze v pracovní dny od <strong>8:00 do 18:00</strong> a v sobotu od <strong>8:00 do 12:00</strong>. Uživatel plánující takové práce má povinnost informovat ostatní uživatele domu vyvěšením informace na nástěnce. Finální počet dnů, s jakým předstihem musí být tato informace zveřejněna, bude určen a schválen na shromáždění vlastníků.</li>
+          </ol>
+
+          <div class="note warn">
+            Doporučujeme tuto lhůtu schválit společně s domovním řádem, aby bylo pravidlo po přijetí
+            jednoznačné a přímo použitelné v praxi.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="i">
+      <div class="container">
+        <div class="card">
+          <h2>I. Držení domácích zvířat</h2>
+          <ol class="list">
+            <li>V případě chovu domácích zvířat je uživatel jednotky povinen dbát, aby nedocházelo k obtěžování pachem, hlukem nebo znečišťováním společných částí a prostor domu.</li>
+            <li>Je zakázáno držení zvířat, která mohou ohrozit zdraví nebo život ostatních osob v domě, zejména živočichů jedovatých nebo jinak nebezpečných.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="j">
+      <div class="container grid-2">
+        <article class="card">
+          <h2>J. Závěrečná ustanovení</h2>
+          <ol class="list">
+            <li>Domovním řádem nejsou dotčena práva a povinnosti vyplývající z jiných obecně závazných předpisů a z pravidel přijatých shromážděním vlastníků jednotek.</li>
+            <li>Domovní řád byl podle textu dokumentu schválen usnesením shromáždění vlastníků jednotek ze dne <strong>27. 4. 2026</strong> a účinnosti má nabýt vyvěšením na nástěnce v bytovém domě.</li>
+          </ol>
+        </article>
+
+        <aside class="card">
+          <h2>Poznámka k použití na webu</h2>
+          <p>
+            Tato HTML verze je vhodná jako přehledný a tisknutelný dokument pro účely
+            zveřejnění na stránce ke shromáždění vlastníků.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-card">
+        <strong>SVJ Bzenecká 4166/22, Brno</strong><br />
+        Podklad ke shromáždění vlastníků – bod 11<br />
+        Domovní řád
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

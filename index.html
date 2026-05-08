@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SVJ Bzenecká 22, Brno</title>
+  <meta
+    name="description"
+    content="Hlavní informační web SVJ Bzenecká 22, Brno. Rozcestník na jednotlivé projekty, dokumenty a připravované stránky."
+  />
+  <style>
+    :root {
+      --bg: #eef3f8;
+      --surface: #ffffff;
+      --surface-soft: #f7fafc;
+      --text: #1f2937;
+      --muted: #5b6678;
+      --primary: #0f4c81;
+      --primary-dark: #0b3b64;
+      --primary-soft: #e6f0f8;
+      --line: #d6e0ea;
+      --shadow: 0 14px 36px rgba(15, 23, 42, 0.08);
+      --radius: 20px;
+      --max: 1140px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(15, 76, 129, 0.08), transparent 32%),
+        linear-gradient(180deg, #f8fbfe 0px, var(--bg) 260px);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.92);
+      border-bottom: 1px solid rgba(214, 224, 234, 0.95);
+      backdrop-filter: blur(10px);
+    }
+
+    .site-header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      min-height: 72px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--primary-dark);
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    .brand-mark {
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, #4c88b9, var(--primary));
+      box-shadow: 0 0 0 5px rgba(15, 76, 129, 0.12);
+      flex: 0 0 auto;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .hero {
+      padding: 36px 0 20px;
+    }
+
+    .hero-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+      gap: 26px;
+      padding: 34px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary-dark);
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 0.84rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+      line-height: 1.18;
+    }
+
+    h1 {
+      margin-bottom: 14px;
+      font-size: clamp(2.2rem, 4.8vw, 3.4rem);
+      color: #11263d;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+      color: #18314f;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .lead {
+      max-width: 62ch;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 12px 18px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--text);
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      transition: transform 0.12s ease, background-color 0.12s ease;
+      text-align: center;
+    }
+
+    .btn:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .facts {
+      display: grid;
+      gap: 12px;
+      align-content: start;
+    }
+
+    .fact {
+      padding: 16px;
+      background: linear-gradient(180deg, #ffffff 0%, var(--surface-soft) 100%);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+
+    .fact-label {
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
+    .fact-value {
+      font-size: 1.04rem;
+      font-weight: 700;
+    }
+
+    .section {
+      padding: 20px 0;
+    }
+
+    .section-card {
+      padding: 26px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .section-intro {
+      max-width: 72ch;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 20px;
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+
+    .project-card h3 {
+      margin-bottom: 0;
+      font-size: 1.15rem;
+      color: #18314f;
+    }
+
+    .project-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .status {
+      display: inline-flex;
+      align-self: flex-start;
+      padding: 6px 11px;
+      border-radius: 999px;
+      background: #edf6ee;
+      color: #165b31;
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .status.pending {
+      background: #fdf4e7;
+      color: #8b5c12;
+    }
+
+    .note {
+      padding: 16px 18px;
+      border: 1px solid #c8d8e8;
+      border-radius: 16px;
+      background: #f5faff;
+      color: #23405f;
+    }
+
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .footer {
+      padding: 28px 0 40px;
+    }
+
+    .footer-card {
+      padding: 16px 18px;
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      color: var(--muted);
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 0.94rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero-card,
+      .project-grid,
+      .columns {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .site-header-inner {
+        align-items: flex-start;
+        padding: 14px 0;
+        min-height: 0;
+        flex-direction: column;
+      }
+
+      .hero {
+        padding-top: 24px;
+      }
+
+      .hero-card,
+      .section-card {
+        padding: 22px;
+      }
+
+      .container {
+        width: min(var(--max), calc(100% - 20px));
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header-inner">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>SVJ Bzenecká 22, Brno</span>
+        </div>
+
+        <nav class="nav" aria-label="Hlavní navigace">
+          <a href="#projekty">Sekce webu</a>
+          <a href="#sprava">Správa webu</a>
+          <a href="#dalsi-kroky">Další kroky</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <div>
+            <span class="eyebrow">Hlavní informační web</span>
+            <h1>Jednotný web pro SVJ Bzenecká 22</h1>
+            <p class="lead">
+              Tato hlavní stránka postupně sjednocuje jednotlivé tematické weby SVJ do jednoho
+              přehledného celku. Aktuálně obsahuje existující sekce ke shromáždění vlastníků a k projektu
+              balkónů. Další obsah bude přibývat postupně podle rozhodnutí výboru.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projekty">Přejít na sekce webu</a>
+              <a class="btn" href="#dalsi-kroky">Zobrazit další kroky</a>
+            </div>
+
+            <div class="note" style="margin-top: 18px;">
+              Tento projekt je založen jako sjednocený základ pro budoucí oficiální web SVJ a bude dále
+              rozšiřován o nové sekce a podle potřeby i o neveřejnou aplikaci pro specifické agendy.
+            </div>
+          </div>
+
+          <div class="facts">
+            <div class="fact">
+              <div class="fact-label">Stav</div>
+              <div class="fact-value">Výchozí sjednocení dvou existujících webů</div>
+            </div>
+
+            <div class="fact">
+              <div class="fact-label">Aktuální sekce</div>
+              <div class="fact-value">Shromáždění 27. 4. 2026, Balkóny</div>
+            </div>
+
+            <div class="fact">
+              <div class="fact-label">Připravuje se</div>
+              <div class="fact-value">Analýza budoucího webu a řešení pro přístupový systém</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projekty">
+      <div class="container">
+        <div class="section-card">
+          <h2>Sekce webu</h2>
+          <p class="section-intro">
+            Níže jsou odkazy na aktuálně převzaté části webu. Tyto sekce zůstávají zatím samostatné,
+            ale nově jsou zastřešeny jednou hlavní stránkou a jedním pracovním projektem.
+          </p>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <span class="status">Hotovo</span>
+              <h3>Shromáždění vlastníků 27. 4. 2026</h3>
+              <p>
+                Pozvánka, formuláře a zveřejněné podklady ke shromáždění vlastníků.
+              </p>
+              <div>
+                <a class="btn btn-primary" href="shromazdeni_260427/index.html">Otevřít sekci</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <span class="status">Hotovo</span>
+              <h3>Balkóny</h3>
+              <p>
+                Přehled častých dotazů a odpovědí k projektu balkónů a přístaveb.
+              </p>
+              <div>
+                <a class="btn btn-primary" href="balkony/index.html">Otevřít sekci</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <span class="status pending">Připravuje se</span>
+              <h3>Přístupový systém</h3>
+              <p>
+                Další navazující sekce bude věnovaná přístupovému systému včetně sběru požadavků,
+                pokud se pro to zvolí vhodná technologie.
+              </p>
+              <div>
+                <a class="btn" href="#dalsi-kroky">Viz další kroky</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sprava">
+      <div class="container">
+        <div class="section-card">
+          <h2>Správa webu</h2>
+          <div class="columns">
+            <div>
+              <p>
+                Pracovní projekt je založen tak, aby bylo možné navázat na dosavadní weby, ukládat průběžná
+                rozhodnutí do repozitáře a později z něj vytvořit jeden hlavní web publikovaný přes GitHub Pages.
+              </p>
+            </div>
+
+            <div>
+              <p>
+                Součástí projektu je i pracovní dokumentace, aby bylo možné pokračovat v návrhu webu i tehdy,
+                když bude na projektu pracovat jiný člen výboru nebo se bude rozhodování vracet po delší době.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="dalsi-kroky">
+      <div class="container">
+        <div class="section-card">
+          <h2>Další kroky</h2>
+          <p class="section-intro">
+            Další fáze nebude technická implementace naslepo, ale pečlivá analýza toho, co má web SVJ
+            do budoucna umět, co má být veřejné a co už vyžaduje neveřejnou aplikaci nebo databázi.
+          </p>
+
+          <div class="note">
+            Následující diskuse se zaměří na očekávání od budoucího webu, správu obsahu, případné formuláře,
+            neveřejné části a na výběr technologie podle reálných potřeb a rozpočtových omezení.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-card">
+        <strong>SVJ Bzenecká 22, Brno</strong><br />
+        Výchozí rozcestník sjednoceného webu a pracovní základ pro další rozvoj.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
