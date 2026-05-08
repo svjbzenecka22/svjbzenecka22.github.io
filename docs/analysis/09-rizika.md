@@ -54,6 +54,23 @@ Popis: Za jednu jednotku může odpovědět více osob, například vlastník, s
 
 Mitigace: Před spuštěním sběru stanovit pravidlo jedné finální odpovědi za jednotku, včetně pravidla pro změny a spory.
 
+## Riziko: sdílený přístup za domácnost
+
+Popis: Pokud domácnost, manželé, rodina nebo spoluvlastníci používají jeden sdílený login nebo přístup za jednotku,
+systém nemusí spolehlivě určit, která konkrétní osoba změnu provedla.
+
+Mitigace: Pro první agendu je sdílený přístup přijatelný, protože cílem je jedna finální odpověď za jednotku. Pro
+budoucí citlivější agendy, dokumenty, souhlasy nebo hlasování je nutné znovu posoudit požadavky na osobní identitu,
+auditní stopu a případné samostatné účty jednotlivých osob.
+
+## Riziko: kontaktní údaj jako identifikátor
+
+Popis: E-mail nebo telefon domácnosti se může změnit, může být sdílený více osobami nebo se může objevit u více agend.
+Pokud by sloužil jako jediný identifikátor jednotky, mohlo by dojít k chybám při přiřazení odpovědi nebo komunikace.
+
+Mitigace: Primární e-mail a telefon používat jako kontaktní a případně přístupové údaje, ale stabilním datovým klíčem
+má zůstat bytová jednotka.
+
 ## Riziko: nejasné potvrzení doplatku
 
 Popis: Partaj nemusí rozumět výši doplatku nebo platebním pokynům, zejména pokud nebude jasně zobrazen finální výpočet, částka a variabilní symbol.

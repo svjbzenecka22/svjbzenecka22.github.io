@@ -41,6 +41,7 @@ Požadavky je nutné potvrdit po zodpovězení prioritních otázek v byznys ana
 ### Role v první agendě
 
 - Odpovídající osoba: vyplňuje požadavek za jednotku.
+- Domácnost nebo jednotkový přístup: pracovní model, kdy přístup prakticky reprezentuje domácnost nebo bytovou jednotku, ne ověřenou identitu každé osoby.
 - Výbor: připravuje zadání, sleduje stav odpovědí, řeší výjimky a exportuje data.
 - Dodavatel: dostává pouze finální souhrn od výboru, nikoliv přímý přístup do interní evidence.
 
@@ -57,6 +58,10 @@ Požadavky je nutné potvrdit po zodpovězení prioritních otázek v byznys ana
 - U spoluvlastnictví stačí jedna odpověď za jednotku.
 - Platební komunikace se má u bytů vlastněných fyzickou osobou vést na kontakt evidovaný u jednotky, typicky na vlastníka, ne automaticky na osobu, která odpověď zadala.
 - U nájemních bytů ve vlastnictví Stavebního bytového družstva Mír má platební komunikace směřovat na nájemníky.
+- Běžný přístup do portálu mají mít vlastníci i nájemníci nebo uživatelé bytů; SBD Mír jako formální vlastník družstevních bytů nemá mít běžný přístup do agend jednotlivých domácností.
+- U jednotky nebo domácnosti má být evidován primární kontaktní e-mail a hlavní kontaktní telefon.
+- Stabilním identifikátorem má být jednotka, nikoliv samotný e-mail nebo telefon.
+- Administrátorský přístup mají mít všichni tři členové výboru.
 - Veřejná informační stránka nesmí zobrazovat odpovědi jednotlivých jednotek.
 - Standardní způsob podání odpovědi je online formulář; náhradní neonline postup není požadavkem první agendy.
 
@@ -118,6 +123,11 @@ Pokud MVP nebude mít obecnou portálovou identitu s rolemi a přístupy, mají 
 - jméno odpovídající osoby,
 - kontaktní údaj pro řešení nejasností,
 - vztah odpovídající osoby k jednotce.
+
+Pro pracovní model domácnosti nebo jednotky mají být evidovány také hlavní kontakty pro komunikaci výboru:
+
+- primární kontaktní e-mail domácnosti nebo jednotky,
+- hlavní kontaktní telefon domácnosti nebo jednotky.
 
 Volitelné položky podle rozhodnutí výboru:
 

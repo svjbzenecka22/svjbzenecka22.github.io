@@ -194,3 +194,15 @@ Provozní rozpočet zatím není pevně určen; pracovní přání je držet pro
 pokud se ukáže, že je to reálné. Před technologickým rozhodnutím je vhodné porovnat vlastní nízkonákladové řešení i
 hotové portály pro SVJ nebo bytové domy. Prioritou má být kombinace rychlého spuštění první agendy a rozumné
 dlouhodobé architektury, bez stavby zbytečně rozsáhlého ideálního řešení.
+
+## Průběžný záznam 2026-05-09: uživatelé a oprávnění
+
+Byl doplněn pracovní brainstorming k uživatelům a oprávněním. Portál má počítat s přístupem vlastníků i nájemníků nebo
+uživatelů bytů. U bytů ve vlastnictví SBD Mír má být běžným uživatelem portálu nájemník nebo uživatel bytu; SBD Mír
+nemá mít běžný přístup do agend jednotlivých domácností, případně jen omezený přístup podle budoucí potřeby.
+
+Jako pracovní model se jeví domácnost nebo jednotka s primárním kontaktním e-mailem a hlavním kontaktním telefonem.
+Tyto kontakty jsou důležité pro komunikaci a mohou pomoci s přístupem, ale stabilním identifikátorem má zůstat bytová
+jednotka. Sdílený přístup v rámci domácnosti nebo rodiny je pro první fázi přijatelný, ale u budoucích citlivějších
+agend bude potřeba znovu posoudit osobní identitu a auditní stopu. Administrátorský přístup mají mít všichni tři
+členové výboru.

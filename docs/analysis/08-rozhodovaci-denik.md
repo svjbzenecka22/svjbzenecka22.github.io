@@ -176,3 +176,18 @@ Důvod:
 - reálnost rozpočtu má vyplynout z technické a nákladové analýzy,
 - před výběrem technologie je vhodné porovnat vlastní nízkonákladové řešení s hotovými portály pro SVJ nebo bytové domy,
 - první agenda má být spuštěna rychle, ale s vyřešenými hlavními architektonickými body, aby nevznikla slepá ulička.
+
+## 2026-05-09: pracovní model uživatelů a oprávnění
+
+Rozhodnutí: portál má pracovně počítat s přístupem vlastníků i nájemníků nebo uživatelů bytů. Pro první návrh se jako
+praktičtější než osobní účet každé osoby jeví model domácnosti nebo jednotky s primárním kontaktním e-mailem a hlavním
+kontaktním telefonem.
+
+Důvod:
+
+- u družstevních bytů je formálním vlastníkem SBD Mír, ale praktickým uživatelem agend je nájemník nebo uživatel bytu,
+- SBD Mír nemá mít běžný přístup do agend jednotlivých domácností; případný přístup má být jen omezený podle budoucí potřeby,
+- u spoluvlastnictví v domě jde typicky o členy rodiny, takže sdílený přístup za domácnost nebo jednotku je pro první fázi přijatelný,
+- primární e-mail a telefon jsou důležité kontakty, ale stabilním datovým klíčem má zůstat jednotka,
+- všichni tři členové výboru mají mít administrátorský přístup,
+- model sdíleného přístupu je potřeba později posoudit z hlediska bezpečnosti a auditní stopy.

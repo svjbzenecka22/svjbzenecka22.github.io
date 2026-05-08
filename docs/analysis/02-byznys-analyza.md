@@ -19,9 +19,25 @@ Potřebuje přístup k informacím, dokumentům, výzvám, formulářům a pří
 Může potřebovat praktické informace, objednávku čipů, volbu telefonu nebo oznámení provozních problémů.
 Je nutné rozhodnout, ve kterých agendách smí jednat samostatně a kde je vyžadováno potvrzení vlastníka.
 
+Pracovní závěr z 2026-05-09: portál má počítat s přístupem vlastníků i nájemníků nebo uživatelů bytů. U bytů ve
+vlastnictví Stavebního bytového družstva Mír je formálním vlastníkem SBD Mír, ale běžný portálový přístup mají mít
+především nájemníci nebo uživatelé bytu. Případný přístup SBD Mír má být nanejvýš omezený a navázaný na konkrétní
+budoucí potřebu, nikoliv běžný přístup do agend jednotlivých domácností.
+
+Pro první návrh se jako praktičtější než osobní účty všech osob jeví model domácnosti nebo jednotky. Každá domácnost
+nebo jednotka má mít primární kontaktní e-mail a hlavní kontaktní telefon. Tyto údaje slouží pro komunikaci a mohou
+pomoci s přístupem, ale stabilním datovým klíčem má zůstat bytová jednotka, protože e-mail nebo telefon se mohou
+změnit a mohou být sdílené více osobami.
+
+Pokud si přístupové údaje v rámci domácnosti sdílí manželé, rodina nebo spoluvlastníci, je to pro první fázi
+přijatelné. U jednotek s více spoluvlastníky se zatím nepředpokládá samostatný účet pro každého spoluvlastníka;
+typicky může jít o jeden sdílený login nebo přístup za domácnost či jednotku. Tento model je potřeba později posoudit
+z hlediska bezpečnosti, auditní stopy a budoucích funkcí portálu.
+
 ### Výbor SVJ
 
 Potřebuje publikovat informace, sbírat odpovědi, kontrolovat stav agend, exportovat data a mít přehled o rizicích.
+Administrátorský přístup mají mít všichni tři členové výboru.
 
 ### Dodavatel
 
@@ -100,6 +116,8 @@ a požadované kvality exportů.
 - Jednotka: byt nebo jiný prostor, ke kterému se objednávka vztahuje.
 - Partaj: praktické označení domácnosti nebo skupiny osob užívajících jednotku; v analýze může zahrnovat vlastníka,
   spoluvlastníky, nájemníka nebo jiného uživatele bytu.
+- Domácnost: pracovní označení pro praktickou skupinu osob užívajících jednotku a sdílejících jeden hlavní přístup nebo
+    primární kontaktní údaje.
 - Oprávněná osoba: osoba, které SVJ dovolí vyplnit finální odpověď za jednotku.
 - Finální odpověď: poslední platná odpověď za jednotku použitá pro objednávku a doplatek.
 - Uzávěrka: datum a čas, po kterém už výbor odpovědi běžně nemění bez individuální domluvy.

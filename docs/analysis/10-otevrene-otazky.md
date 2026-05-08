@@ -30,6 +30,20 @@ Pracovní odpovědi z 2026-05-08:
 4. Jak se řeší jednotka s více spoluvlastníky?
 5. Kdo bude mít administrátorský přístup za výbor?
 
+Pracovní odpovědi z 2026-05-09:
+
+- Přístup do portálu mají mít vlastníci i nájemníci nebo uživatelé bytů.
+- U bytů ve vlastnictví Stavebního bytového družstva Mír je formálním vlastníkem SBD Mír, ale běžný portálový přístup mají mít především nájemníci nebo uživatelé bytu.
+- SBD Mír nemá mít běžný přístup do portálu jako jednotlivá domácnost; případný přístup SBD Mír by měl být jen omezený a podle konkrétní budoucí potřeby.
+- Pracovní model není čistě osobní účet každé osoby. Jako praktičtější se zatím jeví model domácnosti nebo jednotky.
+- Každá domácnost nebo jednotka má mít primární kontaktní e-mail a hlavní kontaktní telefon, na které se výbor může obracet.
+- Primární e-mail a telefon mohou sloužit jako praktický kontaktní a přístupový údaj, ale stabilním datovým klíčem má zůstat bytová jednotka, protože kontakty se mohou změnit nebo sdílet mezi více osobami.
+- Pokud si přístupové údaje v rámci domácnosti sdílí manželé, rodina nebo spoluvlastníci, je to pro první fázi přijatelné.
+- Oprávnění se má v první fázi ověřovat prakticky přes přístup za jednotku nebo domácnost, ne přes detailní ověření totožnosti každé osoby.
+- U jednotky s více spoluvlastníky se zatím nepředpokládá samostatný účet pro každého spoluvlastníka; typicky může jít o jeden sdílený login nebo přístup pro danou domácnost či jednotku.
+- Administrátorský přístup za výbor mají mít všichni tři členové výboru.
+- Tento model je pracovní a má být dále posouzen z hlediska bezpečnosti, přehlednosti, auditní stopy a budoucího rozšíření portálu.
+
 ## Otázky k přístupovému systému
 
 1. Má být jedna finální odpověď za byt?
