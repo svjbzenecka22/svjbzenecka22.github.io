@@ -206,3 +206,14 @@ Tyto kontakty jsou důležité pro komunikaci a mohou pomoci s přístupem, ale 
 jednotka. Sdílený přístup v rámci domácnosti nebo rodiny je pro první fázi přijatelný, ale u budoucích citlivějších
 agend bude potřeba znovu posoudit osobní identitu a auditní stopu. Administrátorský přístup mají mít všichni tři
 členové výboru.
+
+## Průběžný záznam 2026-05-09: uzavření otázek první agendy
+
+Byla zkontrolována sekce otevřených otázek k první agendě přístupového systému. Samostatný krátký seznam obecných
+otázek k přístupovému systému byl odstraněn, protože už jen duplicitně shrnoval otázky, které jsou níže rozpracované
+a pracovně zodpovězené v částech pravidlo odpovědi za jednotku, změny a uzávěrka, rozsah údajů, čipy a telefony,
+doplatky a potvrzení, exporty a kontrola a otázky pro dodavatele.
+
+Z pohledu spuštění sběru počtu čipů a volby bytového telefonu už tyto otázky nejsou považovány za blokující otevřené
+body. Dále zůstává potřeba potvrdit jen navazující provozní a technické detaily při výběru technologie, nastavení
+uchování dat a finálním sladění s dodavatelem.

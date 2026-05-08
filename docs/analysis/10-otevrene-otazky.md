@@ -44,21 +44,11 @@ Pracovní odpovědi z 2026-05-09:
 - Administrátorský přístup za výbor mají mít všichni tři členové výboru.
 - Tento model je pracovní a má být dále posouzen z hlediska bezpečnosti, přehlednosti, auditní stopy a budoucího rozšíření portálu.
 
-## Otázky k přístupovému systému
-
-1. Má být jedna finální odpověď za byt?
-2. Má být možné odpověď po odeslání změnit?
-3. Jaký je termín uzávěrky?
-4. Jaký je povolený rozsah počtu čipů?
-5. Mají se sbírat i kontaktní údaje osoby, která odpověď vyplnila?
-6. Má uživatel potvrdit souhlas s doplatkem?
-7. Bude doplatek stejný pro všechny varianty, nebo se bude lišit podle telefonu a počtu čipů?
-8. Jaký export potřebuje dodavatel?
-9. Jaký export potřebuje výbor pro kontrolu plateb?
-
 ## Prioritní otázky před výběrem technologie
 
-Tyto otázky je vhodné zodpovědět dříve, než se bude vybírat konkrétní nástroj nebo služba.
+Tyto otázky byly pro první agendu pracovně zodpovězeny. Z pohledu spuštění sběru počtu čipů a volby bytového telefonu
+už nejde o blokující otevřené otázky; zůstávají pouze body k pozdějšímu potvrzení při výběru technologie, právním
+nastavení uchování dat a finálním sladění s dodavatelem.
 
 ### Pravidlo odpovědi za jednotku
 
