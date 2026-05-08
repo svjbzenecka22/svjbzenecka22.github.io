@@ -148,3 +148,17 @@ Důvod:
 - sběr se spustí po publikování webu nebo portálu s evidencí odpovědí,
 - uzávěrka zůstává 2026-05-24,
 - kontrola úplnosti proběhne minimálně 2026-05-19 formou avíza jednotkám bez odpovědi a 2026-05-24 jako finální kontrola.
+
+## 2026-05-08: dokumenty a elektronické hlasování
+
+Rozhodnutí: dokumenty a hlasování se nebudou pro první agendu přístupového systému detailně rozpracovávat. Elektronické
+hlasování není požadavkem první fáze.
+
+Důvod:
+
+- pro první agendu je prioritou sběr počtu čipů a volby typu telefonu,
+- současné stanovy SVJ nejsou kompatibilní s elektronickým hlasováním,
+- výbor pracuje na změně stanov, kterou chce řešit na nejbližším shromáždění,
+- u budoucího elektronického hlasování nebo souhlasů bude potřeba auditní stopa a právně potvrzená doba uchování,
+- dokumenty bude do budoucna potřeba rozdělit minimálně na veřejné a neveřejné po přihlášení,
+- otázka dokumentů vázaných jen ke konkrétní jednotce zatím zůstává otevřená.

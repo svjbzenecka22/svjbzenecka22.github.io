@@ -170,3 +170,14 @@ Standardní cestou odpovědi má být pouze online formulář. Samostatná evide
 první agendu neplánuje. Sběr bude spuštěn po publikování příslušné verze webu nebo portálu. Uzávěrka zůstává
 2026-05-24. Kontroly úplnosti proběhnou nejméně 2026-05-19 formou avíza neodpovězeným jednotkám a 2026-05-24 jako
 finální kontrola chybějících odpovědí a zjevných nesrovnalostí.
+
+## Průběžný záznam 2026-05-08: dokumenty a hlasování
+
+Byly doplněny pracovní odpovědi k dokumentům a hlasování. Tato oblast se nyní nemá rozpracovávat do detailu, protože
+není součástí první agendy přístupového systému. Pro budoucí portál se má počítat s veřejnými dokumenty, neveřejnými
+dokumenty po přihlášení pro vlastníky a uživatele bytů a případně s dokumenty vázanými ke konkrétní jednotce; poslední
+varianta zatím zůstává otevřená.
+
+Elektronické hlasování není požadavkem první fáze. Současné stanovy SVJ s ním nejsou kompatibilní, ale výbor pracuje
+na jejich změně. U budoucího elektronického hlasování nebo souhlasů bude pravděpodobně nutná auditní stopa a dobu
+uchování bude potřeba ověřit právně, pravděpodobně s právníkem SBD Mír.

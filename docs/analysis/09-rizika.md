@@ -20,9 +20,21 @@ Mitigace: Před sběrem požadavků definovat pravidlo pro jednu finální odpov
 
 ## Riziko: online hlasování bez právního posouzení
 
-Popis: Hlasování SVJ může mít pravidla daná zákonem, stanovami a povahou rozhodnutí.
+Popis: Hlasování SVJ může mít pravidla daná zákonem, stanovami a povahou rozhodnutí. Momentálně platné stanovy SVJ
+nejsou kompatibilní s elektronickým hlasováním.
 
-Mitigace: Hlasování řešit až samostatně, s ověřením právních a organizačních podmínek.
+Mitigace: Elektronické hlasování neřešit jako součást první agendy. Nejprve změnit stanovy a samostatně ověřit právní,
+organizační a technické podmínky. U budoucího elektronického hlasování nebo souhlasů počítat s auditní stopou a s
+právně potvrzenou dobou uchování.
+
+## Riziko: nejasné členění neveřejných dokumentů
+
+Popis: Budoucí portál může obsahovat veřejné dokumenty, dokumenty pro přihlášené vlastníky a uživatele bytů a případně
+dokumenty určené jen konkrétní jednotce. Bez jasného členění může dojít ke zpřístupnění dokumentu nesprávnému okruhu
+osob.
+
+Mitigace: Při návrhu dokumentové části předem rozlišit veřejné dokumenty, neveřejné dokumenty pro dům a případné
+jednotkové dokumenty. Neveřejné a jednotkové dokumenty neukládat do veřejného repozitáře ani veřejné části webu.
 
 ## Riziko: free tarif přestane stačit
 

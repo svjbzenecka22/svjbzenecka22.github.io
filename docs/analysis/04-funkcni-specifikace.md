@@ -23,7 +23,13 @@ Pracovní kostra. Bude doplněna po dokončení byznys analýzy.
 - zobrazit obsah podle role nebo jednotky,
 - ukládat odpovědi a souhlasy,
 - umožnit výboru export dat,
-- omezit přístup k neveřejným dokumentům.
+- omezit přístup k neveřejným dokumentům,
+- rozlišit veřejné dokumenty, dokumenty pro přihlášené vlastníky a uživatele bytů a případně dokumenty vázané ke konkrétní jednotce,
+- elektronické hlasování řešit až po změně stanov a samostatném právním a procesním ověření,
+- u budoucích elektronických souhlasů nebo hlasování počítat s auditní stopou a pravidly uchování.
+
+Poznámka: dokumenty a hlasování nejsou požadavkem první agendy přístupového systému. Tato oblast má zůstat zatím
+rámcově evidovaná pro budoucí rozvoj portálu.
 
 ## První agenda: přístupový systém
 

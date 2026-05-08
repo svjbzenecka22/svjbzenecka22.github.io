@@ -44,11 +44,22 @@ Možné oblasti:
 Možné oblasti:
 
 - dokumenty určené pouze vlastníkům,
+- dokumenty určené vlastníkům a uživatelům bytů v domě po přihlášení,
+- případně dokumenty vázané ke konkrétní jednotce nebo uživateli systému,
 - sběr požadavků a souhlasů,
 - správa objednávek za jednotky,
 - přehled platebních pokynů,
 - hlasování nebo ankety,
 - evidence odpovědí a exporty pro výbor.
+
+Pracovní závěr z 2026-05-08: oblast dokumentů a hlasování není potřeba pro první agendu přístupového systému dále
+detailně rozpracovávat. Pro budoucí portál je vhodné počítat alespoň s rozlišením veřejných dokumentů a neveřejných
+dokumentů dostupných po přihlášení vlastníkům a uživatelům bytů v domě. Zatím není rozhodnuto, zda bude potřeba také
+doručování dokumentů jen do sekce konkrétní jednotky nebo konkrétního uživatele systému.
+
+Elektronické hlasování není požadavkem první fáze. Momentálně platné stanovy SVJ nejsou kompatibilní s elektronickým
+hlasováním, ale výbor pracuje na jejich změně. U budoucího elektronického hlasování nebo souhlasů je nutné počítat s
+auditní stopou a s právně potvrzenou dobou uchování, kterou je potřeba ověřit pravděpodobně s právníkem SBD Mír.
 
 ## První proces: přístupový systém
 

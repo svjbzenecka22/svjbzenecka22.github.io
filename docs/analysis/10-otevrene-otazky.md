@@ -208,3 +208,14 @@ Pracovní odpovědi z 2026-05-08:
 3. Má web jen podporovat přípravu hlasování, nebo i samotné hlasování?
 4. Jsou stanovy SVJ kompatibilní s elektronickým rozhodováním?
 5. Bude potřeba uchovávat auditní stopu souhlasů a hlasování?
+
+Pracovní odpovědi z 2026-05-08:
+
+- Tuto oblast není potřeba v tuto chvíli rozpracovávat do většího detailu; stačí vědomě držet směr, že dokumenty a případné hlasování mohou být budoucí součástí portálu.
+- Elektronické hlasování není požadavkem pro první fázi ani pro první agendu přístupového systému.
+- Momentálně platné stanovy SVJ nejsou kompatibilní s elektronickým hlasováním.
+- Výbor pracuje na změně stanov tak, aby bylo možné na nejbližším shromáždění schválit úpravu umožňující elektronické rozhodování nebo navazující digitální procesy.
+- U elektronického hlasování nebo souhlasů bude pravděpodobně nutná auditní stopa a uchování relevantních podkladů.
+- Konkrétní dobu uchování auditní stopy a souvisejících podkladů je potřeba ověřit právně, pravděpodobně s právníkem SBD Mír.
+- Dokumenty budou rozdělené minimálně na veřejné dokumenty a neveřejné dokumenty dostupné po přihlášení vlastníkům a uživatelům bytů v domě.
+- Zatím není rozhodnuto, zda budou existovat také dokumenty distribuované jen do sekce konkrétního bytu pro konkrétního uživatele systému.
