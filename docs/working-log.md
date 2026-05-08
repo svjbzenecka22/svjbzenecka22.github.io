@@ -149,3 +149,12 @@ a lokální obrázky ve složce `docs/analysis/assets/telefony/`.
 Podklady obsahují čtyři varianty: základní audiotelefon, handsfree audiotelefon, videotelefon 4,3" a videotelefon 7".
 U obrázků je potřeba před veřejným publikováním ověřit možnost použití produktových obrázků ABB nebo použít podklady
 výslovně poskytnuté dodavatelem.
+
+## Průběžný záznam 2026-05-08: podklad RFID čipu
+
+Byl doplněn pracovní podklad k černé RFID klíčence pro přístupový systém. Vznikl dokument
+`docs/analysis/13-cipy.md`, datový soubor `docs/analysis/data/cipy.csv` a lokální obrázek
+`docs/analysis/assets/cipy/rfid-klicenka-cerna.jpg`.
+
+Pro agendu SVJ zůstává pracovní cena čipu 44 Kč za kus. U obrázku je stejně jako u telefonů potřeba před veřejným
+publikováním ověřit možnost použití produktové fotografie nebo použít podklady výslovně poskytnuté dodavatelem.

@@ -28,11 +28,14 @@ Dokumenty mají být praktické, stručné a použitelné pro výbor i pro pří
 - `10-otevrene-otazky.md` - otázky pro výbor a vlastníky před návrhem řešení
 - `11-pracovni-prompt.md` - opakovaně použitelný prompt pro další analytické kroky
 - `12-telefonni-varianty.md` - pracovní podklad s variantami bytových telefonů, cenami a obrázky
+- `13-cipy.md` - pracovní podklad k RFID čipu, ceně a obrázku
 
 ## Datové a obrazové podklady
 
 - `data/telefonni-varianty.csv` - strojově čitelný seznam telefonních variant pro pozdější formulář nebo import
+- `data/cipy.csv` - strojově čitelný podklad k čipu pro pozdější formulář nebo import
 - `assets/telefony/` - pracovní produktové obrázky telefonních variant
+- `assets/cipy/` - pracovní produktový obrázek RFID čipu
 
 ## Pracovní pravidla
 

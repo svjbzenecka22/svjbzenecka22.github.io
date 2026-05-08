@@ -130,11 +130,12 @@ vztah k jednotce přednostně odvozovat z přihlášení nebo profilu, nikoliv v
 - Hodnota 0 čipů je chyba, protože by znamenala nefunkční přístup uživatele jednotky do domu nebo společných částí.
 - Každý objednaný čip se platí; není základní počet čipů zahrnutý v ceně.
 - Cena jednoho čipu je 44 Kč.
+- Podklad k čipu je veden v dokumentu `13-cipy.md` a v datovém souboru `data/cipy.csv`.
 - Všechny typy bytového telefonu jsou dostupné pro všechny jednotky.
 - Základní varianta telefonu bez doplatku má mít doplatek 0 Kč.
 - Systém nemá předvybírat doporučenou variantu telefonu podle doporučení výboru nebo dodavatele.
 - Názvy a ceny variant telefonů mají odpovídat aktuální nabídce nebo ceníku dodavatele.
-- Podklady k telefonům mají být ideálně vedeny jako tabulka variant s názvem, cenou, stručným popisem a odkazem na obrázek.
+- Podklady k telefonům jsou vedeny v dokumentu `12-telefonni-varianty.md` a v datovém souboru `data/telefonni-varianty.csv`.
 
 ### Pravidla pro doplatky a platby
 

@@ -114,14 +114,16 @@ celým číslem. Hodnota 0 čipů má být považována za chybu, protože by zn
 nedostane do domu nebo některých společných částí. Každý objednaný čip se platí; není určen základní počet čipů
 zahrnutý v ceně. Cena jednoho čipu je 44 Kč.
 
+Pracovní podklad k čipu, včetně obrázku a zdroje, je veden v dokumentu `13-cipy.md` a v datovém souboru
+`data/cipy.csv`.
+
 Všechny typy bytového telefonu mají být dostupné pro všechny jednotky. Varianta bez doplatku se má řešit jako
 základní verze telefonu s doplatkem 0 Kč, nikoliv jako doporučená volba výboru. Výbor ani dodavatel nemají pro
 nerozhodnuté partaje doporučenou výchozí variantu telefonu. Konkrétní názvy a ceny variant je potřeba držet podle
 aktuální nabídky nebo ceníku dodavatele.
 
-Přesné typy bytových telefonů, jejich obrázky a ceny jsou k dispozici a mají být doplněny do podkladů. Nejvhodnější
-forma je tabulka s názvem varianty, cenou, stručným popisem a odkazem na obrázek; obrázky je vhodné uložit jako
-samostatné soubory.
+Přesné typy bytových telefonů, jejich obrázky a ceny jsou vedeny v dokumentu `12-telefonni-varianty.md` a v datovém
+souboru `data/telefonni-varianty.csv`.
 
 ### Doplatky a kontrola plateb
 
