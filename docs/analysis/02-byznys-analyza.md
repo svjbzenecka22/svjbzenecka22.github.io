@@ -179,29 +179,39 @@ za jednotku před uzávěrkou. Tím se snižuje riziko duplicitních odpovědí 
 
 Změna odpovědi do uzávěrky má být samoobslužná. Po uzávěrce už nemá být změna dostupná v běžné uživatelské části
 systému. Osoba, která potřebuje změnu po uzávěrce, musí kontaktovat výbor individuálně, například e-mailem,
-telefonicky nebo přes WhatsApp. Výbor případnou výjimku posoudí a pokud ji přijme, zapíše nebo upraví odpověď
-administrativně ze své strany. Jednotky bez odpovědi budou po uzávěrce kontaktovány e-mailem.
+telefonicky nebo přes WhatsApp. Výbor případnou výjimku posoudí a pokud ji přijme, evidovanou odpověď upraví
+administrativně ze své strany. Standardní způsob podání odpovědi je online formulář; samostatná evidence odpovědí
+přijatých mimo online formulář se pro první agendu neplánuje.
 
 Pokud to nebude technicky příliš náročné, je vhodné, aby systém uměl výboru připravit seznam neodpovězených jednotek
-včetně evidovaných kontaktů nebo přímo vygenerovat e-mail pro připomenutí. Praktickým zlepšením by bylo také avízo
-před uzávěrkou, aby jednotky, které na agendu zapomněly, měly ještě čas odpověď promyslet a odeslat.
+včetně evidovaných kontaktů nebo přímo vygenerovat e-mail pro připomenutí. Avízo jednotkám bez odpovědi má výbor
+znovu odeslat 2026-05-19. Finální kontrola proběhne 2026-05-24; při ní se mají řešit jednotky bez odpovědi a zjevné
+nesrovnalosti, například neplatná hodnota počtu čipů, neobvykle vysoký počet čipů nebo jiná podezřelá hodnota.
+Dotčené partaje bude výbor individuálně kontaktovat.
+
+Před spuštěním sběru není potřeba samostatné oficiální komunikační kolo, protože vlastníci a uživatelé bytů byli s
+problematikou seznámeni na shromáždění dne 2026-04-27. Není potřeba zvlášť vysvětlovat samotnou existenci doplatku;
+v komunikaci může být jen stručně uvedeno, že dodavatel uzavře jednu smlouvu se SVJ jako celkem, nikoliv samostatné
+smlouvy s jednotlivými vlastníky nebo nájemníky. Společná úhrada přes SVJ je proto nejjednodušší organizační cesta.
+Na dotazy má odpovídat výbor jako celek, bez uvádění jedné konkrétní osoby.
 
 Do budoucna je vhodným směrem stabilní přístup nebo účet za každou jednotku, který by bylo možné použít i pro další
 agendy, například dotazníky, hlasování nebo vkládání zpráv.
 
 ### Návrh průběhu
 
-1. Výbor zveřejní informační stránku k přístupovému systému.
+1. Výbor zveřejní web nebo portál s informacemi a online formulářem k přístupovému systému.
 2. Výbor předem určí, kdo smí odpověď za jednotku vyplnit a jak se bude řešit spor.
 3. Každá jednotka obdrží způsob přístupu k formuláři nebo instrukce k vyplnění.
 4. Oprávněná osoba vyplní počet čipů a typ telefonu.
 5. Oprávněná osoba potvrdí seznámení s finálním doplatkem a platebními pokyny.
 6. Systém nebo výbor potvrdí přijetí odpovědi.
 7. Do uzávěrky je podle předem daného pravidla možné odpověď opravit nebo nahradit novou odpovědí.
-8. Výbor po termínu uzávěrky exportuje souhrn.
-9. Výbor zkontroluje jednotky bez odpovědi a rozporné nebo neúplné odpovědi.
-10. Výbor připraví objednávku pro dodavatele.
-11. Výbor stanoví doplatky a platební instrukce pro jednotlivé partaje.
+8. Výbor 2026-05-19 zkontroluje jednotky bez odpovědi a pošle jim avízo.
+9. Výbor 2026-05-24 provede finální kontrolu úplnosti a zjevných nesrovnalostí.
+10. Výbor po termínu uzávěrky exportuje souhrn.
+11. Výbor připraví objednávku pro dodavatele.
+12. Výbor stanoví doplatky a platební instrukce pro jednotlivé partaje.
 
 ### Varianty oprávnění k vyplnění
 
@@ -268,8 +278,9 @@ Délka uchování odpovědí a historie změn zatím není rozhodnuta. Technicky
 nebo let, ale záleží na zvoleném systému, kapacitě databáze, budoucím způsobu provozu a pravidlech uchování dat.
 
 Finální souhrn má být dodavateli předán do 2026-05-24. Tento termín je současně pracovním koncem sběru pro účely
-přípravy finální objednávky, konečné ceny, smlouvy a podkladů k úhradě dodavateli. Přibližně 5 dní před termínem,
-pracovně 2026-05-19, má výbor ručně zkontrolovat neodpovězené jednotky a poslat jim e-mailovou urgenci.
+přípravy finální objednávky, konečné ceny, smlouvy a podkladů k úhradě dodavateli. Dne 2026-05-19 má výbor ručně
+zkontrolovat neodpovězené jednotky a poslat jim e-mailovou urgenci. Dne 2026-05-24 má proběhnout finální kontrola
+úplnosti a zjevných nesrovnalostí.
 
 Po předání finálního souhrnu dodavateli už nemá být možné běžně měnit počet čipů ani typ telefonu v rámci této
 objednávky. Úhrada finální částky jednotlivými partajemi nemusí čekat na další potvrzení dodavatele, protože ceny

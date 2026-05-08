@@ -59,7 +59,7 @@ Důvod:
 - před uzávěrkou je praktické umožnit partajím opravit odpověď bez administrativní zátěže výboru,
 - po uzávěrce už výbor potřebuje stabilní podklad pro objednávku,
 - individuální pozdní změny mají jít přes výbor e-mailem, telefonicky nebo přes WhatsApp,
-- pokud výbor pozdní změnu přijme, zapíše ji administrativně ze své strany,
+- pokud výbor pozdní změnu přijme, upraví evidovanou odpověď administrativně ze své strany,
 - jednotky bez odpovědi budou po uzávěrce připomenuty e-mailem.
 
 ## 2026-05-08: rozsah údajů pro první sběr
@@ -132,3 +132,19 @@ Důvod:
 - u ztracených nebo poškozených čipů bude potřeba čip deaktivovat nebo vyřadit z evidence,
 - náhradní čipy se budou objednávat přes výbor,
 - výbor má zvážit objednání rezervních čipů do zásoby, pracovně přibližně 60 kusů.
+
+## 2026-05-08: komunikace před sběrem a online formulář
+
+Rozhodnutí: před spuštěním sběru není potřeba samostatné oficiální komunikační kolo. Standardní odpověď se bude
+podávat pouze přes online formulář a pro první agendu se neplánuje samostatná evidence odpovědí mimo online formulář.
+
+Důvod:
+
+- vlastníci a uživatelé bytů byli s problematikou seznámeni na shromáždění dne 2026-04-27,
+- doplatek za čipy a zvolený telefon je očekávanou součástí agendy,
+- dodavatel má uzavřít jednu smlouvu se SVJ jako celkem, nikoliv samostatné smlouvy s jednotlivými vlastníky nebo nájemníky,
+- společná úhrada přes SVJ je organizačně nejjednodušší cesta,
+- dotazy může vyřizovat kterýkoliv člen výboru podle dostupnosti a znalosti odpovědi,
+- sběr se spustí po publikování webu nebo portálu s evidencí odpovědí,
+- uzávěrka zůstává 2026-05-24,
+- kontrola úplnosti proběhne minimálně 2026-05-19 formou avíza jednotkám bez odpovědi a 2026-05-24 jako finální kontrola.

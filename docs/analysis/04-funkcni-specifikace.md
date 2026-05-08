@@ -52,7 +52,7 @@ Požadavky je nutné potvrdit po zodpovězení prioritních otázek v byznys ana
 - Platební komunikace se má u bytů vlastněných fyzickou osobou vést na kontakt evidovaný u jednotky, typicky na vlastníka, ne automaticky na osobu, která odpověď zadala.
 - U nájemních bytů ve vlastnictví Stavebního bytového družstva Mír má platební komunikace směřovat na nájemníky.
 - Veřejná informační stránka nesmí zobrazovat odpovědi jednotlivých jednotek.
-- Online řešení musí mít náhradní administrativní postup pro osoby, které neodpoví online.
+- Standardní způsob podání odpovědi je online formulář; náhradní neonline postup není požadavkem první agendy.
 
 ### Funkce pro vlastníka nebo uživatele bytu
 
@@ -77,10 +77,9 @@ stabilním přístupem za jednotku.
 
 - zobrazit seznam odpovědí,
 - vidět, které jednotky neodpověděly,
-- rozlišit platné, nahrazené, neúplné a ručně doplněné odpovědi,
-- doplnit odpověď přijatou mimo online formulář,
+- rozlišit platné, nahrazené a neúplné odpovědi,
 - opravit zjevnou administrativní chybu se zaznamenáním důvodu,
-- administrativně zapsat nebo upravit odpověď po uzávěrce, pokud výbor schválí výjimku,
+- administrativně upravit evidovanou odpověď po uzávěrce, pokud výbor schválí výjimku,
 - vyfiltrovat jednotky bez odpovědi pro e-mailové připomenutí,
 - pokud to zvolená technologie rozumně umožní, vygenerovat e-mail nebo seznam kontaktů pro jednotky bez odpovědi,
 - pokud to zvolená technologie rozumně umožní, připravit avízo před uzávěrkou pro jednotky bez odpovědi,
@@ -117,8 +116,7 @@ Pokud MVP nebude mít obecnou portálovou identitu s rolemi a přístupy, mají 
 Volitelné položky podle rozhodnutí výboru:
 
 - druhý kontaktní údaj, například telefon vedle e-mailu,
-- poznámka s dotazem nebo připomínkou k agendě,
-- informace, zda jde o ručně doplněnou odpověď výborem.
+- poznámka s dotazem nebo připomínkou k agendě.
 
 Pokud bude existovat obecná portálová identita s rolemi a přístupy, má systém identifikaci odpovídající osoby a její
 vztah k jednotce přednostně odvozovat z přihlášení nebo profilu, nikoliv vyžadovat ruční opakované zadání.
@@ -156,9 +154,11 @@ vztah k jednotce přednostně odvozovat z přihlášení nebo profilu, nikoliv v
 - Finální rozsah osobních a kontaktních údajů v exportu je potřeba potvrdit podle skutečných potřeb dodavatele.
 - Přehled pro dodavatele a hlavní export pro výbor se mají generovat až po uzavření sběru objednávek.
 - Výbor musí umět filtrovat jednotky bez odpovědi.
+- Standardní sběr probíhá online formulářem; evidence odpovědí mimo online formulář není požadavkem první agendy.
 - Uchování historie změn a starších odpovědí je otevřený bod závislý na zvoleném systému a pravidlech uchování dat.
 - Finální souhrn pro dodavatele má být připraven k předání do 2026-05-24.
-- Přibližně 5 dní před finálním termínem má výbor zkontrolovat neodpovězené jednotky a poslat e-mailovou urgenci.
+- Dne 2026-05-19 má výbor zkontrolovat neodpovězené jednotky a poslat e-mailovou urgenci.
+- Dne 2026-05-24 má proběhnout finální kontrola úplnosti a zjevných nesrovnalostí, například neplatné hodnoty počtu čipů nebo neobvykle vysokého počtu čipů.
 - Po předání finálního souhrnu dodavateli už se běžně nemá měnit počet čipů ani typ telefonu v rámci objednávky.
 
 ### Provozní pravidla pro náhradní čipy
@@ -179,11 +179,12 @@ vztah k jednotce přednostně odvozovat z přihlášení nebo profilu, nikoliv v
 - Po uzávěrce se nové odpovědi nebo změny zpracují jen individuálně přes výbor a případně administrativním zásahem výboru.
 - Volná poznámka má být určena pouze pro dotazy a připomínky k agendě; uživatel má být stručně upozorněn, aby neuváděl zbytečné osobní nebo citlivé údaje.
 
-### Náhradní neonline postup
+### Režim online formuláře
 
-První agenda má počítat s tím, že některé partaje nevyužijí online formulář. Výbor proto potřebuje jednoduchý postup,
-jak odpověď získanou e-mailem, telefonicky, papírově nebo osobně převést do stejné evidence a označit ji jako ručně
-doplněnou.
+První agenda počítá s online formulářem jako jedinou standardní cestou pro odeslání odpovědi. Systém proto nemá v MVP
+vyžadovat samostatnou evidenci odpovědí přijatých e-mailem, telefonicky, papírově nebo osobně. Případné výjimečné
+opravy po kontaktování partaje řeší výbor individuálně, zejména pokud finální kontrola odhalí chybějící odpověď nebo
+zjevnou nesrovnalost.
 
 ## Návrh akceptačních kritérií pro první agendu
 
@@ -196,7 +197,7 @@ doplněnou.
 - Výbor umí získat sestavu jednotek, které v daném termínu nezaplatily.
 - Veřejná stránka neobsahuje neveřejná data ani osobní údaje nad nezbytný rozsah.
 - Výbor umí zjistit, které jednotky dosud neodpověděly.
-- Výbor umí určit finální odpověď za jednotku i v případě opravy nebo ručního doplnění.
+- Výbor umí určit finální odpověď za jednotku i v případě opravy nebo opakovaného odeslání formuláře.
 - Pokud přijde více odpovědí za stejnou jednotku před uzávěrkou, systém nebo proces umí určit poslední platnou odpověď.
 - Export pro dodavatele obsahuje poslední platnou odpověď za jednotku a finální rozsah údajů potvrzený s dodavatelem.
-- Existuje postup pro odpovědi mimo online formulář.
+- Standardní odpověď se podává online formulářem; odpovědi mimo online formulář nejsou běžnou součástí MVP.

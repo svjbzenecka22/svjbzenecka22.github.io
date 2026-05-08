@@ -70,7 +70,7 @@ Pracovní odpovědi z 2026-05-08:
 - Změna odpovědi do uzávěrky má být samoobslužná, tedy bez nutnosti kontaktovat výbor.
 - Po uzávěrce už nemá být změna řešena běžnou uživatelskou částí systému.
 - Po uzávěrce musí odpovídající osoba kontaktovat výbor individuálně, například e-mailem, telefonicky nebo přes WhatsApp.
-- Výjimky po uzávěrce řeší výbor; pokud bude změna přijata, výbor ji zapíše nebo upraví administrativně ze své strany.
+- Výjimky po uzávěrce řeší výbor; pokud bude změna přijata, výbor evidovanou odpověď upraví administrativně ze své strany.
 - Jednotky, které do uzávěrky neodpoví, budou kontaktovány e-mailem.
 - Pokud to nebude technicky příliš náročné, má systém umět připravit nebo vygenerovat e-mail pro jednotky, které dosud neodpověděly, včetně jejich evidovaných kontaktů.
 - Vhodné zlepšení je také možnost odeslat před uzávěrkou avízo jednotkám bez odpovědi, aby měly čas včas reagovat.
@@ -185,6 +185,21 @@ Pracovní odpovědi z 2026-05-08:
 5. Jak bude výbor evidovat odpovědi přijaté mimo online formulář?
 6. Kdy bude sběr spuštěn a kdy bude uzávěrka?
 7. Kdy proběhne kontrola úplnosti a připomenutí neodpovězeným jednotkám?
+
+Pracovní odpovědi z 2026-05-08:
+
+- Samostatný oficiální text nebo další komunikační kolo před spuštěním sběru není potřeba, protože vlastníci a uživatelé bytů byli s problematikou seznámeni na shromáždění konaném dne 2026-04-27.
+- Není potřeba zvlášť vysvětlovat samotnou existenci doplatku, protože vlastníci a nájemníci s doplatkem za čipy a zvolenou variantu telefonu počítají.
+- Pokud bude potřeba vysvětlit způsob úhrady konkrétní částky do fondu oprav, má být stručně uvedeno, že dodavatel chce uzavřít jednu smlouvu se SVJ jako celkem, nikoliv samostatné smlouvy s každým vlastníkem nebo nájemníkem zvlášť.
+- Společná úhrada přes SVJ je proto nejjednodušší organizační cesta a prakticky výhodná pro všechny strany.
+- Na dotazy bude odpovídat výbor jako celek; nemá se uvádět jedna konkrétní kontaktní osoba.
+- Odpovědi se mají podávat pouze přes online formulář. Nepočítá se se standardní možností odpovědět jinou cestou.
+- Z toho plyne, že se neplánuje samostatná evidence odpovědí přijatých mimo online formulář.
+- Sběr bude spuštěn okamžitě po publikování verze webu nebo portálu, která bude evidenci odpovědí umožňovat.
+- Uzávěrka sběru zůstává 2026-05-24.
+- Kontrola úplnosti proběhne minimálně dvakrát: 2026-05-19 má výbor znovu poslat avízo jednotkám, které dosud neodpověděly, a 2026-05-24 proběhne finální kontrola.
+- Při finální kontrole se mají řešit chybějící odpovědi a zjevné nesrovnalosti, například neplatná hodnota počtu čipů, neobvykle vysoký počet čipů nebo jiná podezřelá hodnota.
+- Jednotky s chybějící odpovědí nebo nesrovnalostí bude výbor individuálně kontaktovat.
 
 ## Otázky k dokumentům a hlasování
 
