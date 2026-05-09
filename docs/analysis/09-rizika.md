@@ -36,28 +36,40 @@ osob.
 Mitigace: Při návrhu dokumentové části předem rozlišit veřejné dokumenty, neveřejné dokumenty pro dům a případné
 jednotkové dokumenty. Neveřejné a jednotkové dokumenty neukládat do veřejného repozitáře ani veřejné části webu.
 
-## Riziko: free tarif přestane stačit
+## Riziko: managed nebo free tarif přestane stačit
 
-Popis: Bezplatná služba může změnit podmínky nebo limity.
+Popis: Bezplatná nebo managed služba může změnit podmínky, limity, ceny nebo vhodnost použití pro právnickou osobu.
 
-Mitigace: Volit řešení s exportem dat a možností migrace.
+Mitigace: Aktuální pracovní směr preferuje self-hosted MVP s PostgreSQL a Docker Compose. Managed služby nepoužívat jako
+povinný základ první verze. Vždy zachovat export dat a možnost migrace.
 
 ## Riziko: nedokončení doporučené technické varianty včas
 
-Popis: Jednoduchá webová aplikace se Supabase lépe odpovídá MVP a budoucímu portálu, ale vyžaduje více návrhu,
-nastavení a testování než čistý formulář nebo tabulka. Při termínu 2026-05-24 může vzniknout časový tlak.
+Popis: Self-hosted MVP s odděleným frontendem, backendem, PostgreSQL a Prisma lépe odpovídá novému požadavku na nízký
+vendor-lock a budoucí VPS provoz, ale vyžaduje více návrhu, nastavení a testování než čistý formulář nebo tabulka. Při
+termínu 2026-05-24 může vzniknout časový tlak.
 
 Mitigace: Držet MVP úzce podle funkční specifikace a neimplementovat funkce mimo první agendu. Současně připravit
-Google Sheets + Apps Script jako záložní variantu, pokud by doporučený směr nebylo možné včas bezpečně dokončit.
+Google Sheets + Apps Script jako nouzovou záložní variantu, pokud by doporučený směr nebylo možné včas bezpečně dokončit.
 
-## Riziko: chybné nastavení přístupu v databázi
+## Riziko: chybné nastavení aplikačního přístupu k datům
 
-Popis: Pokud budou špatně nastavena databázová pravidla, mohl by přístup za jednotku umožnit čtení nebo změnu údajů
-jiné jednotky, případně by se běžný uživatel mohl dostat k administrátorským datům.
+Popis: Pokud budou špatně nastavena pravidla v backendu, mohl by přístup za jednotku umožnit čtení nebo změnu údajů
+jiné jednotky, případně by se běžný uživatel mohl dostat k administrátorským datům. V self-hosted směru přístupová
+pravidla nezajistí managed databázová platforma; musí je vynutit backend a databázový model.
 
 Mitigace: Přístupová pravidla navrhnout a otestovat samostatně před spuštěním. Ověřit testovacími jednotkami, že
 uživatel vidí a mění pouze svou jednotku, zatímco administrátor vidí všechny jednotky. Citlivé klíče a interní exporty
 neukládat do veřejného repozitáře ani do veřejného HTML.
+
+## Riziko: nedostatečně připravený provoz VPS
+
+Popis: Self-hosted směr přes VPS vyžaduje aktualizace, zálohy, HTTPS, obnovu ze zálohy a základní dohled. Pokud tyto
+postupy nebudou připravené, může být systém hůře provozně udržitelný než managed služba.
+
+Mitigace: Pro MVP připravit minimálně Docker Compose, `.env.example`, postup zálohy PostgreSQL, postup obnovy, oddělení
+produkčního `.env` mimo Git a základní produkční návrh Nginx + Let's Encrypt. Ostrý provoz nespouštět bez ověřené
+zálohy a obnovy.
 
 ## Riziko: výbor nebude schopen systém spravovat
 

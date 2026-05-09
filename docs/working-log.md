@@ -237,6 +237,10 @@ Google Sheets + Apps Script zůstává záložní varianta pro případ, že by 
 dokončit. Čistý Google Forms je vhodný jen jako nouzové řešení, protože hůře splňuje požadavky na přístup za jednotku,
 změny odpovědí, administraci výboru a budoucí rozšiřitelnost.
 
+Doplnění po navazující technologické revizi: tento managed směr byl následně nahrazen self-hosted směrem bez povinné
+závislosti na Vercelu, Supabase, Firebase nebo podobných platformách. Důvodem je požadavek nízkého vendor-locku,
+lokálního vývoje přes Docker Compose a možnosti pozdějšího nasazení na levné VPS v EU.
+
 ## Průběžný záznam 2026-05-09: předimplementační detail 05 a 07
 
 Byla dopracována technická specifikace a testovací strategie první agendy. Technická specifikace nově popisuje pracovní
@@ -249,18 +253,40 @@ výběr telefonu, výpočet doplatku, variabilní symbol, opakovaná odpověď p
 exporty, bezpečnost jednotkového přístupu, administrátorský přístup, použitelnost, datová kvalita, archivace a kritéria
 pro ostré spuštění.
 
+## Průběžný záznam 2026-05-09: revize stacku bez vendor-locku
+
+Po konzultaci technologického stacku byl upraven pracovní technický směr MVP. Managed varianta Vercel/Supabase zůstává
+v dokumentaci jako dříve zvažovaná možnost, ale aktuální doporučený směr je self-hosted portál bez povinné závislosti
+na Vercelu, Supabase, Firebase, Railway, Render, Neon, PlanetScale nebo jiné managed/serverless platformě.
+
+Nový pracovní stack:
+
+- frontend React + TypeScript + Vite,
+- backend Node.js + TypeScript + Fastify,
+- REST API,
+- PostgreSQL,
+- Prisma ORM a Prisma migrations,
+- lokální vývoj přes Docker Compose,
+- pozdější produkční provoz na levném VPS v EU,
+- produkčně Nginx jako reverse proxy a HTTPS přes Let's Encrypt,
+- konfigurace přes `.env`, v repozitáři pouze `.env.example`,
+- soubory na lokálním disku nebo Docker volume, v databázi pouze metadata.
+
+Revize byla promítnuta do IT analýzy, technické specifikace, implementačního plánu, testovací strategie, rozhodovacího
+deníku a rizik. Vznikl také samostatný dokument `docs/analysis/14-technologicke-zadani.md`.
+
 ## Stav pro navázání 2026-05-10
 
-Projekt je po analytické a návrhové části připravený na dopracování realizačního implementačního plánu MVP. Poslední
-stav repozitáře je `main` synchronizovaný s `origin/main`; poslední pracovní commit je `301deba Dopracovat technicky
-detail a testy MVP`.
+Projekt je po analytické a návrhové části a po revizi technologického směru připravený na dopracování realizačního
+implementačního plánu MVP. Poslední ucelený krok dokumentace je revize stacku na self-hosted MVP bez zásadního
+vendor-locku.
 
 Hotovo:
 
 - první agenda přístupového systému je požadavkově uzavřená pro účely MVP,
 - otevřené otázky k první agendě byly vyhodnoceny jako pracovně zodpovězené,
 - funkční specifikace popisuje ucelené MVP sběru počtu čipů a volby bytového telefonu,
-- IT analýza doporučuje jednoduchou webovou aplikaci se Supabase jako hlavní směr a Google Sheets + Apps Script jako zálohu,
+- IT analýza nově doporučuje self-hosted webovou aplikaci s PostgreSQL, Prisma a Docker Compose jako hlavní směr,
 - technická specifikace je dopracovaná do předimplementačního detailu,
 - testovací strategie obsahuje konkrétní testovací scénáře a kritéria pro spuštění,
 - data k variantám telefonů a čipu jsou připravena v Markdown dokumentech, CSV souborech a lokálních obrazových podkladech.
@@ -274,14 +300,14 @@ Doporučený další krok:
 Praktické otázky pro dopracování implementačního plánu:
 
 1. Kde má žít aplikační část: ve stejném repozitáři jako samostatná složka, nebo v samostatném repozitáři?
-2. Jaký hosting preferovat pro aplikační část: Vercel, Netlify, nebo zatím ponechat jako rozhodnutí při implementaci?
-3. Potvrdit, zda Supabase zůstává hlavní technický směr pro první build a Google Sheets + Apps Script jen záložní varianta.
-4. Rozhodnout, zda první build začne pouze s testovacími jednotkami, nebo se rovnou připraví ostrý neveřejný import jednotek a kontaktů.
-5. Potvrdit nebo upravit pracovní pravidlo variabilního symbolu `2605 + číslo jednotky doplněné zleva nulami na 3 číslice`.
-6. Potvrdit, zda stále platí termíny 2026-05-19 pro urgenci neodpovězených jednotek a 2026-05-24 pro uzávěrku a předání souhrnu dodavateli.
-7. Potvrdit finální rozsah exportu pro dodavatele, zejména zda dodavatel opravdu potřebuje jméno, kontakt, číslo bytu, podlaží, počet čipů a typ telefonu.
-8. Připravit seznam administrátorských e-mailů pro všechny tři členy výboru.
-9. Připravit nebo určit zdroj neveřejného seznamu jednotek a primárních kontaktů; tyto údaje neukládat do veřejného repozitáře.
+2. Má být pracovní aplikační struktura `svj-portal/`, nebo jiný název?
+3. Rozhodnout, zda první build začne pouze s testovacími jednotkami, nebo se rovnou připraví ostrý neveřejný import jednotek a kontaktů.
+4. Potvrdit nebo upravit pracovní pravidlo variabilního symbolu `2605 + číslo jednotky doplněné zleva nulami na 3 číslice`.
+5. Potvrdit, zda stále platí termíny 2026-05-19 pro urgenci neodpovězených jednotek a 2026-05-24 pro uzávěrku a předání souhrnu dodavateli.
+6. Potvrdit finální rozsah exportu pro dodavatele, zejména zda dodavatel opravdu potřebuje jméno, kontakt, číslo bytu, podlaží, počet čipů a typ telefonu.
+7. Připravit seznam administrátorských e-mailů pro všechny tři členy výboru.
+8. Připravit nebo určit zdroj neveřejného seznamu jednotek a primárních kontaktů; tyto údaje neukládat do veřejného repozitáře.
+9. Připravit minimální provozní rozhodnutí pro self-hosted směr: zálohování PostgreSQL, oddělení `.env`, budoucí doména portálu a produkční VPS až po dokončení MVP.
 
 Poznámka pro další práci: nepokračovat ještě slepě implementací, dokud nebudou aspoň pracovně potvrzené body k umístění aplikace, hostingu, datům jednotek, variabilnímu symbolu a administrátorům. Pokud bude potřeba rychle postupovat,
 lze v implementačním plánu uvést doporučené defaulty a označit je jako pracovní předpoklady.

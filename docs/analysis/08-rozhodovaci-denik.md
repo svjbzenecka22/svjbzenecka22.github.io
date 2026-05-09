@@ -207,3 +207,32 @@ Důvod:
 - oddělená datová vrstva umožní držet citlivá data mimo GitHub Pages a veřejný repozitář,
 - samostatný hosting aplikační části umožní později doplnit serverless logiku, pokud bude potřeba,
 - hotové portály pro SVJ má smysl dál porovnat pro dlouhodobou strategii, ale nemají blokovat aktuální sběr do 2026-05-24.
+
+## 2026-05-09: revize technického směru na self-hosted MVP
+
+Rozhodnutí: managed směr Vercel/Supabase se pro aktuální MVP nahrazuje self-hosted technologickým směrem bez povinné
+závislosti na Vercelu, Supabase, Firebase nebo podobných managed/serverless platformách. Veřejný web zůstává na GitHub
+Pages, ale portálová aplikační část má vzniknout odděleně jako jednoduché monorepo.
+
+Pracovní stack:
+
+- frontend: React, TypeScript, Vite, responzivní mobile-first UI,
+- backend: Node.js, TypeScript, Fastify, REST API,
+- databáze: PostgreSQL,
+- databázová vrstva: Prisma ORM, Prisma schema a Prisma migrations,
+- lokální provoz: Docker Compose,
+- budoucí produkce: levné VPS v EU, Nginx reverse proxy, HTTPS přes Let's Encrypt,
+- konfigurace: `.env` mimo Git, `.env.example` v repozitáři,
+- storage: lokální disk nebo Docker volume, v databázi pouze metadata souborů.
+
+Důvod:
+
+- po ověření tarifů a podmínek managed služeb je zřejmé, že kapacitně by stačily, ale neřeší požadavek nízkého vendor-locku,
+- Vercel Hobby je omezený na osobní/nekomerční použití a nemusí být vhodný pro ostrou agendu SVJ,
+- Supabase Free nemá automatické zálohy a projekt se po neaktivitě pozastavuje,
+- self-hosted směr lépe odpovídá požadavku lokálního vývoje zdarma, budoucího VPS provozu v EU a dlouhodobé kontroly nad daty,
+- PostgreSQL a Prisma poskytují běžný, migrovatelný datový základ pro budoucí portál,
+- MVP musí zůstat úzké, aby se self-hosted směr nezměnil v předčasnou stavbu obecného portálového frameworku.
+
+Poznámka: Vercel/Supabase zůstává historicky zaznamenaná jako dříve zvažovaná managed varianta. Google Sheets + Apps
+Script zůstává nouzová záložní cesta pro případ, že by self-hosted MVP nebylo možné včas bezpečně dokončit.

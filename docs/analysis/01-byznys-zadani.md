@@ -54,7 +54,8 @@ pravděpodobně do fondu oprav, ze kterého bude hrazena dodavatelská faktura.
 - Řešení má být dobře použitelné na mobilu.
 - Veřejný obsah nesmí omylem obsahovat neveřejné nebo citlivé podklady.
 - U hlasování, souhlasů a osobních údajů je nutná opatrnost; tato analýza nenahrazuje právní posouzení.
-- Free tarify služeb mohou být praktické, ale nemusí být garantované navždy.
+- Managed nebo free tarify externích služeb mohou být praktické pro prototyp, ale pro aktuální pracovní směr nemají být povinnou součástí MVP.
+- Technologický směr má preferovat nízký vendor-lock, lokální vývoj přes Docker Compose a možnost pozdějšího nasazení na levné VPS v EU.
 
 ## Mimo rozsah první fáze
 

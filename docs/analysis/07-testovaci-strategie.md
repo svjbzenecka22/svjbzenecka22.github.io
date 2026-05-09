@@ -239,9 +239,11 @@ Ověřit:
 
 Ověřit:
 
-- servisní klíč databáze není v repozitáři,
-- servisní klíč není ve frontendovém JavaScriptu,
-- konfigurační hodnoty jsou uložené v prostředí hostingu,
+- připojovací údaje k databázi nejsou v repozitáři,
+- připojovací údaje k databázi nejsou ve frontendovém JavaScriptu,
+- skutečný `.env` není commitnutý do Gitu,
+- `.env.example` neobsahuje citlivé hodnoty,
+- konfigurační hodnoty jsou uložené v prostředí backendu nebo produkčního serveru,
 - exporty s osobními údaji nejsou veřejně dostupné.
 
 ## Testování použitelnosti

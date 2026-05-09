@@ -32,8 +32,13 @@ Pro MVP první agendy se jako pracovní technický směr doporučuje jednoduchá
 
 - veřejný web zůstává na GitHub Pages,
 - veřejný web odkazuje na samostatnou aplikační část pro sběr odpovědí,
-- aplikační část běží odděleně, například přes Vercel nebo Netlify,
-- data jsou uložena v Supabase,
+- aplikační část vznikne jako jednoduché monorepo s odděleným frontendem a backendem,
+- frontend bude React + TypeScript + Vite,
+- backend bude Node.js + TypeScript + Fastify s REST API,
+- data budou uložena v PostgreSQL,
+- databázovou vrstvu bude řídit Prisma ORM a Prisma migrations,
+- lokální vývoj poběží přes Docker Compose,
+- produkční směr je pozdější nasazení na levné VPS v EU za Nginx reverse proxy,
 - administrátorský přístup výboru je oddělen od běžného přístupu za jednotku,
 - exporty jsou dostupné výboru, nikoliv dodavateli přímo.
 
@@ -42,6 +47,10 @@ uzávěrky, administrátorský přehled, výpočet doplatků, exporty a budoucí
 
 První build má být co nejmenší použitelná aplikace pro jednu agendu, nikoliv obecný portálový framework. Technické
 volby proto mají podporovat budoucí rozšíření, ale nemají do první verze přidávat funkce mimo aktuální sběr.
+
+Managed služby typu Vercel, Supabase, Firebase, Railway, Render, Neon nebo PlanetScale nejsou pro MVP povinnou součástí
+architektury a nemají být použity jako hlavní provozní předpoklad. Jejich pozdější využití lze znovu zvážit pouze jako
+vědomé provozní rozhodnutí, nikoliv jako základ datového modelu nebo aplikační logiky.
 
 ## Záložní technický směr
 
@@ -104,8 +113,8 @@ Pracovní doporučení pro první build:
 - ztracený nebo chybně rozeslaný token musí být možné zneplatnit a vytvořit nový,
 - token nesmí být uložen ve veřejném HTML ani v repozitáři.
 
-Pokud bude použit serverless backend, má validace tokenu probíhat na serverové straně. Klientská část nesmí obsahovat
-servisní databázový klíč.
+Validace tokenu má probíhat na serverové straně ve Fastify backendu. Klientská část nesmí obsahovat databázové
+přihlašovací údaje a frontend nemá mít přímý přístup do PostgreSQL.
 
 ### Administrátorský přístup
 
@@ -117,7 +126,9 @@ Administrátorský přístup má být oddělen od přístupu za jednotku. Dodava
 Pracovní doporučení pro první build:
 
 - administrátoři jsou evidováni e-mailem,
-- administrátorské přihlášení má využít standardní autentizaci zvolené platformy,
+- administrátorské přihlášení má být řešeno v backendu aplikace,
+- hesla administrátorů mají být ukládána pouze jako bezpečný hash,
+- administrátorská session má být vedena přes bezpečnou HTTP-only cookie nebo srovnatelný serverový mechanismus,
 - administrátor nesmí používat jednotkový token jako náhradu za admin přístup,
 - exporty s osobními údaji jsou dostupné pouze administrátorům.
 
@@ -242,9 +253,10 @@ Administrátoři z výboru.
 
 | Pole | Význam | Poznámka |
 | --- | --- | --- |
-| `id` | interní identifikátor | primární klíč nebo vazba na auth uživatele |
+| `id` | interní identifikátor | primární klíč |
 | `email` | e-mail administrátora | unikátní |
 | `name` | jméno administrátora | volitelné |
+| `password_hash` | hash hesla | pokud bude použito heslové přihlášení |
 | `role` | role | pro MVP stačí `committee_admin` |
 | `is_active` | aktivní oprávnění | umožní odebrat přístup |
 
@@ -392,8 +404,8 @@ Pracovní sloupce:
 - Serverová část ověří token proti hashi v databázi.
 - Serverová část zapisuje odpověď do databáze.
 - Administrátor se přihlašuje samostatně a má roli výboru.
-- Servisní klíč k databázi smí být pouze v serverovém prostředí hostingu, nikdy ve frontendovém kódu.
-- Veřejný anonymní klíč Supabase, pokud bude použit, musí mít databázová pravidla omezena tak, aby neumožňoval číst neveřejná data.
+- Připojovací údaje k PostgreSQL smí být pouze v backendovém prostředí, nikdy ve frontendovém kódu.
+- Frontend komunikuje s daty pouze přes REST API backendu.
 
 ### Minimální bezpečnostní testy před spuštěním
 
@@ -486,10 +498,12 @@ později odstranit nebo anonymizovat podle rozhodnutí výboru.
 Pracovní model nasazení:
 
 1. Veřejný web zůstane publikovaný přes GitHub Pages.
-2. Aplikační část se připraví jako samostatná webová aplikace.
-3. Datová část se připraví v Supabase.
+2. Aplikační část se připraví jako samostatný portál s frontendem a backendem.
+3. Datová část se připraví jako PostgreSQL databáze spravovaná přes Prisma migrations.
 4. Veřejný web bude na aplikační část pouze odkazovat.
-5. Před spuštěním se ověří testovací jednotky, výpočet doplatku, změna odpovědi, exporty a administrátorský přístup.
+5. Lokální vývoj poběží přes Docker Compose.
+6. Produkční nasazení se připraví pro VPS v EU s Nginx reverse proxy a HTTPS přes Let's Encrypt.
+7. Před spuštěním se ověří testovací jednotky, výpočet doplatku, změna odpovědi, exporty a administrátorský přístup.
 
 ### Prostředí
 
@@ -506,38 +520,45 @@ označena nebo oddělena.
 
 Konfigurační údaje a tajné klíče mají být vedeny v prostředí hostingu, ne v repozitáři. Minimálně půjde o:
 
-- URL Supabase projektu,
-- veřejný klientský klíč, pokud bude použit,
-- serverový servisní klíč pouze pro serverovou část,
+- `DATABASE_URL` pro PostgreSQL,
+- tajemství pro aplikační session nebo podpis cookie,
 - salt nebo tajemství pro hashování jednotkových tokenů, pokud bude potřeba,
-- seznam administrátorských e-mailů nebo vazbu na tabulku administrátorů.
+- administrátorské účty nebo seed pro jejich založení,
+- produkční doménu, CORS a další provozní nastavení backendu.
+
+Součástí repozitáře má být `.env.example` bez citlivých hodnot. Skutečný `.env` nesmí být commitnutý do Gitu.
 
 ## Body k doplnění před implementací
 
-- konečné rozhodnutí, zda aplikační část poběží přes Vercel, Netlify nebo jiný hosting,
+- konečné rozhodnutí, zda portál vznikne ve stejném repozitáři jako oddělená složka, nebo v samostatném repozitáři,
+- pracovní název aplikační složky nebo repozitáře,
 - potvrzení nebo úprava pracovního pravidla tvorby variabilního symbolu,
 - seznam jednotek a primárních kontaktů pro import,
 - forma distribuce přístupových odkazů nebo kódů jednotkám,
 - finální nastavení administrátorů,
 - finální rozsah exportu pro dodavatele,
 - pravidla uchování dat po dokončení agendy,
-- ověření, zda free tarify zvolených služeb postačí očekávanému provozu.
+- základní provozní postup zálohování databáze a souborového úložiště.
 
 ## Implementační checklist první verze
 
 1. Založit aplikační část oddělenou od veřejného statického webu.
-2. Připravit Supabase projekt a schéma databáze.
-3. Připravit import jednotek a kontaktů.
-4. Naimportovat varianty telefonů a čipu z připravených CSV podkladů.
-5. Vygenerovat jednotkové tokeny a uložit pouze jejich hashe.
-6. Připravit formulář odpovědi za jednotku.
-7. Implementovat výpočet doplatku a variabilního symbolu.
-8. Implementovat uložení odpovědi a nahrazení starší odpovědi.
-9. Připravit administrátorské přihlášení a role výboru.
-10. Připravit administrátorský přehled odpovědí a jednotek bez odpovědi.
-11. Připravit export pro dodavatele.
-12. Připravit export pro kontrolu plateb.
-13. Ověřit bezpečnostní pravidla přístupu.
-14. Ověřit testovací scénáře podle testovací strategie.
-15. Doplnit odkaz z veřejného webu na aplikační část.
-16. Připravit instrukce pro vlastníky, nájemníky a uživatele bytů.
+2. Připravit monorepo strukturu `frontend/`, `backend/`, `docker-compose.yml` a `.env.example`.
+3. Připravit PostgreSQL v Docker Compose.
+4. Připravit Prisma schema a první migrace databáze.
+5. Připravit import jednotek a kontaktů.
+6. Naimportovat varianty telefonů a čipu z připravených CSV podkladů.
+7. Vygenerovat jednotkové tokeny a uložit pouze jejich hashe.
+8. Připravit REST API pro jednotkový přístup, odpovědi, administraci a exporty.
+9. Připravit formulář odpovědi za jednotku.
+10. Implementovat výpočet doplatku a variabilního symbolu.
+11. Implementovat uložení odpovědi a nahrazení starší odpovědi.
+12. Připravit administrátorské přihlášení a role výboru.
+13. Připravit administrátorský přehled odpovědí a jednotek bez odpovědi.
+14. Připravit export pro dodavatele.
+15. Připravit export pro kontrolu plateb.
+16. Připravit základní zálohovací a obnovovací postup.
+17. Ověřit bezpečnostní pravidla přístupu.
+18. Ověřit testovací scénáře podle testovací strategie.
+19. Doplnit odkaz z veřejného webu na aplikační část.
+20. Připravit instrukce pro vlastníky, nájemníky a uživatele bytů.
