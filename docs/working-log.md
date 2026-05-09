@@ -289,6 +289,26 @@ produkční VPS až po lokálně funkčním MVP.
 Implementační plán byl přepracován z obecného seznamu na konkrétní realizační fáze od založení repozitáře přes technický
 skelet, databázový model, API, frontend, import, testování, zálohy, spuštění a vyhodnocení.
 
+## Průběžný záznam 2026-05-09: založení repozitáře portálu
+
+Byl založen samostatný GitHub repozitář `svjbzenecka22/svj-portal` a lokálně naklonován do
+`C:\Projects\Active\Private\svj-portal`. Do repozitáře byla migrována analytická dokumentace, pracovní log a podklady k
+variantám telefonů a čipu. Současně byl založen první technický skelet portálu:
+
+- root `package.json` s workspaces,
+- `.gitignore`, `.env.example`, `README.md`,
+- `docker-compose.yml` s PostgreSQL a backend službou,
+- `backend/` s Fastify, TypeScriptem, health checkem a Prisma schématem,
+- `frontend/` s Vite, Reactem, TypeScriptem a základní úvodní obrazovkou.
+
+První commit v novém repozitáři je `9c98f2f Inicializovat SVJ portal`. Na tomto stroji zatím není dostupný Node.js/npm,
+proto nebylo možné provést instalaci závislostí ani reálné spuštění skeletonu. Dostupná Git kontrola a staged diff check
+proběhly před commitem bez formálních chyb.
+
+Poznámka: GitHub stránka ukazovala repozitář jako `Public`. Pro další práci se doporučuje přepnout repozitář na
+`Private` minimálně do doby, než bude jasně oddělen veřejný kód od neveřejných provozních podkladů. Ostrá data jednotek,
+kontakty, produkční tokeny, databázové dumpy a skutečný `.env` do repozitáře nepatří.
+
 ## Stav pro navázání 2026-05-10
 
 Projekt je po analytické a návrhové části a po revizi technologického směru připravený na dopracování realizačního
