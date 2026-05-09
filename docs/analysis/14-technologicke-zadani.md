@@ -103,8 +103,11 @@ svj-portal/
 └── docs/
 ```
 
-Veřejný statický web může dál zůstat v repozitáři `svjbzenecka22.github.io` a na portál pouze odkazovat. Před založením
-aplikace je potřeba rozhodnout, zda `svj-portal` vznikne jako samostatný repozitář, nebo jako jasně oddělená složka.
+Veřejný statický web zůstává v repozitáři `svjbzenecka22.github.io` a na portál pouze odkazuje. Aplikační část vznikne
+v samostatném repozitáři `svj-portal`, doporučeně jako private repozitář pod GitHub organizací `svjbzenecka22`.
+
+Repozitář `svj-portal` nemá obsahovat reálné seznamy jednotek, kontakty, produkční tokeny, databázové dumpy ani skutečný
+`.env`. Tyto podklady patří mimo Git nebo do samostatného bezpečného provozního úložiště.
 
 ## Praktická zásada pro první build
 

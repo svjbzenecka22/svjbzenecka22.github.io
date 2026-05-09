@@ -530,8 +530,7 @@ Součástí repozitáře má být `.env.example` bez citlivých hodnot. Skutečn
 
 ## Body k doplnění před implementací
 
-- konečné rozhodnutí, zda portál vznikne ve stejném repozitáři jako oddělená složka, nebo v samostatném repozitáři,
-- pracovní název aplikační složky nebo repozitáře,
+- založení samostatného repozitáře `svj-portal`, doporučeně jako private repozitář pod `svjbzenecka22`,
 - potvrzení nebo úprava pracovního pravidla tvorby variabilního symbolu,
 - seznam jednotek a primárních kontaktů pro import,
 - forma distribuce přístupových odkazů nebo kódů jednotkám,

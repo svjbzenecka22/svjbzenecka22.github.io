@@ -275,6 +275,20 @@ Nový pracovní stack:
 Revize byla promítnuta do IT analýzy, technické specifikace, implementačního plánu, testovací strategie, rozhodovacího
 deníku a rizik. Vznikl také samostatný dokument `docs/analysis/14-technologicke-zadani.md`.
 
+## Průběžný záznam 2026-05-09: implementační defaulty
+
+Bylo potvrzeno, že aplikační část vznikne jako nové samostatné repo `svj-portal`, doporučeně pod organizací
+`svjbzenecka22` a zpočátku jako private repozitář. Veřejný GitHub Pages web zůstává oddělený a na portál bude pouze
+odkazovat.
+
+Byly odsouhlaseny pracovní defaulty pro první implementaci: monorepo `backend/` + `frontend/`, Docker Compose,
+PostgreSQL, Prisma, Fastify REST API, Vite frontend, testovací data jako první krok, ostrý import až po ověření toku,
+CSV jako první exportní formát, jednotkové tokeny uložené jen jako hash, administrátorské účty ručně nebo seedem a
+produkční VPS až po lokálně funkčním MVP.
+
+Implementační plán byl přepracován z obecného seznamu na konkrétní realizační fáze od založení repozitáře přes technický
+skelet, databázový model, API, frontend, import, testování, zálohy, spuštění a vyhodnocení.
+
 ## Stav pro navázání 2026-05-10
 
 Projekt je po analytické a návrhové části a po revizi technologického směru připravený na dopracování realizačního
@@ -293,21 +307,17 @@ Hotovo:
 
 Doporučený další krok:
 
-1. Dopracovat `docs/analysis/06-implementacni-plan.md` do detailního realizačního plánu MVP.
-2. Zapsat navazující rozhodnutí do `docs/analysis/08-rozhodovaci-denik.md`.
-3. Podle výsledku potom přejít k založení aplikační části nebo ještě doplnit chybějící provozní podklady.
+1. Založit samostatný repozitář `svj-portal`, doporučeně jako private repozitář pod `svjbzenecka22`.
+2. Připravit počáteční technický skelet podle `docs/analysis/06-implementacni-plan.md`.
+3. Začít pouze s testovacími daty, bez ostrých kontaktů a bez produkčních tajných údajů.
 
 Praktické otázky pro dopracování implementačního plánu:
 
-1. Kde má žít aplikační část: ve stejném repozitáři jako samostatná složka, nebo v samostatném repozitáři?
-2. Má být pracovní aplikační struktura `svj-portal/`, nebo jiný název?
-3. Rozhodnout, zda první build začne pouze s testovacími jednotkami, nebo se rovnou připraví ostrý neveřejný import jednotek a kontaktů.
-4. Potvrdit nebo upravit pracovní pravidlo variabilního symbolu `2605 + číslo jednotky doplněné zleva nulami na 3 číslice`.
-5. Potvrdit, zda stále platí termíny 2026-05-19 pro urgenci neodpovězených jednotek a 2026-05-24 pro uzávěrku a předání souhrnu dodavateli.
-6. Potvrdit finální rozsah exportu pro dodavatele, zejména zda dodavatel opravdu potřebuje jméno, kontakt, číslo bytu, podlaží, počet čipů a typ telefonu.
-7. Připravit seznam administrátorských e-mailů pro všechny tři členy výboru.
-8. Připravit nebo určit zdroj neveřejného seznamu jednotek a primárních kontaktů; tyto údaje neukládat do veřejného repozitáře.
-9. Připravit minimální provozní rozhodnutí pro self-hosted směr: zálohování PostgreSQL, oddělení `.env`, budoucí doména portálu a produkční VPS až po dokončení MVP.
+1. Založit `svj-portal` jako samostatný private repozitář.
+2. Připravit seznam administrátorských e-mailů pro všechny tři členy výboru.
+3. Připravit nebo určit zdroj neveřejného seznamu jednotek a primárních kontaktů; tyto údaje neukládat do veřejného repozitáře.
+4. Potvrdit finální rozsah exportu pro dodavatele, zejména zda dodavatel opravdu potřebuje jméno, kontakt, číslo bytu, podlaží, počet čipů a typ telefonu.
+5. Připravit minimální provozní rozhodnutí pro self-hosted směr: zálohování PostgreSQL, oddělení `.env`, budoucí doména portálu a produkční VPS až po dokončení MVP.
 
-Poznámka pro další práci: nepokračovat ještě slepě implementací, dokud nebudou aspoň pracovně potvrzené body k umístění aplikace, hostingu, datům jednotek, variabilnímu symbolu a administrátorům. Pokud bude potřeba rychle postupovat,
-lze v implementačním plánu uvést doporučené defaulty a označit je jako pracovní předpoklady.
+Poznámka pro další práci: implementaci lze zahájit technickým skeletem a testovacími daty. Ostrá data jednotek,
+kontakty, produkční `.env` a produkční tokeny do Gitu nepatří.

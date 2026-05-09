@@ -236,3 +236,29 @@ Důvod:
 
 Poznámka: Vercel/Supabase zůstává historicky zaznamenaná jako dříve zvažovaná managed varianta. Google Sheets + Apps
 Script zůstává nouzová záložní cesta pro případ, že by self-hosted MVP nebylo možné včas bezpečně dokončit.
+
+## 2026-05-09: samostatný repozitář a pracovní defaulty implementace
+
+Rozhodnutí: aplikační část portálu vznikne v samostatném repozitáři `svj-portal`, doporučeně pod GitHub organizací
+`svjbzenecka22` a zpočátku jako private repozitář. Veřejný web `svjbzenecka22.github.io` zůstane oddělený a bude na
+portál pouze odkazovat.
+
+Schválené pracovní defaulty:
+
+- monorepo struktura `backend/`, `frontend/`, `docker-compose.yml`, `.env.example`, `README.md`, `docs/`,
+- první build začne s testovacími jednotkami,
+- ostrý import jednotek a kontaktů se připraví až po ověření toku na testovacích datech,
+- pracovní pravidlo variabilního symbolu zůstává `2605 + číslo jednotky doplněné zleva nulami na 3 číslice`,
+- termíny 2026-05-19 pro urgenci a 2026-05-24 pro uzávěrku zůstávají pracovně platné,
+- první export pro dodavatele bude CSV,
+- administrátorské účty budou pro MVP založené ručně nebo seedem,
+- jednotkové tokeny budou náhodné a v databázi uložené pouze jako hash,
+- produkční VPS, doména a Nginx se budou řešit až po lokálně funkčním MVP.
+
+Důvod:
+
+- oddělený repozitář lépe odděluje veřejný statický web od backendu, databáze, migrací, Docker konfigurace a provozních
+  podkladů,
+- private režim snižuje riziko náhodného zveřejnění pracovních neveřejných podkladů,
+- schválené defaulty umožňují pokračovat implementačním plánem bez čekání na další technická rozhodnutí,
+- testovací data před ostrým importem snižují riziko chyb při práci s osobními údaji.
