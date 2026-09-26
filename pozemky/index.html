@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informace pro vlastníky jednotek SVJ Bzenecká 4166/22 o bezúplatném převodu pozemku pod domem.">
+  <title>Pozemek pod domem – SVJ Bzenecká 4166/22, Brno</title>
+  <style>
+    :root {
+      --ink: #182b3a;
+      --muted: #536674;
+      --page: #edf2f3;
+      --surface: #ffffff;
+      --surface-soft: #f6f8f8;
+      --primary: #174f69;
+      --primary-dark: #103c51;
+      --primary-soft: #e2eef1;
+      --line: #cedbde;
+      --accent: #a65a19;
+      --accent-dark: #783c0d;
+      --accent-soft: #fff3e5;
+      --notice: #5f4a12;
+      --notice-soft: #fff8df;
+      --notice-line: #e3c86d;
+      --shadow: 0 9px 28px rgba(24, 43, 58, 0.08);
+      --radius: 18px;
+      --container: 1080px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: var(--ink);
+      background: var(--page);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    a { color: var(--primary-dark); }
+    a:hover { color: #092b3a; }
+    a:focus-visible, button:focus-visible { outline: 3px solid #c57624; outline-offset: 3px; }
+
+    .container { width: min(calc(100% - 32px), var(--container)); margin: 0 auto; }
+    .skip-link { position: fixed; z-index: 100; top: -70px; left: 16px; padding: 10px 14px; border-radius: 9px; color: #fff; background: var(--primary-dark); }
+    .skip-link:focus { top: 12px; }
+
+    .site-header {
+      position: sticky;
+      z-index: 20;
+      top: 0;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.96);
+      box-shadow: 0 2px 8px rgba(24, 43, 58, 0.04);
+    }
+
+    .header-row { display: flex; min-height: 60px; align-items: center; justify-content: space-between; gap: 12px; }
+    .brand { display: inline-flex; align-items: center; gap: 9px; color: var(--primary-dark); font-size: 0.92rem; font-weight: 750; line-height: 1.2; text-decoration: none; }
+    .brand-mark { display: inline-grid; width: 30px; height: 30px; place-items: center; border-radius: 8px; color: #fff; background: var(--primary); font-size: 0.95rem; }
+    .print-button {
+      display: inline-flex;
+      min-height: 42px;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      color: var(--primary-dark);
+      background: #fff;
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .print-button:hover { background: var(--surface-soft); }
+
+    .quick-nav { border-top: 1px solid #e5ebec; overflow-x: auto; scrollbar-width: thin; }
+    .quick-nav ul { display: flex; width: max-content; min-width: 100%; margin: 0; padding: 0; list-style: none; }
+    .quick-nav a { display: block; min-height: 44px; padding: 11px 13px; color: var(--muted); font-size: 0.87rem; font-weight: 650; text-decoration: none; white-space: nowrap; }
+    .quick-nav a:hover { color: var(--primary-dark); background: var(--primary-soft); }
+
+    .hero { padding: 28px 0 20px; background: linear-gradient(135deg, #dbeaec 0%, #edf2f3 52%, #f6f8f8 100%); }
+    .hero-grid { display: grid; gap: 24px; }
+    .eyebrow { display: inline-block; margin-bottom: 10px; color: var(--primary-dark); font-size: 0.76rem; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; }
+    h1, h2, h3 { color: var(--ink); line-height: 1.2; }
+    h1 { max-width: 23ch; margin: 0 0 16px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 8vw, 3.5rem); letter-spacing: -0.025em; }
+    h2 { margin: 0 0 14px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.55rem, 5vw, 2.15rem); letter-spacing: -0.012em; }
+    h3 { margin: 0 0 8px; font-size: 1.12rem; }
+    p { margin: 0 0 14px; }
+    .lead { max-width: 66ch; margin-bottom: 0; color: #314a5a; font-size: 1.08rem; }
+
+    .deadline-card { overflow: hidden; border: 1px solid #b8cdd2; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
+    .deadline-heading { margin: 0; padding: 13px 17px; color: #fff; background: var(--primary-dark); font-size: 0.88rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
+    .deadline-content { padding: 19px 17px 17px; }
+    .deadline-text { margin-bottom: 6px; color: var(--muted); font-size: 0.96rem; }
+    .deadline-date { display: block; margin-bottom: 16px; color: var(--primary-dark); font-size: 1.35rem; font-weight: 800; line-height: 1.2; }
+    .countdown { display: grid; grid-template-columns: repeat(4, 1fr); gap: 7px; }
+    .time-box { min-width: 0; padding: 11px 4px 9px; border-radius: 10px; text-align: center; background: var(--primary-soft); }
+    .time-value { display: block; color: var(--primary-dark); font-variant-numeric: tabular-nums; font-size: clamp(1.35rem, 7vw, 2rem); font-weight: 800; line-height: 1; }
+    .time-label { display: block; margin-top: 7px; color: var(--muted); font-size: 0.68rem; font-weight: 750; letter-spacing: 0.04em; text-transform: uppercase; }
+    .expired-message { margin: 0; padding: 14px; border-radius: 10px; color: var(--accent-dark); background: var(--accent-soft); font-weight: 750; }
+    .deadline-badge { margin: 15px 0 0; padding: 10px 12px; border-left: 4px solid var(--accent); color: #66421f; background: #fdf7ee; font-size: 0.9rem; }
+
+    main { padding-bottom: 22px; }
+    .section { padding-top: 18px; scroll-margin-top: 120px; }
+    .section-card { padding: 22px 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
+    .section-intro { max-width: 72ch; color: var(--muted); }
+    .prose > *:last-child, .step-item > *:last-child, .info-box > *:last-child { margin-bottom: 0; }
+    .facts { margin: 18px 0 0; padding: 0; list-style: none; }
+    .facts li { position: relative; margin: 10px 0; padding-left: 24px; }
+    .facts li::before { position: absolute; top: 0.55em; left: 4px; width: 8px; height: 8px; border-radius: 50%; background: var(--primary); content: ""; }
+
+    .example-box, .info-box { margin-top: 18px; padding: 16px; border-radius: 12px; }
+    .example-box { border: 1px solid #c8dce0; border-left: 5px solid var(--primary); background: #f4f9f9; }
+    .box-label { display: block; margin-bottom: 7px; color: var(--primary-dark); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+
+    .steps { display: grid; gap: 12px; margin: 19px 0 0; padding: 0; list-style: none; counter-reset: steps; }
+    .step-item { position: relative; padding: 15px 15px 15px 59px; border: 1px solid var(--line); border-radius: 13px; background: var(--surface-soft); counter-increment: steps; }
+    .step-item::before { position: absolute; top: 15px; left: 15px; display: grid; width: 30px; height: 30px; place-items: center; border-radius: 50%; color: #fff; background: var(--primary); content: counter(steps); font-size: 0.9rem; font-weight: 800; }
+    .step-item p { margin: 0; }
+    .urgent-box { margin-top: 18px; padding: 16px; border: 1px solid var(--notice-line); border-radius: 12px; color: var(--notice); background: var(--notice-soft); }
+    .urgent-box p { margin: 0; }
+
+    .subsection-title { margin: 25px 0 10px; color: var(--primary-dark); font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem; }
+    .verification-block + .verification-block { margin-top: 28px; }
+    .table-wrap { margin-top: 13px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 14px 15px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { color: var(--primary-dark); background: var(--primary-soft); font-size: 0.88rem; }
+    td { font-size: 0.94rem; }
+    tbody tr:last-child td { border-bottom: 0; }
+    .table-note { margin: 12px 0 0; color: var(--muted); font-size: 0.9rem; }
+    .table-note:last-child { margin-bottom: 0; }
+
+    .delivery-primary { margin: 16px 0; padding: 17px; border: 1px solid #c7dce0; border-radius: 13px; background: var(--primary-soft); }
+    .delivery-primary p { margin: 0; }
+    .alternatives { margin: 16px 0 0; padding: 0; list-style: none; }
+    .alternatives li { margin: 10px 0; padding: 12px 13px; border-left: 3px solid #a8bec5; background: var(--surface-soft); }
+
+    .tax-section .section-card { border: 2px solid #d6c387; background: #fffdf5; }
+    .tax-section h2 { color: #504116; }
+    .tax-section .section-intro { color: #685d3f; }
+    .tax-section .subsection-title { color: #685014; }
+    .tax-section .facts li::before { background: #987523; }
+    .tax-alert { margin-top: 20px; padding: 18px; border: 2px solid #d08c31; border-radius: 14px; background: #fff4df; }
+    .tax-alert h3 { display: flex; align-items: center; gap: 8px; margin-bottom: 11px; color: var(--accent-dark); font-family: Georgia, "Times New Roman", serif; font-size: 1.3rem; }
+    .warning-symbol { display: inline-grid; width: 29px; height: 29px; flex: 0 0 auto; place-items: center; border-radius: 50%; color: #fff; background: var(--accent); font-family: system-ui, sans-serif; font-size: 1rem; font-weight: 900; }
+    .tax-alert .facts { margin-top: 14px; }
+    .tax-info { border: 1px solid #cfdae2; color: #405768; background: #f0f7fb; }
+
+    .contacts { display: grid; gap: 11px; margin-top: 18px; }
+    .contact-card { padding: 15px; border: 1px solid var(--line); border-radius: 13px; background: var(--surface-soft); }
+    .contact-card h3 { margin-bottom: 7px; font-size: 1.05rem; }
+    .contact-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+    .contact-link { display: inline-flex; min-height: 42px; align-items: center; padding: 8px 10px; border: 1px solid #bdcfd4; border-radius: 9px; background: #fff; color: var(--primary-dark); font-size: 0.9rem; font-weight: 700; text-decoration: none; }
+    .contact-link:hover { border-color: var(--primary); background: var(--primary-soft); text-decoration: none; }
+    .email-card { margin-top: 12px; padding: 15px; border-radius: 13px; background: var(--primary-soft); }
+    .email-card p { margin: 0; }
+    .email-card a { font-weight: 800; }
+
+    .site-footer { padding: 8px 0 32px; color: #546673; font-size: 0.9rem; }
+    .footer-card { padding: 18px; border-top: 1px solid var(--line); }
+    .footer-card p { margin: 4px 0; }
+
+    @media (max-width: 650px) {
+      .table-wrap { border: 0; overflow: visible; }
+      table, thead, tbody, tr, th, td { display: block; }
+      thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+      tbody { display: grid; gap: 12px; }
+      tr { padding: 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface-soft); }
+      td { display: grid; grid-template-columns: minmax(98px, 0.7fr) minmax(0, 1.3fr); gap: 10px; padding: 6px 0; border: 0; font-size: 0.92rem; }
+      td::before { color: var(--muted); content: attr(data-label); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.035em; text-transform: uppercase; }
+    }
+
+    @media (min-width: 720px) {
+      .hero { padding: 44px 0 34px; }
+      .hero-grid { grid-template-columns: minmax(0, 1.15fr) minmax(330px, 0.85fr); align-items: center; gap: 34px; }
+      .section { padding-top: 26px; }
+      .section-card { padding: 30px; }
+      .contacts { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media print {
+      @page { margin: 13mm; }
+      body { color: #000; background: #fff; font-size: 10.5pt; }
+      .site-header { position: static; border: 0; box-shadow: none; }
+      .quick-nav, .print-button, .skip-link { display: none !important; }
+      .hero { padding: 0 0 12px; background: #fff; }
+      .container { width: 100%; }
+      h1 { font-size: 25pt; }
+      h2 { font-size: 18pt; }
+      .section { padding-top: 12px; scroll-margin-top: 0; }
+      .section-card, .deadline-card { padding: 14px; border: 1px solid #999; border-radius: 0; background: #fff; box-shadow: none; break-inside: avoid; }
+      .deadline-heading { padding: 0 0 6px; color: #000; background: #fff; }
+      .deadline-content { padding: 0; }
+      .countdown { display: none; }
+      .deadline-badge, .example-box, .urgent-box, .delivery-primary, .tax-alert, .tax-info, .email-card, .contact-card, .step-item, .alternatives li { background: #fff !important; }
+      .section-card, .deadline-card, .tax-section .section-card, .tax-alert { border-color: #999 !important; }
+      a { color: #000; text-decoration: underline; }
+      .contacts { grid-template-columns: repeat(3, 1fr); }
+      .contact-link { min-height: 0; padding: 0; border: 0; }
+      .site-footer { padding-bottom: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a class="brand" href="#nahoru" aria-label="SVJ Bzenecká 4166/22 – začátek stránky">
+          <span class="brand-mark" aria-hidden="true">⌂</span>
+          <span>SVJ Bzenecká 4166/22, Brno</span>
+        </a>
+        <button class="print-button" type="button" onclick="window.print()" aria-label="Vytisknout stránku">
+          <span aria-hidden="true">⎙</span> Vytisknout
+        </button>
+      </div>
+      <nav class="quick-nav" aria-label="Rychlá navigace">
+        <ul>
+          <li><a href="#koho-se-tyka">Koho se týká</a></li>
+          <li><a href="#fakta">Fakta</a></li>
+          <li><a href="#postup">Postup</a></li>
+          <li><a href="#overeni">Ověření podpisu</a></li>
+          <li><a href="#odevzdani">Odevzdání smluv</a></li>
+          <li><a href="#dane">Daně a povinnosti</a></li>
+          <li><a href="#kontakt">Kontakt na výbor</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="obsah">
+    <section class="hero" id="nahoru" aria-labelledby="page-title">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Bezúplatný převod pozemku · ÚZSVM</p>
+          <h1 id="page-title">Pozemek pod naším domem – šance získat ho zdarma do vlastnictví</h1>
+          <p class="lead">Úřad pro zastupování státu ve věcech majetkových (ÚZSVM) nabízí vlastníkům bytových jednotek v domě Bzenecká 4166/22 bezúplatný převod spoluvlastnického podílu na pozemcích pod domem. Níže najdete vše podstatné a návod, jak postupovat.</p>
+        </div>
+
+        <aside class="deadline-card" aria-labelledby="deadline-title">
+          <h2 class="deadline-heading" id="deadline-title">Termín pro doručení smluv</h2>
+          <div class="deadline-content">
+            <p class="deadline-text">Podepsané smlouvy je nutné doručit nejpozději do</p>
+            <time class="deadline-date" datetime="2026-10-30T23:59:00+01:00">30. 10. 2026, 23:59</time>
+            <div class="countdown" id="countdown" aria-live="polite" aria-label="Živý odpočet do termínu">
+              <div class="time-box"><span class="time-value" id="days">–</span><span class="time-label">dní</span></div>
+              <div class="time-box"><span class="time-value" id="hours">–</span><span class="time-label">hodin</span></div>
+              <div class="time-box"><span class="time-value" id="minutes">–</span><span class="time-label">minut</span></div>
+              <div class="time-box"><span class="time-value" id="seconds">–</span><span class="time-label">sekund</span></div>
+            </div>
+            <p class="expired-message" id="expired-message" hidden>Termín pro odevzdání vypršel – kontaktujte výbor SVJ</p>
+            <p class="deadline-badge">Doporučujeme nenechávat na poslední chvíli – je potřeba stihnout i ověření podpisu.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="koho-se-tyka" aria-labelledby="koho-title">
+      <div class="container"><article class="section-card prose">
+        <h2 id="koho-title">Týká se to jen vlastníků jednotek</h2>
+        <p>Nabídka ÚZSVM se týká výhradně <strong>vlastníků bytových jednotek</strong> v domě. Smlouvu dostal a podepisuje vždy jen ten, kdo je zapsán v katastru nemovitostí jako vlastník konkrétního bytu (případně oba manželé, mají-li byt ve společném jmění manželů).</p>
+        <p><strong>Nájemníci</strong> (ať už bydlí v soukromě vlastněném, nebo v družstevním bytě) nejsou účastníky této smlouvy a nemusí nic podepisovat ani nic vyřizovat. Tuto informaci zveřejňujeme, protože e-mail jde všem obyvatelům domu, aby bylo jasné, koho přesně se věc týká.</p>
+        <p><strong>Družstevní byty:</strong> je-li jednotka ve vlastnictví bytového družstva, převod pozemku za daného vlastníka řeší přímo družstvo (SBD Mír) jako vlastník jednotky – obyvatelé takového bytu se tímto nemusí zabývat.</p>
+      </article></div>
+    </section>
+
+    <section class="section" id="fakta" aria-labelledby="fakta-title">
+      <div class="container"><article class="section-card prose">
+        <h2 id="fakta-title">Co přesně ÚZSVM nabízí</h2>
+        <p>Dům Bzenecká 4166/22 stojí na pozemcích, které dosud vlastní <strong>Česká republika</strong> (hospodaří s nimi ÚZSVM). To je běžný pozůstatek z doby výstavby panelových domů – vlastnictví bytů bylo v minulosti odděleno od vlastnictví pozemku pod domem.</p>
+        <p>ÚZSVM nyní tuto nesrovnalost napravuje a nabízí vlastníkům jednotek <strong>bezúplatný převod</strong> odpovídajícího podílu na pozemku – tedy zdarma, bez kupní ceny.</p>
+        <ul class="facts">
+          <li><strong>Právní základ:</strong> § 60a zákona č. 219/2000 Sb., o majetku České republiky</li>
+          <li><strong>Převáděné pozemky:</strong> parcely č. 9057/1, 9057/2 a 9057/3, k. ú. Židenice (zastavěná plocha pod domem)</li>
+          <li><strong>Velikost podílu:</strong> každý vlastník dostává podíl na pozemku odpovídající velikosti podílu, který má na společných částech domu (tedy zjednodušeně – podle poměru plochy svého bytu k celkové ploše všech bytů v domě). Konkrétní zlomek je individuální a je uveden přímo ve vaší smlouvě.</li>
+          <li><strong>Vlastnictví vznikne</strong> až zápisem (vkladem) do katastru nemovitostí. Právní účinky ale nastanou zpětně k datu, kdy byl návrh na vklad podán katastrálnímu úřadu.</li>
+          <li>Smlouva <strong>nepodléhá zveřejnění</strong> v registru smluv.</li>
+        </ul>
+        <div class="example-box">
+          <span class="box-label">Jak to vypadá v praxi</span>
+          <p>Příklad z domu Bzenecká 22: vlastník bytu s podílem 76/3892 na společných částech domu obdržel ve své smlouvě k převodu podíl 19/973 na pozemcích pod domem. <strong>Čísla se u každého bytu liší</strong> podle jeho velikosti – ve vaší smlouvě najdete vlastní, individuálně vypočtený zlomek.</p>
+        </div>
+      </article></div>
+    </section>
+
+    <section class="section" id="postup" aria-labelledby="postup-title">
+      <div class="container"><article class="section-card">
+        <h2 id="postup-title">Co je potřeba udělat (a v jakém pořadí)</h2>
+        <ol class="steps">
+          <li class="step-item"><p><strong>Zkontrolujte údaje ve smlouvě</strong> – jméno, datum narození, adresa musí přesně souhlasit s občanským průkazem. Pokud něco nesedí, <strong>smlouvu nepodepisujte</strong> a kontaktujte ÚZSVM (kontakt je uveden přímo v obdrženém dopise) – zašlou opravenou verzi.</p></li>
+          <li class="step-item"><p><strong>Vyberte si termín na ověření podpisu</strong> – u jednoho vyhotovení smlouvy musí být podpis úředně ověřen (pošta, notář nebo matrika). Viz sekce „Kde ověřit podpis“ níže.</p></li>
+          <li class="step-item"><p><strong>Podepište zbylá vyhotovení smlouvy</strong> – se stejným datem a místem, jaké je uvedeno u úředně ověřeného podpisu.</p></li>
+          <li class="step-item"><p><strong>Odevzdejte všechna vyhotovení</strong> – nejjednodušší je vhodit je do <strong>schránky SVJ v domě</strong>. Viz sekce „Kam smlouvy odevzdat“.</p></li>
+          <li class="step-item"><p><strong>Hotovo</strong> – dál už nic řešit nemusíte. Po zpracování vkladu vám přijde vyrozumění z katastru a následně i podepsaná smlouva ze strany ÚZSVM.</p></li>
+        </ol>
+        <div class="urgent-box"><p>Termín pro doručení <strong>všech</strong> podepsaných vyhotovení je <strong>30. 10. 2026</strong>. Počítejte s tím, že ověření podpisu na poště nebo u notáře chce čas – doporučujeme nenechávat si to na poslední týden.</p></div>
+      </article></div>
+    </section>
+
+    <section class="section" id="overeni" aria-labelledby="overeni-title">
+      <div class="container"><article class="section-card prose">
+        <h2 id="overeni-title">Ověření podpisu (legalizace) – kde a za kolik</h2>
+        <p class="section-intro">Ověřit podpis lze na kterékoli poště s Czech POINT, u kteréhokoli notáře, nebo na matrice. Cena je daná zákonem/tarifem a je stejná bez ohledu na to, kterou konkrétní pobočku nebo notáře zvolíte.</p>
+
+        <section class="verification-block" aria-labelledby="posta-title">
+          <h3 class="subsection-title" id="posta-title">Pošta</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Místo</th><th>Adresa</th><th>Otevírací doba</th><th>Cena</th></tr></thead>
+              <tbody><tr>
+                <td data-label="Místo"><strong>Pošta Brno 29 (nejbližší)</strong></td>
+                <td data-label="Adresa">Pálavské náměstí 4246/5, Brno-Židenice</td>
+                <td data-label="Otevírací doba">Po, St: 10:00–12:00 a 13:00–18:00 · Út, Čt, Pá: 8:00–12:00 a 13:00–16:00 · So, Ne: zavřeno</td>
+                <td data-label="Cena"><strong>50 Kč / podpis</strong></td>
+              </tr></tbody>
+            </table>
+          </div>
+          <p class="table-note"><em>Poznámka: otevírací dobu doporučujeme před návštěvou ověřit telefonicky na +420 954 262 900, případně na postaonline.cz, mohou nastat krátkodobé změny.</em></p>
+        </section>
+
+        <section class="verification-block" aria-labelledby="notari-title">
+          <h3 class="subsection-title" id="notari-title">Notáři v okolí</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Notář</th><th>Adresa</th><th>Cena</th></tr></thead>
+              <tbody>
+                <tr><td data-label="Notář"><strong>JUDr. Andrea Štěpánová, MBA</strong></td><td data-label="Adresa">Nové sady 1019, Brno-střed</td><td data-label="Cena">70 Kč bez DPH / podpis (cca 85 Kč vč. DPH)</td></tr>
+                <tr><td data-label="Notář"><strong>Mgr. Petr Šedivý</strong></td><td data-label="Adresa">Šumavská 519, Brno-Veveří</td><td data-label="Cena">70 Kč bez DPH / podpis (cca 85 Kč vč. DPH)</td></tr>
+                <tr><td data-label="Notář"><strong>Mgr. Richard Brázda</strong></td><td data-label="Adresa">Kobližná 47/19, Brno-střed</td><td data-label="Cena">70 Kč bez DPH / podpis (cca 85 Kč vč. DPH)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note"><em>Poznámka: cena za ověření podpisu u notáře je dána notářským tarifem (vyhláška č. 196/2001 Sb.) a je u všech notářů v ČR stejná. Doporučujeme si schůzku předem telefonicky domluvit.</em></p>
+        </section>
+        <p>Ověření je možné i na matrice Vašeho úřadu městské části.</p>
+      </article></div>
+    </section>
+
+    <section class="section" id="odevzdani" aria-labelledby="odevzdani-title">
+      <div class="container"><article class="section-card prose">
+        <h2 id="odevzdani-title">Kam s podepsanými smlouvami</h2>
+        <div class="delivery-primary"><p><strong>Nejjednodušší varianta: schránka SVJ v domě.</strong> Všechna podepsaná a ověřená vyhotovení stačí vhodit do schránky SVJ – výbor je hromadně přepošle na ÚZSVM.</p></div>
+        <ul class="alternatives">
+          <li>Poštou přímo na adresu ÚZSVM (Úřad pro zastupování státu ve věcech majetkových, ÚP Brno, OHM, Příkop 11, 602 00 Brno) – <strong>hradíte poštovné</strong>, počítejte i s dobou doručení.</li>
+          <li>Osobně na podatelně ÚZSVM (Po–Čt 8:00–16:00, Pá 8:00–14:00) – vyžaduje osobní návštěvu v úředních hodinách.</li>
+          <li>Kdykoliv do poštovní schránky na budově ÚZSVM (Příkop 11) – bez nutnosti navštívit podatelnu v úřední době.</li>
+        </ul>
+      </article></div>
+    </section>
+
+    <section class="section tax-section" id="dane" aria-labelledby="dane-title">
+      <div class="container"><article class="section-card prose">
+        <h2 id="dane-title">Co se změní po nabytí pozemku – daně a další povinnosti</h2>
+        <p class="section-intro">Bezúplatné nabytí pozemku s sebou nese i pár praktických důsledků. Většina zpráv je dobrá – jde ale i o jednu novou, trvalou povinnost, na kterou je dobré od začátku myslet.</p>
+
+        <h3 class="subsection-title">7.1 Daň z nabytí nemovitých věcí – netýká se vás</h3>
+        <p>Tato daň byla v České republice <strong>zrušena v roce 2020</strong> a v současnosti neexistuje. Netýkala by se vás ale ani dříve – vztahovala se jen na úplatné převody (koupě), ne na bezúplatné nabytí.</p>
+
+        <h3 class="subsection-title">7.2 Daň z příjmu – převod je od daně osvobozen</h3>
+        <p>I když jde o bezúplatné nabytí majetku, <strong>nemusíte z něj platit daň z příjmu ani ho nikam přiznávat</strong>. Zákon o daních z příjmů (§ 4a písm. e) zákona č. 586/1992 Sb.) výslovně osvobozuje bezúplatné nabytí pozemku od státu podle zákona o majetku ČR přesně pro tento typ situace. Nejde tedy o „dar“ v obvyklém daňovém smyslu.</p>
+
+        <section class="tax-alert" aria-labelledby="tax-alert-title">
+          <h3 id="tax-alert-title"><span class="warning-symbol" aria-hidden="true">!</span> 7.3 Daň z nemovitých věcí – nová, opakovaná povinnost ⚠️</h3>
+          <p><strong>Tohle je jediná skutečně nová povinnost, na kterou byste neměli zapomenout:</strong></p>
+          <ul class="facts">
+            <li>Poté, co bude váš podíl na pozemku zapsán v katastru nemovitostí, se stanete plátcem <strong>daně z nemovitých věcí</strong> (daň z pozemku) za svůj podíl.</li>
+            <li><strong>Daňové přiznání je nutné podat do 31. ledna roku následujícího po roce, kdy proběhl zápis</strong> do katastru (např. zápis v roce 2026 → přiznání do 31. 1. 2027).</li>
+            <li>Vzhledem k tomu, že jde o podíl na pozemku odvozený přímo od vlastnictví bytové jednotky, měl by být každý vlastník poplatníkem <strong>samostatně za svůj podíl</strong> (nemělo by být potřeba domlouvat se s ostatními vlastníky na společném zástupci jako u běžného spoluvlastnictví) – tento konkrétní mechanismus doporučujeme před podáním přiznání ověřit přímo na finančním úřadě, ať máte jistotu.</li>
+            <li>Výše samotné daně bude u malého podílu na zastavěné ploše pod domem pravděpodobně jen řádově nízká (desítky až stovky korun ročně), přesnou částku ale nelze předem přesně určit – závisí na výměře a místních koeficientech. Finanční úřad vám ji po podání přiznání vyměří.</li>
+            <li>Formulář a informace: portál Finanční správy (mojedane.cz) nebo místně příslušný finanční úřad.</li>
+          </ul>
+        </section>
+
+        <h3 class="subsection-title">7.4 Ostatní praktické dopady</h3>
+        <ul class="facts">
+          <li>Nabýváte pozemek v aktuálním stavu – ÚZSVM prohlašuje, že mu nejsou známy žádné závady ani omezení váznoucí na pozemku.</li>
+          <li>Podíl na pozemku bude od nynějška neoddělitelně spojen s vlastnictvím vaší jednotky – při budoucím prodeji bytu se automaticky převádí spolu s ním (je vhodné na to pamatovat při sepisování budoucí kupní smlouvy).</li>
+          <li>Pro daňové účely se má za to, že jste pozemek nabyli k datu podání návrhu na vklad do katastru – tohle datum může mít v budoucnu význam, pokud byste byt s pozemkem prodávali (časové testy u daně z příjmu). Při případném budoucím prodeji doporučujeme tuto skutečnost zmínit poradci.</li>
+          <li>Poplatek za samotný vklad do katastru neplatíte vy – návrh na vklad podle smlouvy podává převodce (stát), jde o bezúplatný převod.</li>
+        </ul>
+        <div class="info-box tax-info"><p>Toto shrnutí je informační, nejde o daňové ani právní poradenství. Konkrétní dopad na vaši situaci doporučujeme ověřit s daňovým poradcem nebo na finančním úřadě.</p></div>
+      </article></div>
+    </section>
+
+    <section class="section" id="kontakt" aria-labelledby="kontakt-title">
+      <div class="container"><article class="section-card prose">
+        <h2 id="kontakt-title">Nevíte si rady? Ozvěte se výboru</h2>
+        <p>Pokud si nejste jistí čímkoliv výše uvedeným, nebojte se ozvat kterémukoliv členovi výboru – osobně, telefonicky, e-mailem nebo přes WhatsApp:</p>
+        <div class="contacts">
+          <section class="contact-card"><h3>Patrik Řehák <span aria-label="předseda">(předseda)</span></h3><div class="contact-actions"><a class="contact-link" href="tel:+420725791406">Zavolat: +420 725 791 406</a><a class="contact-link" href="https://wa.me/420725791406">WhatsApp</a></div></section>
+          <section class="contact-card"><h3>Ondrej Peťko</h3><div class="contact-actions"><a class="contact-link" href="tel:+420728760898">Zavolat: +420 728 760 898</a><a class="contact-link" href="https://wa.me/420728760898">WhatsApp</a></div></section>
+          <section class="contact-card"><h3>František Červenec</h3><div class="contact-actions"><a class="contact-link" href="tel:+420603791144">Zavolat: +420 603 791 144</a><a class="contact-link" href="https://wa.me/420603791144">WhatsApp</a></div></section>
+        </div>
+        <div class="email-card"><p>Společný e-mail výboru: <a href="mailto:svjbzenecka22@gmail.com">svjbzenecka22@gmail.com</a></p></div>
+      </article></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><div class="footer-card">
+      <p><strong>SVJ Bzenecká 4166/22, Brno</strong> · IČO: 04063163</p>
+      <p>Správce domu: Bytové družstvo Mír, <a href="mailto:mirsbd@mirsbd.cz">mirsbd@mirsbd.cz</a></p>
+      <p>Obsah aktualizován: <time datetime="2026-09-26">26. 9. 2026</time></p>
+    </div></div>
+  </footer>
+
+  <script>
+    (() => {
+      const deadline = new Date("2026-10-30T23:59:00+01:00");
+      const countdown = document.getElementById("countdown");
+      const expiredMessage = document.getElementById("expired-message");
+      const fields = {
+        days: document.getElementById("days"),
+        hours: document.getElementById("hours"),
+        minutes: document.getElementById("minutes"),
+        seconds: document.getElementById("seconds")
+      };
+
+      let timer;
+
+      const updateCountdown = () => {
+        const difference = deadline.getTime() - Date.now();
+
+        if (difference <= 0) {
+          countdown.hidden = true;
+          expiredMessage.hidden = false;
+          clearInterval(timer);
+          return false;
+        }
+
+        const totalSeconds = Math.floor(difference / 1000);
+        const days = Math.floor(totalSeconds / 86400);
+        const hours = Math.floor((totalSeconds % 86400) / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+        fields.days.textContent = days;
+        fields.hours.textContent = String(hours).padStart(2, "0");
+        fields.minutes.textContent = String(minutes).padStart(2, "0");
+        fields.seconds.textContent = String(seconds).padStart(2, "0");
+        return true;
+      };
+
+      if (updateCountdown()) {
+        timer = setInterval(updateCountdown, 1000);
+      }
+    })();
+  </script>
+</body>
+</html>
